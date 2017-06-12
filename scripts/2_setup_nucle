@@ -1,5 +1,5 @@
-export SCRIPTS_DIR=/home/shubha_g/msc/scripts/
-export DATA_DIR=/home/shubha_g/msc/data/
+export SCRIPTS_DIR=~/MSc/scripts
+export DATA_DIR=~/MSc/data
 
 # set up perl
 echo 'Setting up perl...'
