@@ -1,0 +1,3 @@
+sudo -s
+mkdir /mine
+mount -t cifs //gec.file.core.windows.net/shubhag /mine -o vers=2.1,username=gec,password=Fw7TOy2iyt90kGS/vUlLry93TIfPTXPhCQyb5osgIfcAaYNa9oQa5OMTEOyiY3/UX/bvXUvetgMiWl5ErjCYsQ==,dir_mode=0777,file_mode=0777
