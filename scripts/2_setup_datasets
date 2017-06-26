@@ -1,0 +1,74 @@
+export SCRIPTS_DIR=~/MSc/scripts
+export DATA_DIR=~/MSc/data
+export SUBWORD_DIR=${SCRIPTS_DIR}/subword-nmt
+
+# extract data files
+cd ${DATA_DIR}
+echo 'Extracting NUCLE...'
+tar -xzvf nucle-3.0.tar.gz
+echo 'Extracting Lang-8...'
+tar -xzvf lang8.tar.gz
+echo 'Extracting CoNLL-2013 test set...'
+tar -xzvf release2.3.1.tar.gz
+# echo 'Extracting CoNLL-2014 test set...'
+# tar -xzvg conll14st-test-data.tar.gz
+
+# set up perl
+echo 'Setting up perl...'
+./${SCRIPTS_DIR}/setup-perl
+
+# run perl script from EMNLP 2016 paper
+echo 'Generating parallel texts from NUCLE...'
+perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/conll14st-preprocessed.m2 > ${DATA_DIR}/nucle.parallel
+echo 'Generating parallel texts from CoNLL-2013...'
+perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/release2.3.1/original/data/official-preprocessed.m2 > ${DATA_DIR}/valid.parallel
+# echo 'Generating parallel texts from CoNLL-2014...'
+# perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/release2.3.1/original/data/official-preprocessed.m2 > ${DATA_DIR}/test.parallel
+
+# concatenate NUCLE and Lang-8 for training
+echo 'Concatenating NUCLE and Lang-8 parallel texts...'
+cat ${DATA_DIR}/nucle.parallel ${DATA_DIR}/lang8-naist.tok.uniq.txt > ${DATA_DIR}/train.parallel
+
+# run python script to separate parallel data into two files
+echo 'Splitting parallel texts into two files...'
+python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/train.parallel
+python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/valid.parallel
+# python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/test.parallel
+
+# install nltk
+echo 'Installing nltk...'
+source activate nmtenv
+conda install nltk
+
+# run tokenizer on training and validation datasets
+echo 'Running tokenizer on training dataset...'
+python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/train.fr
+python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/train.en
+echo 'Running tokenizer on validation dataset...'
+python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/valid.fr
+python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/valid.en
+# echo 'Running tokenizer on test dataset...'
+# python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/test.fr
+# python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/test.en
+
+# learn and apply BPE
+echo 'Learning BPE...'
+cat ${DATA_DIR}/train.fr.tok ${DATA_DIR}/train.en.tok | .${SUBWORD_DIR}/learn_bpe.py -s 49999 -o ${DATA_DIR}/gec2.bpe
+echo 'Applying BPE...'
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/train.fr.tok > ${DATA_DIR}/train.fr.tok.bpe2
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe2
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe2
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe2
+# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe2
+# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe2
+
+# apply Roman's BPE
+echo 'Applying Roman\'s BPE...'
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.fr.tok > ${DATA_DIR}/train.fr.tok.bpe
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe
+.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe
+# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe
+# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe
+
+echo 'Done'

@@ -8,6 +8,7 @@ conda clean -t
 
 echo 'Installing nematus...'
 sudo apt-get install git
+cd ~
 git clone https://github.com/moses-smt/mosesdecoder
 git clone https://github.com/rsennrich/subword-nmt
 git clone https://github.com/rsennrich/nematus
