@@ -435,3 +435,94 @@ Epoch  3 Update  105000 Cost  14.9643047944 UD  1341.52240396 59.63 sents/s 917.
 Epoch  3 Update  106000 Cost  14.9896850021 UD  1342.41663814 59.59 sents/s 919.62 words/s
 Epoch  3 Update  107000 Cost  14.9758583696 UD  1342.06888008 59.61 sents/s 921.08 words/s
 Epoch  3 Update  108000 Cost  14.8040485299 UD  1344.67472911 59.49 sents/s 913.71 words/s
+Epoch  3 Update  109000 Cost  15.0684172817 UD  1347.63096595 59.36 sents/s 915.43 words/s
+Epoch  3 Update  110000 Cost  15.0788399723 UD  1350.59984684 59.23 sents/s 916.04 words/s
+Saving the best model... Done
+Saving the model at iteration 110000... Done
+Source  0 : Thank you !
+Truth  0  :  Thank you !
+Sample  0 :  Thank you !
+Source  1 : not finish !
+Truth  1  :  not finish !
+Sample  1 :  not over journey !
+Source  2 : July 25@@ ,2010
+Truth  2  :  July 25@@ ,2010
+Sample  2 :  July 25@@ ,2010
+Source  3 : Good evening .
+Truth  3  :  Good evening .
+Sample  3 :  Good evening .
+Source  4 : Work Al@@ location
+Truth  4  :  Work Al@@ location
+Sample  4 :  Work Al@@ location
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  18.6061
+Epoch  3 Update  111000 Cost  14.9498506491 UD  1447.07747912 55.28 sents/s 855.71 words/s
+Epoch  3 Update  112000 Cost  14.8642095857 UD  1334.34934497 59.95 sents/s 922.56 words/s
+Epoch  3 Update  113000 Cost  14.7618718624 UD  1346.47473001 59.41 sents/s 912.74 words/s
+Epoch  3 Update  114000 Cost  15.0090001263 UD  1344.64766097 59.50 sents/s 919.88 words/s
+Epoch  3 Update  115000 Cost  15.0438391498 UD  1328.39187813 60.22 sents/s 928.83 words/s
+Epoch  3 Update  116000 Cost  14.9939999129 UD  1348.60168791 59.32 sents/s 915.45 words/s
+Epoch  3 Update  117000 Cost  14.9856966973 UD  1348.91544199 59.31 sents/s 917.10 words/s
+Epoch  3 Update  118000 Cost  14.8896970585 UD  1354.90013599 59.04 sents/s 912.61 words/s
+Epoch  3 Update  119000 Cost  14.7895970427 UD  1336.09913588 59.88 sents/s 923.15 words/s
+Epoch  3 Update  120000 Cost  14.9555403766 UD  1351.83565497 59.18 sents/s 914.15 words/s
+Saving the best model... Done
+Saving the model at iteration 120000... Done
+Source  0 : a perfect lullaby
+Truth  0  :  a perfect lullaby
+Sample  0 :  a perfect lullaby
+Source  1 : MY FRIEND
+Truth  1  :  MY FRIEND
+Sample  1 :  MY FRIEND
+Source  2 : Kanji dictionary
+Truth  2  :  Kanji dictionary
+Sample  2 :  Kanji dictionary
+Source  3 : But ...
+Truth  3  :  But ...
+Sample  3 :  But ...
+Source  4 : Written tests
+Truth  4  :  Written tests
+Sample  4 :  Written tests
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  18.4275
+Epoch  3 Update  121000 Cost  14.7993232033 UD  1448.62641597 55.22 sents/s 850.11 words/s
+Epoch  3 Update  122000 Cost  14.7639131885 UD  1337.44942498 59.82 sents/s 923.63 words/s
+Epoch  3 Update  123000 Cost  14.9110952302 UD  1345.94452596 59.44 sents/s 920.96 words/s
+Epoch  3 Update  124000 Cost  14.8866178204 UD  1347.04887104 59.39 sents/s 920.33 words/s
+Epoch  3 Update  125000 Cost  14.8274282544 UD  1349.52841187 59.28 sents/s 915.27 words/s
+Epoch  3 Update  126000 Cost  14.8472394391 UD  1346.02159119 59.43 sents/s 916.45 words/s
+Epoch  3 Update  127000 Cost  14.7024702396 UD  1349.51958704 59.28 sents/s 913.46 words/s

@@ -237,3 +237,142 @@ Epoch  1 Update  55000 Cost  20.328684479 UD  876.200198174 68.48 sents/s 1058.1
 Epoch  1 Update  56000 Cost  20.2397269805 UD  869.481552124 69.01 sents/s 1060.78 words/s
 Epoch  1 Update  57000 Cost  19.9017197251 UD  867.649291039 69.15 sents/s 1063.33 words/s
 Epoch  1 Update  58000 Cost  20.038360693 UD  874.555251837 68.61 sents/s 1055.18 words/s
+Epoch  1 Update  59000 Cost  20.0743816685 UD  875.207106829 68.56 sents/s 1063.50 words/s
+Epoch  1 Update  60000 Cost  19.8659385146 UD  876.39289999 68.46 sents/s 1052.99 words/s
+Saving the best model... Done
+Saving the model at iteration 60000... Done
+Source  0 : Homework 2
+Truth  0  :  Homework 2
+Sample  0 :  Homework 2
+Source  1 : dough ?
+Truth  1  :  dough ?
+Sample  1 :  dough ?
+Source  2 : Camp@@ ing
+Truth  2  :  Camp@@ ing
+Sample  2 :  Camp@@ ing
+Source  3 : Yeah .
+Truth  3  :  Yeah .
+Sample  3 :  Yeah .
+Source  4 : Music .
+Truth  4  :  Music .
+Sample  4 :  Music .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.984
+Epoch  1 Update  61000 Cost  19.8191314961 UD  1001.16741991 59.93 sents/s 923.35 words/s
+Epoch  1 Update  62000 Cost  19.9751931317 UD  878.206740856 68.32 sents/s 1056.74 words/s
+Epoch  1 Update  63000 Cost  19.9735305561 UD  872.18306303 68.79 sents/s 1057.63 words/s
+Epoch  1 Update  64000 Cost  19.7425577784 UD  869.188084841 69.03 sents/s 1065.22 words/s
+Epoch  1 Update  65000 Cost  20.0120123422 UD  876.683475018 68.44 sents/s 1059.88 words/s
+Epoch  1 Update  66000 Cost  19.6084294627 UD  872.883167982 68.74 sents/s 1059.72 words/s
+Epoch  1 Update  67000 Cost  19.6499877272 UD  872.178265095 68.79 sents/s 1059.73 words/s
+Epoch  1 Update  68000 Cost  19.6872826306 UD  876.712619066 68.44 sents/s 1055.68 words/s
+Epoch  1 Update  69000 Cost  19.5732190448 UD  873.716781139 68.67 sents/s 1059.82 words/s
+Epoch  1 Update  70000 Cost  19.8660861797 UD  881.622442961 68.06 sents/s 1054.36 words/s
+Saving the best model... Done
+Saving the model at iteration 70000... Done
+Source  0 : ● Control the myself@@ - I & ap@@ os ; m doing .
+Truth  0  :  ● Self-@@ control
+Sample  0 :  ● Control Catholic - I & ap@@ os ; m doing .
+Source  1 : hehe = )
+Truth  1  :  hehe = )
+Sample  1 :  hehe = )
+Source  2 : Winter standard dish
+Truth  2  :  Winter standard dish
+Sample  2 :  Winter standard dish
+Source  3 : My Hobby !
+Truth  3  :  My Hobby !
+Sample  3 :  My Hobby !
+Source  4 : with my hope
+Truth  4  :  with my hope
+Sample  4 :  with my hope
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.4383
+Epoch  1 Update  71000 Cost  19.5365911887 UD  1011.72942305 59.30 sents/s 916.88 words/s
+Epoch  1 Update  72000 Cost  19.8419209691 UD  875.929892063 68.50 sents/s 1061.82 words/s
+Epoch  1 Update  73000 Cost  19.5409612801 UD  868.840045929 69.06 sents/s 1061.73 words/s
+Epoch  1 Update  74000 Cost  19.8611325018 UD  872.93690896 68.73 sents/s 1063.04 words/s
+Seen 2240372 samples
+Epoch  2 Update  75000 Cost  19.172168846 UD  883.901245117 67.85 sents/s 1047.55 words/s
+Epoch  2 Update  76000 Cost  18.8754648198 UD  871.821733952 68.82 sents/s 1058.86 words/s
+Epoch  2 Update  77000 Cost  18.9644099315 UD  882.529520988 67.99 sents/s 1053.52 words/s
+Epoch  2 Update  78000 Cost  18.8705929036 UD  874.073036909 68.64 sents/s 1062.18 words/s
+Epoch  2 Update  79000 Cost  19.2633091564 UD  877.632459879 68.37 sents/s 1059.19 words/s
+Epoch  2 Update  80000 Cost  19.018249236 UD  873.47377491 68.69 sents/s 1060.37 words/s
+Saving the best model... Done
+Saving the model at iteration 80000... Done
+Source  0 : winter vacation 3
+Truth  0  :  Winter Vacation 3
+Sample  0 :  winter vacation 3
+Source  1 : I slept .
+Truth  1  :  I slept .
+Sample  1 :  I slept .
+Source  2 : YES ! !
+Truth  2  :  YES ! !
+Sample  2 :  YES ! !
+Source  3 : English conversation class
+Truth  3  :  English conversation class
+Sample  3 :  English conversation class
+Source  4 : How beautiful !
+Truth  4  :  How beautiful !
+Sample  4 :  How beautiful !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.2699
+Epoch  2 Update  81000 Cost  19.0744221185 UD  1006.09077692 59.64 sents/s 919.85 words/s
+Epoch  2 Update  82000 Cost  18.8969223979 UD  876.318560123 68.47 sents/s 1058.55 words/s
+Epoch  2 Update  83000 Cost  18.9030444186 UD  870.801298857 68.90 sents/s 1060.57 words/s
+Epoch  2 Update  84000 Cost  18.7747561573 UD  874.658134937 68.60 sents/s 1056.74 words/s
+Epoch  2 Update  85000 Cost  18.9773902707 UD  877.846067905 68.35 sents/s 1056.53 words/s
+Epoch  2 Update  86000 Cost  18.6578440067 UD  866.530282021 69.24 sents/s 1066.03 words/s
+Epoch  2 Update  87000 Cost  18.8666916257 UD  880.921736002 68.11 sents/s 1053.96 words/s
+Epoch  2 Update  88000 Cost  18.719954824 UD  864.121747971 69.43 sents/s 1066.19 words/s

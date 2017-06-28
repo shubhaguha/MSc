@@ -16,21 +16,29 @@ brew install parallel
 - Launch virtual machine scale set
 az login  # with Kenneth to accept my code
 az group create -l southcentralus -n ${USER}-gec-nmt
-./vmss_create.sh --resource-group ${USER}-gec-nmt --name ${USER}-ss --instance-count 1 --vm-sku Standard_NC6 --ssh-key-value ~/.ssh/id_rsa.pub --image /subscriptions/b97717d6-1424-45c1-b6e6-316241c3cd70/resourceGroups/HEAFIELD-BASE/providers/Microsoft.Compute/images/wmtbase --generate-ssh-keys
-./vmss_setup.sh --resource-group ${USER}-gec-nmt --name ${USER}-ss
+./vmss_create.sh --resource-group ${USER}-gec-nmt --name ${USER}-scale --instance-count 1 --vm-sku Standard_NC6 --ssh-key-value ~/.ssh/id_rsa.pub --image /subscriptions/b97717d6-1424-45c1-b6e6-316241c3cd70/resourceGroups/HEAFIELD-BASE/providers/Microsoft.Compute/images/wmtbase --generate-ssh-keys
+./vmss_setup.sh --resource-group ${USER}-gec-nmt --name ${USER}-scale
+
+- Other useful Azure commands
+az vmss list-instances --resource-group ${USER}-gec-nmt --name ${USER}-scale
+az vmss deallocate --resource-group ${USER}-gec-nmt --name ${USER}-scale --instance-ids 0  # if deallocate command doesn't work on VM
+az vmss start --resource-group ${USER}-gec-nmt --name ${USER}-scale --instance-ids 0
+az vmss scale --resource-group ${USER}-gec-nmt --name ${USER}-scale --new-capacity 2
 
 
 === Preprocessing data (mostly encapsulated in 2_setup_datasets script) ===
 
-- Convert NUCLE dataset into parallel corpus
+- Convert NUCLE, CoNNL-2013, and CoNLL-2014 datasets into parallel corpora
 
-- Concatenate NUCLE and Lang-8 and split parallel texts
+- Concatenate NUCLE and Lang-8 and split train, valid, and test parallel texts
+
+- Replace | with <pipe>
+    * TODO: find out exactly why
 
 - Tokenize
 
 - BPE
-
-- Replace | with I
+    * TODO: find out what git version of subword-nmt was used to generate gec.bpe
 
 
 === Running training ===
@@ -42,16 +50,21 @@ python nematus/data/build_dictionary.py MSc/data/train.fr.tok.bpe MSc/data/train
 python nematus/nematus/nmt.py --datasets MSc/data/train.fr.tok.bpe MSc/data/train.en.tok.bpe
                               --dictionaries MSc/data/train.fr.tok.bpe.json MSc/data/train.en.tok.bpe.json
                               --model MSc/models/baseline_0.npz
-                              --saveFreq 10000
-                              --reload
-                              --overwrite?
+                              [--saveFreq 10000]
                               --layer_normalisation
                               --use_dropout
                               --dropout_source 0.1
                               --dropout_target 0.1
+                              --batch_size 60?
                               --valid_datasets MSc/data/valid.fr.tok.bpe MSc/data/valid.en.tok.bpe
+                              [--reload]
 
 * run with `time` and `deallocate`
+* default values:   dropout_embedding 0.2
+                    dropout_hidden 0.2
+                    patience 10
+                    batch_size 80
+                    objective CE (cross-entropy minimization)
 
 
 === Model file naming ===
@@ -64,6 +77,8 @@ baseline_3          batch size 60, trained on M60 machine
                         (started training around 12am Wed June 28)
 baseline_4          batch size 40, trained on M60 machine
                         (started training around 12am Wed June 28)
+baseline_5          + replace | with <pipe>, M60 machine, batch size 60
+                        (started training around 
 
 
 ===================================================================================================

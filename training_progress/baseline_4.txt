@@ -279,3 +279,144 @@ Epoch  1 Update  61000 Cost  20.7763825901 UD  942.253787994 42.45 sents/s 653.9
 Epoch  1 Update  62000 Cost  20.8887812394 UD  761.097558975 52.56 sents/s 811.64 words/s
 Epoch  1 Update  63000 Cost  20.7509607403 UD  757.394320011 52.81 sents/s 814.21 words/s
 Epoch  1 Update  64000 Cost  20.5489636339 UD  756.064754963 52.91 sents/s 814.37 words/s
+Epoch  1 Update  65000 Cost  20.8607222294 UD  764.775285959 52.30 sents/s 811.45 words/s
+Epoch  1 Update  66000 Cost  20.6463046274 UD  760.013952971 52.63 sents/s 810.82 words/s
+Epoch  1 Update  67000 Cost  20.7884720287 UD  761.838928938 52.50 sents/s 812.96 words/s
+Epoch  1 Update  68000 Cost  20.6648726566 UD  760.328667164 52.61 sents/s 811.43 words/s
+Epoch  1 Update  69000 Cost  20.4352111685 UD  755.445133209 52.95 sents/s 813.70 words/s
+Epoch  1 Update  70000 Cost  20.6173779358 UD  758.786818027 52.72 sents/s 812.87 words/s
+Saving the best model... Done
+Saving the model at iteration 70000... Done
+Source  0 : It is obvious that human factors play an important role in this accident .
+Truth  0  :  It is obvious that human factors played an important role in this accident .
+Sample  0 :  It is obvious that human factors play an important role in this accident .
+Source  1 : Drinking , talking , eating and taking picture .
+Truth  1  :  So there will be more talking , eating , taking pictures and drinking .
+Sample  1 :  Drinking ( having ) the time and taking a picture .
+Source  2 : Today was called & qu@@ ot ; Good Friday . & qu@@ ot ;
+Truth  2  :  Today was called & qu@@ ot ; Good Friday . & qu@@ ot ;
+Sample  2 :  Today was called & qu@@ ot ; Good Friday . & qu@@ ot ;
+Source  3 : I & ap@@ os ; m plan@@ nig to seed them next time .
+Truth  3  :  I & ap@@ os ; m plan@@ nig to seed them next time .
+Sample  3 :  I & ap@@ os ; m plan@@ nig to seed them next time .
+Source  4 : Tell me your best song , when your in the bad mood .
+Truth  4  :  Tell me your best song , when you are in a bad mood .
+Sample  4 :  Tell me your favorite song , when your in the bad mood .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  18.3444
+Epoch  1 Update  71000 Cost  20.4206261446 UD  909.494447947 43.98 sents/s 678.17 words/s
+Epoch  1 Update  72000 Cost  20.5476880999 UD  764.466339111 52.32 sents/s 806.34 words/s
+Epoch  1 Update  73000 Cost  20.5029069059 UD  762.778337002 52.44 sents/s 807.50 words/s
+Epoch  1 Update  74000 Cost  20.5931839837 UD  766.061856031 52.22 sents/s 808.84 words/s
+Epoch  1 Update  75000 Cost  20.5556375469 UD  765.195477962 52.27 sents/s 808.79 words/s
+Epoch  1 Update  76000 Cost  20.3573995146 UD  765.779995918 52.23 sents/s 806.62 words/s
+Epoch  1 Update  77000 Cost  20.467371763 UD  765.681622982 52.24 sents/s 809.25 words/s
+Epoch  1 Update  78000 Cost  20.4409814638 UD  759.434411049 52.67 sents/s 810.95 words/s
+Epoch  1 Update  79000 Cost  20.3934009392 UD  759.545587063 52.66 sents/s 811.20 words/s
+Epoch  1 Update  80000 Cost  20.1645530601 UD  759.415961981 52.67 sents/s 811.69 words/s
+Saving the best model... Done
+Saving the model at iteration 80000... Done
+Source  0 : s ) If there is a more appropriate expression , please teach those expressions
+Truth  0  :  S. If there are more appropriate expressions , please teach me those expressions .
+Sample  0 :  s ) If there is a more appropriate expression , please teach those expressions .
+Source  1 : But my brother was diffirent from me & ap@@ os ; n & ap@@ os ; was can swim well .
+Truth  1  :  But my brother was different from me because he can swim quite well .
+Sample  1 :  But my brother was different from me & ap@@ os ; n & ap@@ os ; t swim well .
+Source  2 : Because I didn & ap@@ os ; t do any@@ think while two month .
+Truth  2  :  Because I didn & ap@@ os ; t do anything for two months .
+Sample  2 :  So , I didn & ap@@ os ; t do anything much for two months .
+Source  3 : It is impossible that a computer breaks itself naturally . & qu@@ ot ;
+Truth  3  :  It is impossible that a computer breaks itself naturally . & qu@@ ot ;
+Sample  3 :  It is impossible that the computer breaks itself naturally . & qu@@ ot ;
+Source  4 : I & ap@@ os ; m very very looking forward to seeing them ! !
+Truth  4  :  I & ap@@ os ; m really looking forward to seeing them ! !
+Sample  4 :  I & ap@@ os ; m very very looking forward to seeing them ! !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  17.7972
+Epoch  1 Update  81000 Cost  20.4226472104 UD  943.150583982 42.41 sents/s 653.77 words/s
+Epoch  1 Update  82000 Cost  20.4875439177 UD  763.968244076 52.36 sents/s 809.77 words/s
+Epoch  1 Update  83000 Cost  20.2252561056 UD  764.974814177 52.29 sents/s 805.37 words/s
+Epoch  1 Update  84000 Cost  20.0195367017 UD  761.984220028 52.49 sents/s 806.66 words/s
+Epoch  1 Update  85000 Cost  20.3308880129 UD  768.831681967 52.03 sents/s 804.96 words/s
+Epoch  1 Update  86000 Cost  20.1143529075 UD  774.771288872 51.63 sents/s 798.81 words/s
+Epoch  1 Update  87000 Cost  20.1736601857 UD  773.51827693 51.71 sents/s 797.79 words/s
+Epoch  1 Update  88000 Cost  19.964204804 UD  771.898932934 51.82 sents/s 798.44 words/s
+Epoch  1 Update  89000 Cost  20.2284814007 UD  778.273820877 51.40 sents/s 791.68 words/s
+Epoch  1 Update  90000 Cost  20.3057140952 UD  774.648216963 51.64 sents/s 796.36 words/s
+Saving the best model... Done
+Saving the model at iteration 90000... Done
+Source  0 : He is twel@@ ve@@ th grade ?
+Truth  0  :  He is in the twelfth ( 12th is more common . ) grade ?
+Sample  0 :  He is 23@@ ve@@ th grade ?
+Source  1 : However , now I don & ap@@ os ; t have that feeling .
+Truth  1  :  However , I don & ap@@ os ; t have that feeling anymore .
+Sample  1 :  However , now I don & ap@@ os ; t think the feelings .
+Source  2 : becouse weather was fine and I made friend with classmate .
+Truth  2  :  I also made friend with classmate . It was a very enjoyable day .
+Sample  2 :  The weather was fine and I made friends with classmates .
+Source  3 : This is the reason for so clean although wild dogs .
+Truth  3  :  This is the reason for why they are so clean although wild dogs .
+Sample  3 :  This is the reason why that is clean even by wild dogs .
+Source  4 : In the old days the role of family members used to be specialized .
+Truth  4  :  In the old days the role of family members used to be specialized .
+Sample  4 :  In the old days the role of family members used to be specialized / in specialized back .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  17.1737
+Epoch  1 Update  91000 Cost  20.2542174195 UD  961.044377089 41.62 sents/s 642.30 words/s
+Epoch  1 Update  92000 Cost  20.3777156746 UD  781.552144051 51.18 sents/s 793.80 words/s
+Epoch  1 Update  93000 Cost  19.9854660212 UD  777.98833704 51.41 sents/s 793.06 words/s
+Epoch  1 Update  94000 Cost  20.1324228814 UD  777.359373093 51.46 sents/s 796.30 words/s
+Epoch  1 Update  95000 Cost  19.9236003909 UD  777.545479059 51.44 sents/s 796.60 words/s
+Epoch  1 Update  96000 Cost  19.7939761596 UD  774.612734079 51.64 sents/s 796.56 words/s
+Epoch  1 Update  97000 Cost  20.009196872 UD  773.075180054 51.74 sents/s 797.30 words/s

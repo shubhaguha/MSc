@@ -100,3 +100,89 @@ Epoch  0 Update  27000 Cost  21.6856679758 UD  1757.13650322 45.53 sents/s 698.7
 Epoch  0 Update  28000 Cost  21.9679130001 UD  1770.820333 45.18 sents/s 698.98 words/s
 Seen 2240372 samples
 Epoch  1 Update  29000 Cost  21.0557534755 UD  1793.21061397 44.60 sents/s 688.25 words/s
+Epoch  1 Update  30000 Cost  21.0135592277 UD  1767.29942417 45.27 sents/s 697.74 words/s
+Saving the best model... Done
+Saving the model at iteration 30000... Done
+Source  0 : The clinical psychologist is a main character .
+Truth  0  :  A clinical psychologist is the main character .
+Sample  0 :  The clinical psychologist is a main character .
+Source  1 : I did a mistake at work yesterday .
+Truth  1  :  I made a mistake at work yesterday .
+Sample  1 :  I did a mistake at work yesterday .
+Source  2 : How should I do ?
+Truth  2  :  What do you think I should do ?
+Sample  2 :  How should I do ?
+Source  3 : which is right between 1 and 3 ?
+Truth  3  :  which is right between 1 and 3 ?
+Sample  3 :  which is an right between 1 and 3 ?
+Source  4 : This weeks is very nice holiday ,
+Truth  4  :  This weeks is a very nice holiday ,
+Sample  4 :  This terrible holiday is a very nice holiday ,
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  18.7462
+Epoch  1 Update  31000 Cost  21.1631937321 UD  1977.34605384 40.46 sents/s 625.82 words/s
+Epoch  1 Update  32000 Cost  21.0347876428 UD  1764.78341603 45.33 sents/s 698.46 words/s
+Epoch  1 Update  33000 Cost  20.8824238081 UD  1772.90487194 45.12 sents/s 696.93 words/s
+Epoch  1 Update  34000 Cost  20.85099965 UD  1762.26166892 45.40 sents/s 698.94 words/s
+Epoch  1 Update  35000 Cost  20.7533780082 UD  1774.84288692 45.07 sents/s 697.85 words/s
+Epoch  1 Update  36000 Cost  20.6061389996 UD  1765.32488489 45.32 sents/s 699.15 words/s
+Epoch  1 Update  37000 Cost  20.5222289653 UD  1758.52114701 45.49 sents/s 702.07 words/s
+Epoch  1 Update  38000 Cost  20.4726324998 UD  1760.43583894 45.44 sents/s 701.60 words/s
+Epoch  1 Update  39000 Cost  20.2761839364 UD  1770.90972996 45.17 sents/s 696.33 words/s
+Epoch  1 Update  40000 Cost  20.3301425518 UD  1765.480721 45.31 sents/s 698.65 words/s
+Saving the best model... Done
+Saving the model at iteration 40000... Done
+Source  0 : I played golf today with my husband .
+Truth  0  :  I played golf today with my husband .
+Sample  0 :  I played golf today with my husband .
+Source  1 : It can make you sad and lonely .
+Truth  1  :  It can make you sad and lonely .
+Sample  1 :  It can make you sad and lonely .
+Source  2 : I thought she is a good person .
+Truth  2  :  I think she is a good person .
+Sample  2 :  I thought she is a good person .
+Source  3 : My friend is in this theater company .
+Truth  3  :  My friend is in this theater company .
+Sample  3 :  My friend is at this theater company .
+Source  4 : I wan na sleep ... ... ... ...
+Truth  4  :  I wan na sleep ... ... ... ...
+Sample  4 :  I wan na sleep ... ... ... ...
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  17.4256
+Epoch  1 Update  41000 Cost  20.2828185583 UD  1968.97420001 40.63 sents/s 627.94 words/s
+Epoch  1 Update  42000 Cost  20.2568843092 UD  1772.86313891 45.12 sents/s 696.48 words/s
+Epoch  1 Update  43000 Cost  20.039855173 UD  1759.91984105 45.46 sents/s 698.27 words/s
