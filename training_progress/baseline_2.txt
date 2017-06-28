@@ -1,0 +1,102 @@
+Epoch  0 Update  1000 Cost  82.3631833 UD  1749.97242785 45.72 sents/s 705.70 words/s
+Epoch  0 Update  2000 Cost  53.5199732366 UD  1748.99742103 45.74 sents/s 705.65 words/s
+Epoch  0 Update  3000 Cost  43.2844649496 UD  1766.4414258 45.29 sents/s 698.45 words/s
+Epoch  0 Update  4000 Cost  37.7631137981 UD  1762.34695911 45.39 sents/s 701.83 words/s
+Epoch  0 Update  5000 Cost  34.6917283759 UD  1764.83892202 45.33 sents/s 698.23 words/s
+Epoch  0 Update  6000 Cost  32.239231575 UD  1765.09342194 45.32 sents/s 698.40 words/s
+Epoch  0 Update  7000 Cost  30.7308126438 UD  1769.542979 45.21 sents/s 700.65 words/s
+Epoch  0 Update  8000 Cost  29.1280359333 UD  1764.92968607 45.33 sents/s 698.61 words/s
+Epoch  0 Update  9000 Cost  28.3870065796 UD  1769.31371188 45.22 sents/s 700.95 words/s
+Epoch  0 Update  10000 Cost  27.5158855245 UD  1762.85946488 45.38 sents/s 699.92 words/s
+Saving the best model... Done
+Saving the model at iteration 10000... Done
+Source  0 : However , I
+Truth  0  :  However , I
+Sample  0 :  However , I & ap@@ os ; m wonderful to correct the job .
+Source  1 : Mu@@ un ...
+Truth  1  :  Mu@@ un ...
+Sample  1 :  Mu@@ un ...
+Source  2 : My poor English
+Truth  2  :  My poor English
+Sample  2 :  My poor English
+Source  3 : Cooking Training
+Truth  3  :  Cooking Training
+Sample  3 :  Cooking Training
+Source  4 : Internet ...
+Truth  4  :  Internet ...
+Sample  4 :  Internet ...
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  25.7441
+Epoch  0 Update  11000 Cost  26.9081022828 UD  1966.74061704 40.68 sents/s 627.84 words/s
+Epoch  0 Update  12000 Cost  26.0321632518 UD  1763.05709505 45.38 sents/s 699.73 words/s
+Epoch  0 Update  13000 Cost  25.6810036005 UD  1767.65160918 45.26 sents/s 699.12 words/s
+Epoch  0 Update  14000 Cost  25.2340938307 UD  1758.40501308 45.50 sents/s 701.95 words/s
+Epoch  0 Update  15000 Cost  24.8407270714 UD  1768.12498403 45.25 sents/s 699.41 words/s
+Epoch  0 Update  16000 Cost  24.3927579234 UD  1765.30946589 45.32 sents/s 701.75 words/s
+Epoch  0 Update  17000 Cost  24.0041787777 UD  1759.08846712 45.48 sents/s 700.88 words/s
+Epoch  0 Update  18000 Cost  23.6109091669 UD  1761.59830189 45.41 sents/s 696.65 words/s
+Epoch  0 Update  19000 Cost  23.6140545603 UD  1769.29787803 45.22 sents/s 698.36 words/s
+Epoch  0 Update  20000 Cost  23.2287645533 UD  1760.4067359 45.44 sents/s 701.25 words/s
+Saving the best model... Done
+Saving the model at iteration 20000... Done
+Source  0 : go flying high
+Truth  0  :  go flying high
+Sample  0 :  Back high
+Source  1 : ・ 2 eggs
+Truth  1  :  ・ 2 eggs
+Sample  1 :  ・ 2 eggs
+Source  2 : Rolling blackout .
+Truth  2  :  Rolling blackout .
+Sample  2 :  Rolling blackout .
+Source  3 : Party : )
+Truth  3  :  Party : )
+Sample  3 :  Party : )
+Source  4 : Picture card letter
+Truth  4  :  Picture card letter
+Sample  4 :  Picture card letter
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  21.079
+Epoch  0 Update  21000 Cost  23.0082205738 UD  1938.190907 41.28 sents/s 638.82 words/s
+Epoch  0 Update  22000 Cost  22.8823481075 UD  1763.33625102 45.37 sents/s 699.09 words/s
+Epoch  0 Update  23000 Cost  22.6544648249 UD  1759.89759183 45.46 sents/s 701.46 words/s
+Epoch  0 Update  24000 Cost  22.4951454226 UD  1766.21535587 45.29 sents/s 700.34 words/s
+Epoch  0 Update  25000 Cost  22.3481400425 UD  1769.20997596 45.22 sents/s 699.21 words/s
+Epoch  0 Update  26000 Cost  22.0267508106 UD  1766.94109702 45.28 sents/s 698.73 words/s
+Epoch  0 Update  27000 Cost  21.6856679758 UD  1757.13650322 45.53 sents/s 698.74 words/s
+Epoch  0 Update  28000 Cost  21.9679130001 UD  1770.820333 45.18 sents/s 698.98 words/s
+Seen 2240372 samples
+Epoch  1 Update  29000 Cost  21.0557534755 UD  1793.21061397 44.60 sents/s 688.25 words/s

@@ -1,0 +1,134 @@
+MSc Notes
+Shubha Guha
+Summer 2017
+
+
+=== Setting up to use Azure on local machine ===
+
+- Create conda env with python3
+
+- Get Kenneth's Azure scripts
+git clone https://github.com/kpu/azurehacks.git
+
+- Install prerequisites for Kenneth's scripts
+brew install parallel
+
+- Launch virtual machine scale set
+az login  # with Kenneth to accept my code
+az group create -l southcentralus -n ${USER}-gec-nmt
+./vmss_create.sh --resource-group ${USER}-gec-nmt --name ${USER}-ss --instance-count 1 --vm-sku Standard_NC6 --ssh-key-value ~/.ssh/id_rsa.pub --image /subscriptions/b97717d6-1424-45c1-b6e6-316241c3cd70/resourceGroups/HEAFIELD-BASE/providers/Microsoft.Compute/images/wmtbase --generate-ssh-keys
+./vmss_setup.sh --resource-group ${USER}-gec-nmt --name ${USER}-ss
+
+
+=== Preprocessing data (mostly encapsulated in 2_setup_datasets script) ===
+
+- Convert NUCLE dataset into parallel corpus
+
+- Concatenate NUCLE and Lang-8 and split parallel texts
+
+- Tokenize
+
+- BPE
+
+- Replace | with I
+
+
+=== Running training ===
+
+- Build dictionaries
+python nematus/data/build_dictionary.py MSc/data/train.fr.tok.bpe MSc/data/train.en.tok.bpe
+
+- Train
+python nematus/nematus/nmt.py --datasets MSc/data/train.fr.tok.bpe MSc/data/train.en.tok.bpe
+                              --dictionaries MSc/data/train.fr.tok.bpe.json MSc/data/train.en.tok.bpe.json
+                              --model MSc/models/baseline_0.npz
+                              --saveFreq 10000
+                              --reload
+                              --overwrite?
+                              --layer_normalisation
+                              --use_dropout
+                              --dropout_source 0.1
+                              --dropout_target 0.1
+                              --valid_datasets MSc/data/valid.fr.tok.bpe MSc/data/valid.en.tok.bpe
+
+* run with `time` and `deallocate`
+
+
+=== Model file naming ===
+
+baseline_ce_0       without tokenization and BPE, default Nematus parameters, including cross-entropy minimization
+baseline_1          + tokenization and BPE
+baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 source and target dropout
+                        (started training around 12am Wed June 28)
+baseline_3          batch size 60, trained on M60 machine
+                        (started training around 12am Wed June 28)
+baseline_4          batch size 40, trained on M60 machine
+                        (started training around 12am Wed June 28)
+
+
+===================================================================================================
+MEETING NOTES
+===================================================================================================
+
+
+=== Meeting notes 12 June 2017 ===
+
+back translation / data augmentation using smt
+LM for reranking NMT outputs (or mixing models) doesn't seem to work
+
+what to use LM for?
+- measure fluency
+- Xie et al: linear combination
+
+
+=== Meeting summary 23 June 2017 ===
+
+(1) (re)do preprocessing: tokenization, BPE (ask Roman)
+(2) preprocess and use validation dataset in tracking training progress
+(3) use dropout (~0.1)
+(4) implement script for M2 (ask Roman)
+(5) modify Nematus code to use word-level weighted loss function
+
+
+=== Questions for Kenneth 27 June 2017 ===
+
+PREPROCESSING:
+
+two different tokenizer results (Roman's NLTK tokenizer vs. Moses tokenizer included in Nematus)
+- main difference seems to be escaping symbols like `&`
+
+how to apply BPE?
+- subword-nmt/learn_bpe.py learns different bpe than gec.bpe from Roman
+- subword-nmt/apply_bpe.py produces new training file with few but strange differences
+- is it only meant for test time?
+
+increase number of subword units to capture morphology? could help learn to correct e.g. misspellings like `reliabiliyt` instead of `reliability`
+
+when is detokenizer necessary?
+
+DROPOUT:
+
+5 dropout parameters in Nematus: --use_dropout  use dropout layer (default: False)
+                                 --dropout_embedding FLOAT   dropout for input embeddings (0: no dropout) (default: 0.2)
+                                 --dropout_hidden FLOAT  dropout for hidden layer (0: no dropout) (default: 0.2)
+                                 --dropout_source FLOAT  dropout source words (0: no dropout) (default: 0)
+                                 --dropout_target FLOAT  dropout target words (0: no dropout) (default: 0)
+
+
+=== Meeting notes 27 June 2017 ===
+
+doesn't matter what tokenizer; just be consistent and report which one
+
+check with Roman which git version of subword-nmt he used to create gec.bpe
+
+talk to Maxi about trying to learn morphology with more BPE (didn't work)
+
+--layer_normalisation --use_dropout --dropout_source 0.1 --dropout_target 0.1
+
+try smaller batch size on m60 (converge faster)
+
+replace pipe symbols with something unique like <pipe> or &#124
+do after tokenization
+undo before detokenization
+
+detokenize before evaluation on M2

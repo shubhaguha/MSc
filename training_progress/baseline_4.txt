@@ -1,0 +1,281 @@
+Epoch  0 Update  1000 Cost  86.1956947784 UD  777.652998924 51.44 sents/s 794.41 words/s
+Epoch  0 Update  2000 Cost  59.4764120178 UD  771.832442999 51.82 sents/s 798.45 words/s
+Epoch  0 Update  3000 Cost  49.038935061 UD  770.221961975 51.93 sents/s 799.66 words/s
+Epoch  0 Update  4000 Cost  43.0242594695 UD  769.341769934 51.99 sents/s 804.56 words/s
+Epoch  0 Update  5000 Cost  39.2244715388 UD  778.083126068 51.41 sents/s 797.64 words/s
+Epoch  0 Update  6000 Cost  36.2949460118 UD  774.801741838 51.63 sents/s 795.66 words/s
+Epoch  0 Update  7000 Cost  34.6525118973 UD  781.402595043 51.19 sents/s 793.50 words/s
+Epoch  0 Update  8000 Cost  32.9154018314 UD  776.557731152 51.51 sents/s 797.23 words/s
+Epoch  0 Update  9000 Cost  31.6443610528 UD  780.671030998 51.24 sents/s 790.89 words/s
+Epoch  0 Update  10000 Cost  30.6220264363 UD  779.476837158 51.32 sents/s 792.70 words/s
+Saving the best model... Done
+Saving the model at iteration 10000... Done
+Source  0 : A marriage ceremony
+Truth  0  :  A marriage ceremony
+Sample  0 :  A marriage ceremony
+Source  1 : good evening .
+Truth  1  :  Good evening .
+Sample  1 :  The good evening .
+Source  2 : My composition :
+Truth  2  :  My composition :
+Sample  2 :  My composition :
+Source  3 : One year anniversary
+Truth  3  :  One year anniversary
+Sample  3 :  One year surgery
+Source  4 : Introduction myself
+Truth  4  :  Introduction myself
+Sample  4 :  Introduction myself
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  30.8872
+Epoch  0 Update  11000 Cost  30.1052421496 UD  964.433644056 41.48 sents/s 639.01 words/s
+Epoch  0 Update  12000 Cost  29.3877986858 UD  772.169086933 51.80 sents/s 801.48 words/s
+Epoch  0 Update  13000 Cost  28.2765624635 UD  772.928256989 51.75 sents/s 794.87 words/s
+Epoch  0 Update  14000 Cost  28.0879477229 UD  775.514937878 51.58 sents/s 794.80 words/s
+Epoch  0 Update  15000 Cost  27.5293169647 UD  771.209445953 51.87 sents/s 798.37 words/s
+Epoch  0 Update  16000 Cost  27.234722234 UD  771.241168976 51.86 sents/s 801.34 words/s
+Epoch  0 Update  17000 Cost  26.6877568167 UD  775.00919795 51.61 sents/s 797.84 words/s
+Epoch  0 Update  18000 Cost  25.941244082 UD  765.575154066 52.25 sents/s 797.46 words/s
+Epoch  0 Update  19000 Cost  25.9930202912 UD  776.483662844 51.51 sents/s 794.95 words/s
+Epoch  0 Update  20000 Cost  25.8560881691 UD  773.906829119 51.69 sents/s 797.52 words/s
+Saving the best model... Done
+Saving the model at iteration 20000... Done
+Source  0 : Con@@ tract
+Truth  0  :  Con@@ tract
+Sample  0 :  Con@@ graduation
+Source  1 : And Mr .
+Truth  1  :  Mr .
+Sample  1 :  yes , Mr .
+Source  2 : Hello !
+Truth  2  :  Hello !
+Sample  2 :  Hello !
+Source  3 : Hello .
+Truth  3  :  Hello .
+Sample  3 :  Hello .
+Source  4 : Iron dumbbell
+Truth  4  :  Iron dumbbells
+Sample  4 :  Iron avoi@@
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  24.1977
+Epoch  0 Update  21000 Cost  25.4022684183 UD  972.343877077 41.14 sents/s 632.44 words/s
+Epoch  0 Update  22000 Cost  25.4842991726 UD  778.370893955 51.39 sents/s 796.71 words/s
+Epoch  0 Update  23000 Cost  25.0875917424 UD  766.62577796 52.18 sents/s 806.78 words/s
+Epoch  0 Update  24000 Cost  25.005809292 UD  781.070643902 51.21 sents/s 790.49 words/s
+Epoch  0 Update  25000 Cost  24.6686786975 UD  779.972980022 51.28 sents/s 787.98 words/s
+Epoch  0 Update  26000 Cost  24.4559116235 UD  776.197052956 51.53 sents/s 797.63 words/s
+Epoch  0 Update  27000 Cost  24.185508433 UD  776.411250114 51.52 sents/s 797.24 words/s
+Epoch  0 Update  28000 Cost  24.1587915713 UD  768.530708075 52.05 sents/s 804.24 words/s
+Epoch  0 Update  29000 Cost  24.0391848073 UD  764.90504694 52.29 sents/s 805.22 words/s
+Epoch  0 Update  30000 Cost  23.656797276 UD  763.387404919 52.40 sents/s 809.01 words/s
+Saving the best model... Done
+Saving the model at iteration 30000... Done
+Source  0 : Hi ! !
+Truth  0  :  Hi ! !
+Sample  0 :  Hi ! !
+Source  1 : Origin / Italy
+Truth  1  :  Origin / Italy
+Sample  1 :  Lemon / Italy
+Source  2 : For example ;
+Truth  2  :  For example :
+Sample  2 :  For example ;
+Source  3 : My favorite phra@@ ze
+Truth  3  :  My favorite phrase
+Sample  3 :  My favorite roads
+Source  4 : help me !
+Truth  4  :  help me !
+Sample  4 :  help me !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  21.8306
+Epoch  0 Update  31000 Cost  23.6033718632 UD  953.931158066 41.93 sents/s 645.82 words/s
+Epoch  0 Update  32000 Cost  23.310081727 UD  763.759831905 52.37 sents/s 805.03 words/s
+Epoch  0 Update  33000 Cost  23.4575312508 UD  760.163131952 52.62 sents/s 809.07 words/s
+Epoch  0 Update  34000 Cost  23.4701490317 UD  757.308937073 52.82 sents/s 812.08 words/s
+Epoch  0 Update  35000 Cost  23.2406057123 UD  765.038346052 52.28 sents/s 806.04 words/s
+Epoch  0 Update  36000 Cost  22.9542924441 UD  762.241194963 52.48 sents/s 810.00 words/s
+Epoch  0 Update  37000 Cost  22.9744529895 UD  764.608242035 52.31 sents/s 809.37 words/s
+Epoch  0 Update  38000 Cost  22.7073937774 UD  762.069564819 52.49 sents/s 810.03 words/s
+Epoch  0 Update  39000 Cost  22.6602507585 UD  759.351026058 52.68 sents/s 811.49 words/s
+Epoch  0 Update  40000 Cost  22.8269819158 UD  763.573335886 52.39 sents/s 808.96 words/s
+Saving the best model... Done
+Saving the model at iteration 40000... Done
+Source  0 : ha@@ ah ~
+Truth  0  :  ha@@ ah ~
+Sample  0 :  ha@@ ah ~
+Source  1 : the salad .
+Truth  1  :  the salad .
+Sample  1 :  the salad .
+Source  2 : to do .
+Truth  2  :  do it .
+Sample  2 :  to do .
+Source  3 : I feel bad
+Truth  3  :  I feel bad
+Sample  3 :  I feel bad
+Source  4 : I have .
+Truth  4  :  I do .
+Sample  4 :  I have .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  20.3975
+Epoch  0 Update  41000 Cost  22.602981715 UD  946.666214943 42.25 sents/s 652.50 words/s
+Epoch  0 Update  42000 Cost  22.6734492354 UD  769.129734993 52.01 sents/s 808.28 words/s
+Epoch  0 Update  43000 Cost  22.6193451059 UD  762.759150028 52.44 sents/s 813.66 words/s
+Epoch  0 Update  44000 Cost  22.5123847776 UD  764.29190588 52.34 sents/s 814.13 words/s
+Epoch  0 Update  45000 Cost  22.2478489347 UD  763.844179869 52.37 sents/s 808.25 words/s
+Epoch  0 Update  46000 Cost  22.4624561623 UD  762.970659018 52.43 sents/s 811.01 words/s
+Epoch  0 Update  47000 Cost  22.2462774729 UD  764.110873938 52.35 sents/s 811.08 words/s
+Epoch  0 Update  48000 Cost  22.0913744007 UD  758.855134964 52.71 sents/s 812.62 words/s
+Epoch  0 Update  49000 Cost  21.8630572129 UD  759.15920496 52.69 sents/s 810.44 words/s
+Epoch  0 Update  50000 Cost  21.8339048783 UD  761.810152054 52.51 sents/s 807.94 words/s
+Saving the best model... Done
+Saving the model at iteration 50000... Done
+Source  0 : sm@@ ur@@ f
+Truth  0  :  sm@@ ur@@ f
+Sample  0 :  sm@@ ur@@ f
+Source  1 : Thank you .
+Truth  1  :  Thank you .
+Sample  1 :  Thank you .
+Source  2 : Hello ! !
+Truth  2  :  Hello ! !
+Sample  2 :  Hello ! !
+Source  3 : 8 , metaphor
+Truth  3  :  8 , metaphor
+Sample  3 :  8 , metaphor
+Source  4 : speaking 20 languages
+Truth  4  :  Speaking 20 Languages
+Sample  4 :  Speaking 20 languages
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  19.1597
+Epoch  0 Update  51000 Cost  22.0158664039 UD  953.131870031 41.97 sents/s 647.50 words/s
+Epoch  0 Update  52000 Cost  21.8184759935 UD  758.231055021 52.75 sents/s 817.07 words/s
+Epoch  0 Update  53000 Cost  21.7166076769 UD  757.881582975 52.78 sents/s 812.38 words/s
+Epoch  0 Update  54000 Cost  21.8687375826 UD  760.233553886 52.62 sents/s 813.14 words/s
+Epoch  0 Update  55000 Cost  21.7059189494 UD  763.597986937 52.38 sents/s 810.08 words/s
+Epoch  0 Update  56000 Cost  21.5368501203 UD  763.285992861 52.40 sents/s 808.18 words/s
+Seen 2240372 samples
+Epoch  1 Update  57000 Cost  21.2240070364 UD  779.312097073 51.29 sents/s 794.66 words/s
+Epoch  1 Update  58000 Cost  20.7944190401 UD  756.054085016 52.91 sents/s 810.32 words/s
+Epoch  1 Update  59000 Cost  20.7865669845 UD  759.07080102 52.70 sents/s 812.09 words/s
+Epoch  1 Update  60000 Cost  21.0240886636 UD  760.606049061 52.59 sents/s 814.51 words/s
+Saving the best model... Done
+Saving the model at iteration 60000... Done
+Source  0 : If possible , I want to sleep for more than seven hours .
+Truth  0  :  If possible , I want to sleep for more than seven hours .
+Sample  0 :  If possible , I want to sleep for more than seven hours .
+Source  1 : Moreover , an article is the most difficult for learning English .
+Truth  1  :  Moreover , the articles are the most difficult part of learning English .
+Sample  1 :  Moreover , an article is the most difficult for learning English .
+Source  2 : And we ate out at the restaurant near their house .
+Truth  2  :  And later on we ate out at the restaurant near their house .
+Sample  2 :  And we ate out at a restaurant near their house .
+Source  3 : On the way to go home I felt something flowing out from my nose .
+Truth  3  :  On the way home I felt something flowing out from my nose .
+Sample  3 :  On the way home , I felt something flowing out from my nose .
+Source  4 : My goal of TOEIC is 750 .
+Truth  4  :  My goal for the TOEIC ( test / exam ) is 750 .
+Sample  4 :  My goal of TOEIC is 750 .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  18.6995
+Epoch  1 Update  61000 Cost  20.7763825901 UD  942.253787994 42.45 sents/s 653.92 words/s
+Epoch  1 Update  62000 Cost  20.8887812394 UD  761.097558975 52.56 sents/s 811.64 words/s
+Epoch  1 Update  63000 Cost  20.7509607403 UD  757.394320011 52.81 sents/s 814.21 words/s
+Epoch  1 Update  64000 Cost  20.5489636339 UD  756.064754963 52.91 sents/s 814.37 words/s

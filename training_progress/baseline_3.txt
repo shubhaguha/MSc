@@ -1,0 +1,239 @@
+Epoch  0 Update  1000 Cost  84.3036326742 UD  876.277412891 68.47 sents/s 1058.29 words/s
+Epoch  0 Update  2000 Cost  56.2298305168 UD  865.901243925 69.29 sents/s 1066.03 words/s
+Epoch  0 Update  3000 Cost  45.4951185665 UD  872.65784812 68.76 sents/s 1058.20 words/s
+Epoch  0 Update  4000 Cost  40.4063981342 UD  875.772351027 68.51 sents/s 1061.76 words/s
+Epoch  0 Update  5000 Cost  36.7770456381 UD  880.792983055 68.12 sents/s 1057.06 words/s
+Epoch  0 Update  6000 Cost  33.876712301 UD  873.593405008 68.68 sents/s 1058.68 words/s
+Epoch  0 Update  7000 Cost  31.9062341955 UD  870.554348946 68.92 sents/s 1061.22 words/s
+Epoch  0 Update  8000 Cost  30.7238399665 UD  876.862436056 68.43 sents/s 1056.37 words/s
+Epoch  0 Update  9000 Cost  29.5971006346 UD  875.548710108 68.53 sents/s 1056.30 words/s
+Epoch  0 Update  10000 Cost  28.8870015163 UD  869.802580833 68.98 sents/s 1064.95 words/s
+Saving the best model... Done
+Saving the model at iteration 10000... Done
+Source  0 : oops ..
+Truth  0  :  oops ..
+Sample  0 :  manager ..
+Source  1 : mmm ...
+Truth  1  :  mmm ...
+Sample  1 :  mmm ...
+Source  2 : The laptop
+Truth  2  :  The laptop
+Sample  2 :  The laptop
+Source  3 : Hello .
+Truth  3  :  Hello .
+Sample  3 :  Hello .
+Source  4 : Veg@@ gie
+Truth  4  :  Veg@@ gie
+Sample  4 :  greed carnival
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  28.0215
+Epoch  0 Update  11000 Cost  27.9599069953 UD  1011.72957492 59.30 sents/s 913.14 words/s
+Epoch  0 Update  12000 Cost  27.2853996003 UD  871.661061049 68.83 sents/s 1060.15 words/s
+Epoch  0 Update  13000 Cost  26.733799722 UD  867.859803915 69.14 sents/s 1068.98 words/s
+Epoch  0 Update  14000 Cost  26.4854685863 UD  876.429419041 68.46 sents/s 1055.89 words/s
+Epoch  0 Update  15000 Cost  25.7710613495 UD  871.285815001 68.86 sents/s 1064.07 words/s
+Epoch  0 Update  16000 Cost  25.4703915331 UD  873.878286123 68.66 sents/s 1060.73 words/s
+Epoch  0 Update  17000 Cost  25.1272696069 UD  878.07002306 68.33 sents/s 1053.81 words/s
+Epoch  0 Update  18000 Cost  24.5408192726 UD  874.066277027 68.64 sents/s 1058.90 words/s
+Epoch  0 Update  19000 Cost  24.6065579712 UD  868.838721037 69.06 sents/s 1067.96 words/s
+Epoch  0 Update  20000 Cost  24.3449720893 UD  868.813746929 69.06 sents/s 1066.85 words/s
+Saving the best model... Done
+Saving the model at iteration 20000... Done
+Source  0 : hi everyone .
+Truth  0  :  hi everyone .
+Sample  0 :  Hi everyone .
+Source  1 : but ... .
+Truth  1  :  but ... .
+Sample  1 :  but ... .
+Source  2 : Deep under Tokyo
+Truth  2  :  Deep under Tokyo
+Sample  2 :  thanking under Tokyo
+Source  3 : Cit@@ ations :
+Truth  3  :  Cit@@ ations :
+Sample  3 :  momo :
+Source  4 : someone ! !
+Truth  4  :  someone ! !
+Sample  4 :  someone ! !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  21.8576
+Epoch  0 Update  21000 Cost  23.9512532665 UD  1022.43682098 58.68 sents/s 907.04 words/s
+Epoch  0 Update  22000 Cost  23.7307787875 UD  872.702366114 68.75 sents/s 1056.77 words/s
+Epoch  0 Update  23000 Cost  23.6917773952 UD  874.388617992 68.62 sents/s 1060.16 words/s
+Epoch  0 Update  24000 Cost  23.1375791469 UD  876.312572002 68.47 sents/s 1055.12 words/s
+Epoch  0 Update  25000 Cost  22.9809810361 UD  870.025649071 68.96 sents/s 1063.24 words/s
+Epoch  0 Update  26000 Cost  22.9236609691 UD  872.594235897 68.76 sents/s 1060.22 words/s
+Epoch  0 Update  27000 Cost  22.8795771645 UD  871.027364016 68.88 sents/s 1065.87 words/s
+Epoch  0 Update  28000 Cost  22.7451329921 UD  867.921580076 69.13 sents/s 1066.70 words/s
+Epoch  0 Update  29000 Cost  22.5510420249 UD  873.307990789 68.70 sents/s 1061.26 words/s
+Epoch  0 Update  30000 Cost  22.5895023828 UD  875.470925093 68.53 sents/s 1061.31 words/s
+Saving the best model... Done
+Saving the model at iteration 30000... Done
+Source  0 : English recording
+Truth  0  :  English recording
+Sample  0 :  English recording
+Source  1 : Black ?
+Truth  1  :  Black ?
+Sample  1 :  Black ?
+Source  2 : Hello !
+Truth  2  :  Hello !
+Sample  2 :  Hello !
+Source  3 : Busy days
+Truth  3  :  Busy Days
+Sample  3 :  Busy days
+Source  4 : Rain Cape
+Truth  4  :  Rain Cape
+Sample  4 :  Rain Chao
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  19.4782
+Epoch  0 Update  31000 Cost  22.3139606757 UD  1010.11267018 59.40 sents/s 919.50 words/s
+Epoch  0 Update  32000 Cost  22.0708879075 UD  874.537441015 68.61 sents/s 1062.77 words/s
+Epoch  0 Update  33000 Cost  22.1110878741 UD  869.925889015 68.97 sents/s 1062.64 words/s
+Epoch  0 Update  34000 Cost  21.8867339725 UD  874.573599815 68.60 sents/s 1056.28 words/s
+Epoch  0 Update  35000 Cost  21.7606645379 UD  866.651525021 69.23 sents/s 1062.26 words/s
+Epoch  0 Update  36000 Cost  21.7403515921 UD  871.443831921 68.85 sents/s 1062.83 words/s
+Epoch  0 Update  37000 Cost  21.7573425344 UD  871.863989115 68.82 sents/s 1066.71 words/s
+Seen 2240372 samples
+Epoch  1 Update  38000 Cost  21.1561223631 UD  887.620739937 67.56 sents/s 1042.75 words/s
+Epoch  1 Update  39000 Cost  21.0452337217 UD  873.543388844 68.69 sents/s 1065.14 words/s
+Epoch  1 Update  40000 Cost  20.8594955133 UD  869.009747028 69.04 sents/s 1065.09 words/s
+Saving the best model... Done
+Saving the model at iteration 40000... Done
+Source  0 : best regards .
+Truth  0  :  best regards .
+Sample  0 :  best regards .
+Source  1 : No way !
+Truth  1  :  No way !
+Sample  1 :  No way !
+Source  2 : senteces i wrote
+Truth  2  :  Sentences I wrote
+Sample  2 :  Champion i wrote
+Source  3 : Yes .
+Truth  3  :  Yes .
+Sample  3 :  Yes .
+Source  4 : House@@ keeping
+Truth  4  :  House@@ keeping
+Sample  4 :  House@@ keeping
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  18.2223
+Epoch  1 Update  41000 Cost  20.7289754434 UD  996.963793993 60.18 sents/s 925.58 words/s
+Epoch  1 Update  42000 Cost  20.8571262513 UD  874.899291992 68.58 sents/s 1060.42 words/s
+Epoch  1 Update  43000 Cost  20.9734514358 UD  875.087333918 68.56 sents/s 1063.05 words/s
+Epoch  1 Update  44000 Cost  20.5780582116 UD  868.64109993 69.07 sents/s 1062.63 words/s
+Epoch  1 Update  45000 Cost  20.6477507424 UD  880.571242809 68.14 sents/s 1054.27 words/s
+Epoch  1 Update  46000 Cost  20.6248921811 UD  873.797841072 68.67 sents/s 1061.04 words/s
+Epoch  1 Update  47000 Cost  20.7127695265 UD  873.864968061 68.66 sents/s 1060.81 words/s
+Epoch  1 Update  48000 Cost  20.5327079157 UD  876.982629061 68.42 sents/s 1055.92 words/s
+Epoch  1 Update  49000 Cost  20.4594560553 UD  874.987061977 68.57 sents/s 1058.70 words/s
+Epoch  1 Update  50000 Cost  20.3963223166 UD  870.760243177 68.91 sents/s 1061.13 words/s
+Saving the best model... Done
+Saving the model at iteration 50000... Done
+Source  0 : Thank you .
+Truth  0  :  Thank you .
+Sample  0 :  Thank you .
+Source  1 : Gabriel ! ?
+Truth  1  :  Gabriel ! ?
+Sample  1 :  Gabriel ! ?
+Source  2 : Part time job
+Truth  2  :  Part Time Job
+Sample  2 :  Part time job
+Source  3 : thank you .
+Truth  3  :  thank you .
+Sample  3 :  Thank you .
+Source  4 : First diary
+Truth  4  :  First diary
+Sample  4 :  First diary
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  17.6021
+Epoch  1 Update  51000 Cost  20.4381913973 UD  1061.51145196 56.52 sents/s 874.07 words/s
+Epoch  1 Update  52000 Cost  20.3046216424 UD  873.851366043 68.66 sents/s 1060.66 words/s
+Epoch  1 Update  53000 Cost  20.306326744 UD  871.307574987 68.86 sents/s 1060.20 words/s
+Epoch  1 Update  54000 Cost  20.2901544077 UD  874.186598063 68.64 sents/s 1059.63 words/s
+Epoch  1 Update  55000 Cost  20.328684479 UD  876.200198174 68.48 sents/s 1058.15 words/s
+Epoch  1 Update  56000 Cost  20.2397269805 UD  869.481552124 69.01 sents/s 1060.78 words/s
+Epoch  1 Update  57000 Cost  19.9017197251 UD  867.649291039 69.15 sents/s 1063.33 words/s
+Epoch  1 Update  58000 Cost  20.038360693 UD  874.555251837 68.61 sents/s 1055.18 words/s
