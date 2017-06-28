@@ -1,6 +1,7 @@
 export SCRIPTS_DIR=~/MSc/scripts
 export DATA_DIR=~/MSc/data
-export SUBWORD_DIR=${SCRIPTS_DIR}/subword-nmt
+export SUBWORD_DIR=~/subword-nmt
+export NEMATUS_DIR=~/nematus
 
 # extract data files
 cd ${DATA_DIR}
@@ -12,10 +13,11 @@ echo 'Extracting CoNLL-2013 test set...'
 tar -xzvf release2.3.1.tar.gz
 # echo 'Extracting CoNLL-2014 test set...'
 # tar -xzvg conll14st-test-data.tar.gz
+cd ~
 
 # set up perl
 echo 'Setting up perl...'
-./${SCRIPTS_DIR}/setup-perl
+${SCRIPTS_DIR}/setup_perl
 
 # run perl script from EMNLP 2016 paper
 echo 'Generating parallel texts from NUCLE...'
@@ -29,6 +31,12 @@ perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/release2.3.1/original/data/
 echo 'Concatenating NUCLE and Lang-8 parallel texts...'
 cat ${DATA_DIR}/nucle.parallel ${DATA_DIR}/lang8-naist.tok.uniq.txt > ${DATA_DIR}/train.parallel
 
+# remove pipe symbols because Nematus can't handle them
+echo 'Replacing pipe symbols...'
+sed -i 's/|/<pipe>/g' ${DATA_DIR}/train.parallel
+sed -i 's/|/<pipe>/g' ${DATA_DIR}/valid.parallel
+# sed -i 's/|/<pipe>/g' ${DATA_DIR}/test.parallel
+
 # run python script to separate parallel data into two files
 echo 'Splitting parallel texts into two files...'
 python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/train.parallel
@@ -39,36 +47,38 @@ python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/valid.parallel
 echo 'Installing nltk...'
 source activate nmtenv
 conda install nltk
+mkdir ~/nltk_data
+python -m nltk.downloader punkt
 
 # run tokenizer on training and validation datasets
 echo 'Running tokenizer on training dataset...'
-python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/train.fr
-python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/train.en
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/train.fr
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/train.en
 echo 'Running tokenizer on validation dataset...'
-python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/valid.fr
-python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/valid.en
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/valid.fr
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/valid.en
 # echo 'Running tokenizer on test dataset...'
-# python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/test.fr
-# python ${SCRIPTS_DIR}/nltk_tok.py --nltk-data ${DATA_DIR}/test.en
-
-# learn and apply BPE
-echo 'Learning BPE...'
-cat ${DATA_DIR}/train.fr.tok ${DATA_DIR}/train.en.tok | .${SUBWORD_DIR}/learn_bpe.py -s 49999 -o ${DATA_DIR}/gec2.bpe
-echo 'Applying BPE...'
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/train.fr.tok > ${DATA_DIR}/train.fr.tok.bpe2
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe2
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe2
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe2
-# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe2
-# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec2.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe2
+# python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.fr
+# python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.en
 
 # apply Roman's BPE
-echo 'Applying Roman\'s BPE...'
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.fr.tok > ${DATA_DIR}/train.fr.tok.bpe
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe
-.${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe
-# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe
-# .${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe
+echo 'Applying BPE...'
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.fr.tok > ${DATA_DIR}/train.fr.tok.bpe
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe
+# python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe
+# python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe
+
+# build dictionaries for Nematus
+echo 'Building dictionaries for Nematus...'
+python ${NEMATUS_DIR}/data/build_dictionary.py ${DATA_DIR}/train.fr.tok.bpe ${DATA_DIR}/train.en.tok.bpe
+
+# compress data files
+echo 'Compressing data files for GitHub...'
+cd ${DATA_DIR}
+tar -czvf train.tar.gz train.fr.tok.bpe train.en.tok.bpe train.fr.tok.bpe.json train.en.tok.bpe.json
+tar -czvf valid.tar.gz valid.fr.tok.bpe valid.en.tok.bpe
+cd ~
 
 echo 'Done'

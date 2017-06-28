@@ -74,7 +74,6 @@ set mouse=
 " highlight Pmenu ctermbg=238 gui=bold
 " set term=xterm-256color
 set bg=dark
-colorscheme wombat2
 
 set directory^=$HOME/.vim_swap//   " put all swap files in one place
 
@@ -85,12 +84,6 @@ nnoremap <Space> :noh<CR>          " when space is pressed, clear all highlights
 "au InsertLeave * :set rnu
 "au FocusLost * :set nu
 "au FocusGained * :set rnu
-
-" NERDTree
-autocmd vimenter * NERDTree
-let NERDTreeIgnore = ['\.pyc$']
-" Go to previous (last accessed) window.
-autocmd VimEnter * wincmd p
 
 " ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
