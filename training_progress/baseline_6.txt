@@ -1,0 +1,82 @@
+INFO: Epoch 0 Update 1000 Cost 83.3399084702 UD 1425.41348791 42.09 sents/s 646.84 words/s
+INFO: Epoch 0 Update 2000 Cost 56.262756557 UD 1446.48469996 41.48 sents/s 640.72 words/s
+INFO: Epoch 0 Update 3000 Cost 45.6369448209 UD 1446.07245803 41.49 sents/s 639.68 words/s
+INFO: Epoch 0 Update 4000 Cost 39.8956416135 UD 1438.39110303 41.71 sents/s 642.80 words/s
+INFO: Epoch 0 Update 5000 Cost 36.1503187649 UD 1444.25807905 41.54 sents/s 640.95 words/s
+INFO: Epoch 0 Update 6000 Cost 34.1702228396 UD 1452.50517011 41.31 sents/s 639.67 words/s
+INFO: Epoch 0 Update 7000 Cost 31.9613361669 UD 1443.18901706 41.57 sents/s 642.37 words/s
+INFO: Epoch 0 Update 8000 Cost 30.6717722232 UD 1440.68661308 41.65 sents/s 642.16 words/s
+INFO: Epoch 0 Update 9000 Cost 29.7808593872 UD 1444.19214702 41.55 sents/s 641.68 words/s
+INFO: Epoch 0 Update 10000 Cost 28.8113026061 UD 1443.31851006 41.57 sents/s 639.49 words/s
+Source  0 : Hellow everyone .
+Truth  0  :  Hello everyone .
+Sample  0 :  Hello everyone .
+Source  1 : Dear all ,
+Truth  1  :  Dear all ,
+Sample  1 :  Dear all ,
+Source  2 : ・ case@@ 3
+Truth  2  :  ・ case@@ 3
+Sample  2 :  ・ Spiderman 3
+Source  3 : good night everybody
+Truth  3  :  good night everybody
+Sample  3 :  good night everybody
+Source  4 : An@@ xi@@ ety
+Truth  4  :  An@@ xi@@ ety
+Sample  4 :  An@@ xi@@ accounts
+INFO: Valid 27.8066425323
+INFO: Epoch 0 Update 11000 Cost 27.9487557482 UD 1444.42157698 41.54 sents/s 637.96 words/s
+INFO: Epoch 0 Update 12000 Cost 27.3681137986 UD 1436.09037089 41.78 sents/s 644.98 words/s
+INFO: Epoch 0 Update 13000 Cost 26.6223103158 UD 1437.62002206 41.74 sents/s 642.10 words/s
+INFO: Epoch 0 Update 14000 Cost 26.4040832803 UD 1449.58904696 41.39 sents/s 640.60 words/s
+INFO: Epoch 0 Update 15000 Cost 26.1296382716 UD 1447.83583283 41.44 sents/s 642.68 words/s
+INFO: Epoch 0 Update 16000 Cost 25.5496260241 UD 1440.36153817 41.66 sents/s 641.10 words/s
+INFO: Epoch 0 Update 17000 Cost 25.0419045862 UD 1446.93878508 41.47 sents/s 639.76 words/s
+INFO: Epoch 0 Update 18000 Cost 25.019154439 UD 1446.067626 41.49 sents/s 642.70 words/s
+INFO: Epoch 0 Update 19000 Cost 24.45564956 UD 1452.50553799 41.31 sents/s 638.57 words/s
+INFO: Epoch 0 Update 20000 Cost 24.1725070537 UD 1446.92042994 41.47 sents/s 638.68 words/s
+Source  0 : Japanese comics
+Truth  0  :  Japanese comics
+Sample  0 :  Japanese comic
+Source  1 : Recent weather
+Truth  1  :  Recent weather
+Sample  1 :  Recent weather
+Source  2 : 6 .
+Truth  2  :  6 .
+Sample  2 :  6 .
+Source  3 : hi ,
+Truth  3  :  hi ,
+Sample  3 :  hi ,
+Source  4 : He said
+Truth  4  :  He said
+Sample  4 :  He said
+INFO: Valid 21.9426708221
+INFO: Epoch 0 Update 21000 Cost 23.7914126166 UD 1455.45901418 41.22 sents/s 635.09 words/s
+INFO: Epoch 0 Update 22000 Cost 23.9454110814 UD 1454.15230489 41.26 sents/s 638.29 words/s
+INFO: Epoch 0 Update 23000 Cost 23.4344436592 UD 1438.8848002 41.70 sents/s 644.36 words/s
+INFO: Epoch 0 Update 24000 Cost 23.288205552 UD 1450.20888996 41.37 sents/s 639.42 words/s
+INFO: Epoch 0 Update 25000 Cost 23.1463395376 UD 1444.67852092 41.53 sents/s 640.73 words/s
+INFO: Epoch 0 Update 26000 Cost 22.8092444209 UD 1437.83094597 41.73 sents/s 644.15 words/s
+INFO: Epoch 0 Update 27000 Cost 22.7541574709 UD 1436.47568107 41.77 sents/s 641.72 words/s
+INFO: Epoch 0 Update 28000 Cost 22.741977054 UD 1443.24042583 41.57 sents/s 643.00 words/s
+INFO: Epoch 0 Update 29000 Cost 22.5741138418 UD 1440.09495616 41.66 sents/s 641.41 words/s
+INFO: Epoch 0 Update 30000 Cost 22.4338491355 UD 1442.30055285 41.60 sents/s 640.23 words/s
+INFO: Saving the best model...
+INFO: Done
+INFO: Saving the model at iteration 30000...
+INFO: Done
+Source  0 : i had a good sleep
+Truth  0  :  I slept well
+Sample  0 :  i enjoyed a good sleep .
+Source  1 : Kamen Rider Part1
+Truth  1  :  Kamen Rider Part1
+Sample  1 :  Kamen Rider throne
+Source  2 : My aim .
+Truth  2  :  My aim .
+Sample  2 :  My aim .
+Source  3 : Get started !
+Truth  3  :  Get started !
+Sample  3 :  Get started !
+Source  4 : X ( )
+Truth  4  :  X ( )
+Sample  4 :  X ( )
+INFO: Valid 19.7195281982

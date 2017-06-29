@@ -11,8 +11,8 @@ echo 'Extracting Lang-8...'
 tar -xzvf lang8.tar.gz
 echo 'Extracting CoNLL-2013 test set...'
 tar -xzvf release2.3.1.tar.gz
-# echo 'Extracting CoNLL-2014 test set...'
-# tar -xzvg conll14st-test-data.tar.gz
+echo 'Extracting CoNLL-2014 test set...'
+tar -xzvf conll14st-test-data.tar.gz
 cd ~
 
 # set up perl
@@ -24,8 +24,8 @@ echo 'Generating parallel texts from NUCLE...'
 perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/conll14st-preprocessed.m2 > ${DATA_DIR}/nucle.parallel
 echo 'Generating parallel texts from CoNLL-2013...'
 perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/release2.3.1/original/data/official-preprocessed.m2 > ${DATA_DIR}/valid.parallel
-# echo 'Generating parallel texts from CoNLL-2014...'
-# perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/release2.3.1/original/data/official-preprocessed.m2 > ${DATA_DIR}/test.parallel
+echo 'Generating parallel texts from CoNLL-2014...'
+perl ${SCRIPTS_DIR}/make_parallel.perl < ${DATA_DIR}/conll14st-test-data/noalt/official-2014.combined.m2 > ${DATA_DIR}/test.parallel
 
 # concatenate NUCLE and Lang-8 for training
 echo 'Concatenating NUCLE and Lang-8 parallel texts...'
@@ -35,13 +35,13 @@ cat ${DATA_DIR}/nucle.parallel ${DATA_DIR}/lang8-naist.tok.uniq.txt > ${DATA_DIR
 echo 'Replacing pipe symbols...'
 sed -i 's/|/<pipe>/g' ${DATA_DIR}/train.parallel
 sed -i 's/|/<pipe>/g' ${DATA_DIR}/valid.parallel
-# sed -i 's/|/<pipe>/g' ${DATA_DIR}/test.parallel
+sed -i 's/|/<pipe>/g' ${DATA_DIR}/test.parallel
 
 # run python script to separate parallel data into two files
 echo 'Splitting parallel texts into two files...'
 python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/train.parallel
 python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/valid.parallel
-# python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/test.parallel
+python ${SCRIPTS_DIR}/split_parallel.py ${DATA_DIR}/test.parallel
 
 # install nltk
 echo 'Installing nltk...'
@@ -57,9 +57,9 @@ python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/train.en
 echo 'Running tokenizer on validation dataset...'
 python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/valid.fr
 python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/valid.en
-# echo 'Running tokenizer on test dataset...'
-# python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.fr
-# python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.en
+echo 'Running tokenizer on test dataset...'
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.fr
+python ${SCRIPTS_DIR}/tokenize_dataset.py ${DATA_DIR}/test.en
 
 # apply Roman's BPE
 echo 'Applying BPE...'
@@ -67,8 +67,8 @@ python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.fr
 python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/train.en.tok > ${DATA_DIR}/train.en.tok.bpe
 python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.fr.tok > ${DATA_DIR}/valid.fr.tok.bpe
 python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/valid.en.tok > ${DATA_DIR}/valid.en.tok.bpe
-# python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe
-# python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.fr.tok > ${DATA_DIR}/test.fr.tok.bpe
+python ${SUBWORD_DIR}/apply_bpe.py -c ${DATA_DIR}/gec.bpe < ${DATA_DIR}/test.en.tok > ${DATA_DIR}/test.en.tok.bpe
 
 # build dictionaries for Nematus
 echo 'Building dictionaries for Nematus...'

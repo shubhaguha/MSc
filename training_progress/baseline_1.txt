@@ -526,3 +526,101 @@ Epoch  3 Update  124000 Cost  14.8866178204 UD  1347.04887104 59.39 sents/s 920.
 Epoch  3 Update  125000 Cost  14.8274282544 UD  1349.52841187 59.28 sents/s 915.27 words/s
 Epoch  3 Update  126000 Cost  14.8472394391 UD  1346.02159119 59.43 sents/s 916.45 words/s
 Epoch  3 Update  127000 Cost  14.7024702396 UD  1349.51958704 59.28 sents/s 913.46 words/s
+Epoch  3 Update  128000 Cost  14.9126686386 UD  1347.75505185 59.36 sents/s 915.08 words/s
+Seen 2240372 samples
+Epoch  4 Update  129000 Cost  14.1367559071 UD  1375.29696989 58.15 sents/s 901.05 words/s
+Epoch  4 Update  130000 Cost  14.2102357092 UD  1351.27648807 59.20 sents/s 914.29 words/s
+Saving the best model... Done
+Saving the model at iteration 130000... Done
+Source  0 : Such jokes don & ap@@ os ; t have to be interesting .
+Truth  0  :  However , such jokes are not necessarily interesting .
+Sample  0 :  Such jokes don & ap@@ os ; t have to be interesting .
+Source  1 : I recommend Yakushima as a traveling place .
+Truth  1  :  I recommend Yakushima as a place to visit .
+Sample  1 :  I recommend Yakushima in a travelling place .
+Source  2 : In Tokyo , there are 13 million people .
+Truth  2  :  In Tokyo , there are 13 million people .
+Sample  2 :  In Tokyo , there contain 13 million people .
+Source  3 : She pondered over it and decided to go .
+Truth  3  :  She pondered over it and decided to go .
+Sample  3 :  She vu over it to decide to go and unlock .
+Source  4 : Thank you very much . & qu@@ ot ;
+Truth  4  :  Thank you very much . & qu@@ ot ;
+Sample  4 :  Thank you very much . & qu@@ ot ;
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  18.054
+Epoch  4 Update  131000 Cost  14.1815454144 UD  1487.91066289 53.77 sents/s 828.54 words/s
+Epoch  4 Update  132000 Cost  13.9393870934 UD  1345.31856084 59.47 sents/s 914.67 words/s
+Epoch  4 Update  133000 Cost  13.9984018661 UD  1345.43541288 59.46 sents/s 914.98 words/s
+Epoch  4 Update  134000 Cost  14.1145989578 UD  1343.36527205 59.55 sents/s 918.48 words/s
+Epoch  4 Update  135000 Cost  14.1359881233 UD  1349.42462492 59.28 sents/s 916.82 words/s
+Epoch  4 Update  136000 Cost  14.0562090906 UD  1353.25415587 59.12 sents/s 912.51 words/s
+Epoch  4 Update  137000 Cost  14.0762030112 UD  1349.10644794 59.30 sents/s 918.40 words/s
+Epoch  4 Update  138000 Cost  14.1718347818 UD  1348.22037387 59.34 sents/s 916.33 words/s
+Epoch  4 Update  139000 Cost  14.3118053865 UD  1357.29068685 58.94 sents/s 912.59 words/s
+Epoch  4 Update  140000 Cost  13.9978083923 UD  1344.14627409 59.52 sents/s 917.63 words/s
+Saving the best model... Done
+Saving the model at iteration 140000... Done
+Source  0 : Just after lunch , I came back home .
+Truth  0  :  Just after lunch , Iwent back home .
+Sample  0 :  At that after lunch , I came back home .
+Source  1 : Japan won the championship in WBC ! ! !
+Truth  1  :  Japan won the WBC Championship ! ! !
+Sample  1 :  Japan won the championship in WBC ! ! !
+Source  2 : What were you doing ten years ago ?
+Truth  2  :  What were you doing ten years ago ?
+Sample  2 :  What time were you doing ten years ago ?
+Source  3 : I get excited when I watched this movie .
+Truth  3  :  I was excited when watching this movie .
+Sample  3 :  I got excited when I watched this movie .
+Source  4 : It makes me neat and proper .
+Truth  4  :  It makes me look neat and proper .
+Sample  4 :  It makes me neat and proper .
+80 samples computed
+160 samples computed
+240 samples computed
+320 samples computed
+400 samples computed
+480 samples computed
+560 samples computed
+640 samples computed
+720 samples computed
+800 samples computed
+880 samples computed
+960 samples computed
+1040 samples computed
+1120 samples computed
+1200 samples computed
+1280 samples computed
+1360 samples computed
+1381 samples computed
+Valid  18.1168
+Epoch  4 Update  141000 Cost  14.2707105904 UD  1453.99295402 55.02 sents/s 848.77 words/s
+Epoch  4 Update  142000 Cost  14.0843059177 UD  1341.41828799 59.64 sents/s 920.09 words/s
+Epoch  4 Update  143000 Cost  14.1337183917 UD  1335.79907799 59.89 sents/s 925.23 words/s
+Epoch  4 Update  144000 Cost  14.2314095434 UD  1334.10370302 59.97 sents/s 921.69 words/s
+Epoch  4 Update  145000 Cost  13.9570574969 UD  1340.72339106 59.67 sents/s 920.97 words/s
+Epoch  4 Update  146000 Cost  14.2095604914 UD  1355.84680915 59.00 sents/s 912.62 words/s
+Epoch  4 Update  147000 Cost  14.1971859706 UD  1334.18405104 59.96 sents/s 924.92 words/s
+Epoch  4 Update  148000 Cost  14.0281268733 UD  1336.93625689 59.84 sents/s 921.68 words/s
+Epoch  4 Update  149000 Cost  14.1018919636 UD  1345.6115191 59.45 sents/s 918.21 words/s
+Epoch  4 Update  150000 Cost  14.0847442517 UD  1338.69754195 59.76 sents/s 920.79 words/s
+Saving the best model... Done
+Saving the model at iteration 150000...

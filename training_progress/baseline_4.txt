@@ -420,3 +420,282 @@ Epoch  1 Update  94000 Cost  20.1324228814 UD  777.359373093 51.46 sents/s 796.3
 Epoch  1 Update  95000 Cost  19.9236003909 UD  777.545479059 51.44 sents/s 796.60 words/s
 Epoch  1 Update  96000 Cost  19.7939761596 UD  774.612734079 51.64 sents/s 796.56 words/s
 Epoch  1 Update  97000 Cost  20.009196872 UD  773.075180054 51.74 sents/s 797.30 words/s
+Epoch  1 Update  98000 Cost  19.9861139956 UD  775.156091928 51.60 sents/s 798.66 words/s
+Epoch  1 Update  99000 Cost  19.6762052785 UD  771.144834995 51.87 sents/s 800.68 words/s
+Epoch  1 Update  100000 Cost  19.6374444023 UD  776.083537817 51.54 sents/s 792.03 words/s
+Saving the best model... Done
+Saving the model at iteration 100000... Done
+Source  0 : But I know only a few phrases and that were not correct .
+Truth  0  :  But I know only a few phrases and they were not correct .
+Sample  0 :  But I know only a few phrases and that are not correct . ( or I know ( this ) only a few phrases and that were not written .
+Source  1 : Fukushima Daiichi nuclear power plant leak a large amount of radioactive material .
+Truth  1  :  Fukushima Daiichi nuclear power plant leaked a large amount of radioactive material .
+Sample  1 :  Fukushima Daiichi nuclear power plant leak a large amount of radioactive material .
+Source  2 : Ab@@ os@@ ol@@ u@@ taly , making fre@@ id is an other gole for me .
+Truth  2  :  Ab@@ solu@@ t@@ ley , making freinds is another goal for me .
+Sample  2 :  Ab@@ os@@ ol@@ u@@ s.org/@@ , making fre@@ id is an other holiday for me .
+Source  3 : There is children are crying to violence of parents in all of the world .
+Truth  3  :  There are children crying because of parental violence all over the world .
+Sample  3 :  There is children who are crying to violence of parents all around the world .
+Source  4 : Nowadays I write English journal and read English easy text everyday .
+Truth  4  :  Nowadays , I write English journals and read easy English text everyday .
+Sample  4 :  Recently I write English journals and read an English Bath text every day .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  17.0981
+Epoch  1 Update  101000 Cost  19.8857292671 UD  943.470722914 42.40 sents/s 653.85 words/s
+Epoch  1 Update  102000 Cost  19.672258494 UD  771.829343081 51.82 sents/s 798.20 words/s
+Epoch  1 Update  103000 Cost  20.0087086241 UD  778.670768023 51.37 sents/s 794.72 words/s
+Epoch  1 Update  104000 Cost  19.8546880841 UD  767.4208529 52.12 sents/s 802.59 words/s
+Epoch  1 Update  105000 Cost  19.819554203 UD  767.710827827 52.10 sents/s 804.53 words/s
+Epoch  1 Update  106000 Cost  20.0826237055 UD  768.64047718 52.04 sents/s 804.77 words/s
+Epoch  1 Update  107000 Cost  19.881867763 UD  773.647119045 51.70 sents/s 801.66 words/s
+Epoch  1 Update  108000 Cost  19.7373560897 UD  774.091489077 51.67 sents/s 801.60 words/s
+Epoch  1 Update  109000 Cost  19.6622883117 UD  762.177507877 52.48 sents/s 807.42 words/s
+Epoch  1 Update  110000 Cost  20.2093440395 UD  766.750965118 52.17 sents/s 809.99 words/s
+Saving the best model... Done
+Saving the model at iteration 110000... Done
+Source  0 : This is really hard to think and get an answer .
+Truth  0  :  This is really hard to think about and to get an answer .
+Sample  0 :  It is really hard to think and get an answer .
+Source  1 : But I don & ap@@ os ; t did it much .
+Truth  1  :  But I didn & ap@@ os ; t do much of it .
+Sample  1 :  But I don & ap@@ os ; t did it much .
+Source  2 : Today I tal@@ d about train which is the main transportation in Japan .
+Truth  2  :  Today I told about trains which are the main transportation in Japan .
+Sample  2 :  Today I stood out the train which is my main transportation in Japan .
+Source  3 : Green soybeans ( ED@@ AM@@ AME )
+Truth  3  :  Green soybeans ( & qu@@ ot ; edamame & qu@@ ot ; )
+Sample  3 :  Green soybeans ( ED@@ AM@@ AME )
+Source  4 : Ama@@ ebi ( This is a shrimp .
+Truth  4  :  Ama@@ ebi ( A very sweet , pink kind of shrimp . )
+Sample  4 :  Ama@@ Plurk ( This is an shrimp .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.6516
+Epoch  1 Update  111000 Cost  19.7454692658 UD  958.267980814 41.74 sents/s 642.71 words/s
+Epoch  1 Update  112000 Cost  19.8732725096 UD  767.84266901 52.09 sents/s 808.94 words/s
+Seen 2240372 samples
+Epoch  2 Update  113000 Cost  19.0205058427 UD  778.979969978 51.31 sents/s 791.17 words/s
+Epoch  2 Update  114000 Cost  19.1507204256 UD  762.464707851 52.46 sents/s 811.47 words/s
+Epoch  2 Update  115000 Cost  18.9830531055 UD  764.685365915 52.31 sents/s 808.18 words/s
+Epoch  2 Update  116000 Cost  19.0651079997 UD  762.09710598 52.49 sents/s 808.70 words/s
+Epoch  2 Update  117000 Cost  18.9805366828 UD  764.388030052 52.33 sents/s 806.34 words/s
+Epoch  2 Update  118000 Cost  19.0357628912 UD  760.460216999 52.60 sents/s 812.63 words/s
+Epoch  2 Update  119000 Cost  18.9950156907 UD  762.955533981 52.43 sents/s 809.45 words/s
+Epoch  2 Update  120000 Cost  19.2118535591 UD  770.450524807 51.92 sents/s 805.76 words/s
+Saving the best model... Done
+Saving the model at iteration 120000... Done
+Source  0 : Sport week
+Truth  0  :  Sport week
+Sample  0 :  Sport Week
+Source  1 : Lovely Bone
+Truth  1  :  Lovely Bone
+Sample  1 :  Lovely Japanase
+Source  2 : Air pump
+Truth  2  :  Air pump
+Sample  2 :  Air pump
+Source  3 : Nana Kato
+Truth  3  :  Nana Kato
+Sample  3 :  Nana Kato
+Source  4 : face .
+Truth  4  :  face .
+Sample  4 :  face .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.5254
+Epoch  2 Update  121000 Cost  19.0007330259 UD  1024.41078711 39.05 sents/s 601.31 words/s
+Epoch  2 Update  122000 Cost  19.113171742 UD  760.866106987 52.57 sents/s 808.39 words/s
+Epoch  2 Update  123000 Cost  19.2000355898 UD  765.447694063 52.26 sents/s 807.14 words/s
+Epoch  2 Update  124000 Cost  18.9949518848 UD  760.754252911 52.58 sents/s 809.49 words/s
+Epoch  2 Update  125000 Cost  19.2012218918 UD  758.438582182 52.74 sents/s 813.75 words/s
+Epoch  2 Update  126000 Cost  19.0056886075 UD  757.508234024 52.80 sents/s 811.20 words/s
+Epoch  2 Update  127000 Cost  19.211875662 UD  765.679329157 52.24 sents/s 809.87 words/s
+Epoch  2 Update  128000 Cost  18.9700021956 UD  760.093770981 52.63 sents/s 812.76 words/s
+Epoch  2 Update  129000 Cost  18.9629834204 UD  758.218444109 52.76 sents/s 813.34 words/s
+Epoch  2 Update  130000 Cost  19.1033125654 UD  758.511798143 52.73 sents/s 810.61 words/s
+Saving the best model... Done
+Saving the model at iteration 130000... Done
+Source  0 : thanks !
+Truth  0  :  thanks !
+Sample  0 :  thanks !
+Source  1 : non@@ titled
+Truth  1  :  non@@ titled
+Sample  1 :  non@@ titled
+Source  2 : This Weekend
+Truth  2  :  This Weekend
+Sample  2 :  This Weekend
+Source  3 : Hi !
+Truth  3  :  Hi !
+Sample  3 :  Hi !
+Source  4 : Holiday !
+Truth  4  :  Holiday !
+Sample  4 :  Holiday !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.545
+Epoch  2 Update  131000 Cost  19.0922373755 UD  942.315114021 42.45 sents/s 656.96 words/s
+Epoch  2 Update  132000 Cost  18.969751111 UD  761.557534933 52.52 sents/s 808.58 words/s
+Epoch  2 Update  133000 Cost  19.1857545875 UD  760.634941101 52.59 sents/s 808.53 words/s
+Epoch  2 Update  134000 Cost  19.0123251657 UD  766.068980932 52.21 sents/s 805.69 words/s
+Epoch  2 Update  135000 Cost  18.9008961386 UD  765.449639082 52.26 sents/s 802.65 words/s
+Epoch  2 Update  136000 Cost  19.1152330325 UD  773.990990877 51.68 sents/s 799.25 words/s
+Epoch  2 Update  137000 Cost  19.0153699283 UD  770.145776033 51.94 sents/s 803.83 words/s
+Epoch  2 Update  138000 Cost  19.0225272255 UD  776.403953075 51.52 sents/s 796.14 words/s
+Epoch  2 Update  139000 Cost  19.1378450389 UD  774.323168039 51.66 sents/s 800.62 words/s
+Epoch  2 Update  140000 Cost  18.7680101768 UD  770.40203619 51.92 sents/s 796.03 words/s
+Saving the best model... Done
+Saving the model at iteration 140000... Done
+Source  0 : Rainy Day
+Truth  0  :  Rainy Day
+Sample  0 :  Rainy Day
+Source  1 : About Lang-8
+Truth  1  :  About Lang-8
+Sample  1 :  About Lang-8
+Source  2 : Bob ...
+Truth  2  :  Bob ...
+Sample  2 :  Bob ...
+Source  3 : Big Meeting
+Truth  3  :  Big Meeting
+Sample  3 :  Big Meeting
+Source  4 : : D
+Truth  4  :  : D
+Sample  4 :  : D
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.1648
+Epoch  2 Update  141000 Cost  19.0276984794 UD  928.999306917 43.06 sents/s 662.81 words/s
+Epoch  2 Update  142000 Cost  18.9599251071 UD  773.5719769 51.71 sents/s 799.82 words/s
+Epoch  2 Update  143000 Cost  19.1692488877 UD  772.981069088 51.75 sents/s 803.80 words/s
+Epoch  2 Update  144000 Cost  19.2633920592 UD  778.519460917 51.38 sents/s 796.87 words/s
+Epoch  2 Update  145000 Cost  18.9540819123 UD  777.219850063 51.47 sents/s 796.68 words/s
+Epoch  2 Update  146000 Cost  18.8599248708 UD  766.173962116 52.21 sents/s 806.26 words/s
+Epoch  2 Update  147000 Cost  18.9277138417 UD  762.464830875 52.46 sents/s 809.92 words/s
+Epoch  2 Update  148000 Cost  18.7853241037 UD  762.304508924 52.47 sents/s 806.28 words/s
+Epoch  2 Update  149000 Cost  18.6768811306 UD  761.52125001 52.53 sents/s 806.63 words/s
+Epoch  2 Update  150000 Cost  18.9945418361 UD  774.248495817 51.66 sents/s 796.64 words/s
+Saving the best model... Done
+Saving the model at iteration 150000... Done
+Source  0 : please correct it
+Truth  0  :  please correct it
+Sample  0 :  Please correct it .
+Source  1 : Also in Spanish .
+Truth  1  :  And Spanish .
+Sample  1 :  Also by Spanish .
+Source  2 : The Japanese deal@@ e@@ cts
+Truth  2  :  The Japanese dialects
+Sample  2 :  The Japanese strokes
+Source  3 : My Daily Life
+Truth  3  :  My Daily Life
+Sample  3 :  My Daily Life
+Source  4 : Hi ! !
+Truth  4  :  Hi ! !
+Sample  4 :  Hi ! !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  16.1623
+Epoch  2 Update  151000 Cost  18.9306461047 UD  957.744761944 41.76 sents/s 642.45 words/s
+Epoch  2 Update  152000 Cost  18.8793565172 UD  773.139299154 51.74 sents/s 796.23 words/s
+Epoch  2 Update  153000 Cost  19.0243190969 UD  770.287257195 51.93 sents/s 803.23 words/s
+Epoch  2 Update  154000 Cost  19.0775367223 UD  775.442936897 51.58 sents/s 797.70 words/s
+Epoch  2 Update  155000 Cost  18.8675775244 UD  772.653542042 51.77 sents/s 796.40 words/s
+Epoch  2 Update  156000 Cost  18.898015614 UD  765.786370039 52.23 sents/s 805.28 words/s
+Epoch  2 Update  157000 Cost  19.0801721537 UD  777.64398694 51.44 sents/s 796.93 words/s
+Epoch  2 Update  158000 Cost  18.9089660034 UD  768.891579866 52.02 sents/s 801.73 words/s
+Epoch  2 Update  159000 Cost  18.5597046281 UD  768.239699841 52.07 sents/s 801.83 words/s

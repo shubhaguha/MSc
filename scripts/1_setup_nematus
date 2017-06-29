@@ -12,7 +12,10 @@ cd ~
 git clone https://github.com/moses-smt/mosesdecoder
 git clone https://github.com/rsennrich/subword-nmt
 git clone https://github.com/rsennrich/nematus
-cd nematus && python setup.py install && cd ..
+cd nematus
+python setup.py install
+git reset --hard 73037e94884fd2d1c1d18d81686cd1f6ea32d073
+cd ..
 
 echo 'Installing g++ c compiler for theano optimization...'
 sudo apt-get install g++

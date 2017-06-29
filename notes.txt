@@ -69,8 +69,9 @@ python nematus/nematus/nmt.py --datasets MSc/data/train.fr.tok.bpe MSc/data/trai
 
 === Model file naming ===
 
-baseline_ce_0       without tokenization and BPE, default Nematus parameters, including cross-entropy minimization
-baseline_1          + tokenization and BPE
+baseline_ce_0       NUCLE only, without tokenization and BPE, default Nematus parameters, including cross-entropy minimization
+baseline_mrt_0      + MRT objective
+baseline_1          + Lang-8, + tokenization and BPE, default cross-entropy objective
 baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 source and target dropout
                         (started training around 12am Wed June 28)
 baseline_3          batch size 60, trained on M60 machine
@@ -78,7 +79,9 @@ baseline_3          batch size 60, trained on M60 machine
 baseline_4          batch size 40, trained on M60 machine
                         (started training around 12am Wed June 28)
 baseline_5          + replace | with <pipe>, M60 machine, batch size 60
-                        (started training around 
+                        (started training around 9:45pm Wed June 28)
+baseline_6          K80 machine, default batch size 80
+                        (started training around 10:45pm Wed June 28)
 
 
 ===================================================================================================

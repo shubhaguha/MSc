@@ -186,3 +186,8 @@ Valid  17.4256
 Epoch  1 Update  41000 Cost  20.2828185583 UD  1968.97420001 40.63 sents/s 627.94 words/s
 Epoch  1 Update  42000 Cost  20.2568843092 UD  1772.86313891 45.12 sents/s 696.48 words/s
 Epoch  1 Update  43000 Cost  20.039855173 UD  1759.91984105 45.46 sents/s 698.27 words/s
+Epoch  1 Update  44000 Cost  20.1711323169 UD  1769.56402898 45.21 sents/s 699.07 words/s
+Epoch  1 Update  45000 Cost  20.2416967671 UD  1763.99173808 45.35 sents/s 701.03 words/s
+Epoch  1 Update  46000 Cost  20.0140582445 UD  1771.69427013 45.15 sents/s 697.01 words/s
+Epoch  1 Update  47000 Cost  19.9510606452 UD  1779.78636408 44.95 sents/s 693.12 words/s
+Epoch  1 Update  48000 Cost  20.0779808564 UD  1772.07701707 45.14 sents/s 697.05 words/s
