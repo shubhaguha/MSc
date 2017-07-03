@@ -23,13 +23,13 @@ Precision   : 0.2432
 Recall      : 0.0842
 F1          : 0.1251
 
-Precision   : 0.2326
-Recall      : 0.0819
-F1          : 0.1211
-
-
-model.npz after 420000 updates
+baseline_5 after 420000 updates
 Precision   : 0.3104
 Recall      : 0.1219
 F1          : 0.1751
+
+baseline_6 after 270000 updates
+Precision   : 0.3054
+Recall      : 0.1195
+F1          : 0.1718
 
