@@ -647,3 +647,476 @@ None
 Valid  15.4452
 Epoch  3 Update  141000 Cost  17.8854680398 UD  1024.82697916 58.55 sents/s 901.48 words/s
 Epoch  3 Update  142000 Cost  18.072700825 UD  881.564335108 68.06 sents/s 1052.42 words/s
+Epoch  3 Update  143000 Cost  18.0257177981 UD  873.162125826 68.72 sents/s 1059.78 words/s
+Epoch  3 Update  144000 Cost  17.6641408519 UD  868.135005951 69.11 sents/s 1063.07 words/s
+Epoch  3 Update  145000 Cost  17.9090486671 UD  871.730983019 68.83 sents/s 1063.25 words/s
+Epoch  3 Update  146000 Cost  17.9308598772 UD  873.994313002 68.65 sents/s 1058.15 words/s
+Epoch  3 Update  147000 Cost  17.9608222535 UD  873.413019896 68.70 sents/s 1059.11 words/s
+Epoch  3 Update  148000 Cost  17.8571118236 UD  871.76117897 68.83 sents/s 1056.61 words/s
+Epoch  3 Update  149000 Cost  17.8842607451 UD  871.340337038 68.86 sents/s 1059.54 words/s
+Seen 2240372 samples
+Epoch  4 Update  150000 Cost  17.7182999091 UD  890.450232029 67.35 sents/s 1047.71 words/s
+Saving the best model... Done
+Saving the model at iteration 150000... Done
+Source  0 : God ! !
+Truth  0  :  God ! !
+Sample  0 :  God ! !
+Source  1 : Hi everyone !
+Truth  1  :  Hi everyone !
+Sample  1 :  Hi everyone !
+Source  2 : Thank goodness .
+Truth  2  :  Thank goodness .
+Sample  2 :  Thank goodness .
+Source  3 : Introduce about Won@@ Bin
+Truth  3  :  Introducing Won Bin
+Sample  3 :  Introduce about Won@@ Bin
+Source  4 : English study 2
+Truth  4  :  English study 2
+Sample  4 :  English study 2
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  15.278
+Epoch  4 Update  151000 Cost  17.3855206615 UD  1053.3021872 56.96 sents/s 881.23 words/s
+Epoch  4 Update  152000 Cost  17.3391010578 UD  871.250298023 68.87 sents/s 1062.97 words/s
+Epoch  4 Update  153000 Cost  17.3142616637 UD  875.174546957 68.56 sents/s 1054.64 words/s
+Epoch  4 Update  154000 Cost  17.2310920087 UD  870.419270992 68.93 sents/s 1062.22 words/s
+Epoch  4 Update  155000 Cost  17.2806244068 UD  867.840352058 69.14 sents/s 1060.38 words/s
+Epoch  4 Update  156000 Cost  17.5432561299 UD  872.976378918 68.73 sents/s 1062.97 words/s
+Epoch  4 Update  157000 Cost  17.45870262 UD  870.726927996 68.91 sents/s 1061.96 words/s
+Epoch  4 Update  158000 Cost  17.5506601311 UD  875.451424122 68.54 sents/s 1061.68 words/s
+Epoch  4 Update  159000 Cost  17.4069424433 UD  869.425437927 69.01 sents/s 1063.32 words/s
+Epoch  4 Update  160000 Cost  17.4099754609 UD  868.921163082 69.05 sents/s 1061.47 words/s
+Saving the best model... Done
+Saving the model at iteration 160000... Done
+Source  0 : Drinking in Izakaya
+Truth  0  :  Drinking in Izakaya
+Sample  0 :  Drinking in Izakaya
+Source  1 : after pub ...
+Truth  1  :  after pub ...
+Sample  1 :  after pub ...
+Source  2 : Mod@@ el@@ Answer
+Truth  2  :  Mod@@ el@@ Answer
+Sample  2 :  Kyo@@ el@@ Answer
+Source  3 : For example :
+Truth  3  :  For example :
+Sample  3 :  For example :
+Source  4 : Friends visited me
+Truth  4  :  Friends visited me
+Sample  4 :  Friends visited me
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.9311
+Epoch  4 Update  161000 Cost  17.7964807311 UD  1030.95546103 58.20 sents/s 900.73 words/s
+Epoch  4 Update  162000 Cost  17.6742946454 UD  877.900185108 68.34 sents/s 1055.31 words/s
+Epoch  4 Update  163000 Cost  17.621433004 UD  877.12706399 68.41 sents/s 1060.18 words/s
+Epoch  4 Update  164000 Cost  17.4286039183 UD  871.507857084 68.85 sents/s 1058.80 words/s
+Epoch  4 Update  165000 Cost  17.46755102 UD  871.427924871 68.85 sents/s 1059.58 words/s
+Epoch  4 Update  166000 Cost  17.6279809459 UD  870.551837921 68.92 sents/s 1064.20 words/s
+Epoch  4 Update  167000 Cost  17.4665235835 UD  875.277014971 68.55 sents/s 1057.28 words/s
+Epoch  4 Update  168000 Cost  17.5843432723 UD  878.608024836 68.29 sents/s 1059.26 words/s
+Epoch  4 Update  169000 Cost  17.4186184497 UD  868.752979994 69.06 sents/s 1061.99 words/s
+Epoch  4 Update  170000 Cost  17.5244014545 UD  875.112323999 68.56 sents/s 1059.54 words/s
+Saving the best model... Done
+Saving the model at iteration 170000... Done
+Source  0 : A phone
+Truth  0  :  A phone call
+Sample  0 :  A phone
+Source  1 : Ad@@ opt !
+Truth  1  :  Ad@@ opt !
+Sample  1 :  Ad@@ opt !
+Source  2 : How terrible !
+Truth  2  :  How terrible !
+Sample  2 :  How terrible !
+Source  3 : s .
+Truth  3  :  s .
+Sample  3 :  s .
+Source  4 : Husband
+Truth  4  :  My Husband
+Sample  4 :  Husband
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.813
+Epoch  4 Update  171000 Cost  17.3885747612 UD  1009.81426096 59.42 sents/s 914.43 words/s
+Epoch  4 Update  172000 Cost  17.4389147666 UD  872.835175991 68.74 sents/s 1060.07 words/s
+Epoch  4 Update  173000 Cost  17.3145907076 UD  871.866627932 68.82 sents/s 1059.02 words/s
+Epoch  4 Update  174000 Cost  17.5040184654 UD  882.048243046 68.02 sents/s 1051.18 words/s
+Epoch  4 Update  175000 Cost  17.5971602153 UD  872.118345022 68.80 sents/s 1060.58 words/s
+Epoch  4 Update  176000 Cost  17.6028436551 UD  873.283125877 68.71 sents/s 1065.05 words/s
+Epoch  4 Update  177000 Cost  17.5532005143 UD  875.429851055 68.54 sents/s 1058.68 words/s
+Epoch  4 Update  178000 Cost  17.432393627 UD  874.084625006 68.64 sents/s 1059.45 words/s
+Epoch  4 Update  179000 Cost  17.317268383 UD  871.395117044 68.86 sents/s 1061.98 words/s
+Epoch  4 Update  180000 Cost  17.6130311724 UD  952.38526082 63.00 sents/s 976.55 words/s
+Saving the best model... Done
+Saving the model at iteration 180000... Done
+Source  0 : Hello !
+Truth  0  :  Hello !
+Sample  0 :  Hello !
+Source  1 : 10 .
+Truth  1  :  Internal organ
+Sample  1 :  The final maple tree are keeping the price .
+Source  2 : Communication .
+Truth  2  :  Communication .
+Sample  2 :  Communication .
+Source  3 : Pil@@ ot
+Truth  3  :  Pil@@ ot
+Sample  3 :  Pil@@ ot
+Source  4 : resently ...
+Truth  4  :  Recently ...
+Sample  4 :  resently ...
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  15.1284
+Epoch  4 Update  181000 Cost  17.3948480828 UD  1071.49393106 56.00 sents/s 862.82 words/s
+Epoch  4 Update  182000 Cost  17.7108920031 UD  873.493864059 68.69 sents/s 1060.39 words/s
+Epoch  4 Update  183000 Cost  17.5017481515 UD  873.408512115 68.70 sents/s 1061.06 words/s
+Epoch  4 Update  184000 Cost  17.5737421758 UD  873.522124052 68.69 sents/s 1062.08 words/s
+Epoch  4 Update  185000 Cost  17.519699255 UD  872.970686913 68.73 sents/s 1061.40 words/s
+Epoch  4 Update  186000 Cost  17.6192404327 UD  877.681386948 68.36 sents/s 1056.95 words/s
+Seen 2240372 samples
+Epoch  5 Update  187000 Cost  17.3709401796 UD  889.02730608 67.46 sents/s 1042.07 words/s
+Epoch  5 Update  188000 Cost  17.0472204269 UD  878.448019981 68.30 sents/s 1058.64 words/s
+Epoch  5 Update  189000 Cost  16.9637203673 UD  871.239555836 68.87 sents/s 1061.12 words/s
+Epoch  5 Update  190000 Cost  17.1143663607 UD  870.463956833 68.93 sents/s 1063.68 words/s
+Saving the best model... Done
+Saving the model at iteration 190000... Done
+Source  0 : confused Korean expression
+Truth  0  :  confusing Korean expression
+Sample  0 :  confused Korean expression
+Source  1 : Thank you .
+Truth  1  :  Thank you .
+Sample  1 :  Thank you .
+Source  2 : Plan@@ et@@ es
+Truth  2  :  Plan@@ et@@ es
+Sample  2 :  Plan@@ et@@ es
+Source  3 : are prepared .
+Truth  3  :  are prepared .
+Sample  3 :  are prepared .
+Source  4 : Pay day !
+Truth  4  :  Pay day !
+Sample  4 :  Pay day !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  15.1012
+Epoch  5 Update  191000 Cost  17.0627445596 UD  990.009150982 60.61 sents/s 938.63 words/s
+Epoch  5 Update  192000 Cost  16.9400486458 UD  874.148823023 68.64 sents/s 1060.79 words/s
+Epoch  5 Update  193000 Cost  16.9830293849 UD  875.511614084 68.53 sents/s 1061.10 words/s
+Epoch  5 Update  194000 Cost  16.9540400117 UD  877.838999033 68.35 sents/s 1056.27 words/s
+Epoch  5 Update  195000 Cost  16.9766766587 UD  875.198813915 68.56 sents/s 1057.34 words/s
+Epoch  5 Update  196000 Cost  17.114856797 UD  869.901793957 68.97 sents/s 1062.66 words/s
+Epoch  5 Update  197000 Cost  17.1635928518 UD  875.877022982 68.50 sents/s 1060.03 words/s
+Epoch  5 Update  198000 Cost  16.9096685423 UD  874.42392993 68.62 sents/s 1058.97 words/s
+Epoch  5 Update  199000 Cost  16.9137611238 UD  870.230763912 68.95 sents/s 1061.65 words/s
+Epoch  5 Update  200000 Cost  17.1357398115 UD  876.585907936 68.45 sents/s 1058.24 words/s
+Saving the best model... Done
+Saving the model at iteration 200000... Done
+Source  0 : Sashimi set
+Truth  0  :  Sashimi set
+Sample  0 :  Sashimi set
+Source  1 : La@@ in
+Truth  1  :  La@@ in
+Sample  1 :  La@@ in
+Source  2 : feeling down
+Truth  2  :  feeling down
+Sample  2 :  feeling down
+Source  3 : Guys ,
+Truth  3  :  Guys ,
+Sample  3 :  Guys ,
+Source  4 : ← casual
+Truth  4  :  ← casual
+Sample  4 :  ← casual
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.9554
+Epoch  5 Update  201000 Cost  17.1910681263 UD  990.981858969 60.55 sents/s 934.42 words/s
+Epoch  5 Update  202000 Cost  17.1600961917 UD  872.943476915 68.73 sents/s 1060.92 words/s
+Epoch  5 Update  203000 Cost  17.1290960994 UD  876.747552872 68.43 sents/s 1055.26 words/s
+Epoch  5 Update  204000 Cost  17.0135607411 UD  872.470570803 68.77 sents/s 1059.87 words/s
+Epoch  5 Update  205000 Cost  17.0397288018 UD  870.590462923 68.92 sents/s 1061.37 words/s
+Epoch  5 Update  206000 Cost  17.2053481919 UD  872.943897963 68.73 sents/s 1060.36 words/s
+Epoch  5 Update  207000 Cost  17.1999095145 UD  872.525798082 68.77 sents/s 1062.76 words/s
+Epoch  5 Update  208000 Cost  17.2955680887 UD  868.610080004 69.08 sents/s 1064.59 words/s
+Epoch  5 Update  209000 Cost  17.28210955 UD  872.137364864 68.80 sents/s 1064.54 words/s
+Epoch  5 Update  210000 Cost  17.1527292946 UD  873.49394393 68.69 sents/s 1060.36 words/s
+Saving the best model... Done
+Saving the model at iteration 210000... Done
+Source  0 : G@@ osh !
+Truth  0  :  G@@ osh !
+Sample  0 :  G@@ osh !
+Source  1 : B@@ other ...
+Truth  1  :  B@@ other ...
+Sample  1 :  whatnot ,
+Source  2 : Bed@@ time story
+Truth  2  :  Bed@@ time story
+Sample  2 :  Bed@@ time story
+Source  3 : Thank you .
+Truth  3  :  Thank you .
+Sample  3 :  Thank you .
+Source  4 : Hello everybody ,
+Truth  4  :  Hello everybody ,
+Sample  4 :  Hello everybody ,
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.6729
+Epoch  5 Update  211000 Cost  16.893600512 UD  1015.48519111 59.09 sents/s 908.63 words/s
+Epoch  5 Update  212000 Cost  17.078053283 UD  871.625809908 68.84 sents/s 1063.93 words/s
+Epoch  5 Update  213000 Cost  17.2498624628 UD  870.673380852 68.91 sents/s 1064.32 words/s
+Epoch  5 Update  214000 Cost  17.2974566717 UD  878.279810905 68.32 sents/s 1055.99 words/s
+Epoch  5 Update  215000 Cost  17.1161041394 UD  872.695009947 68.75 sents/s 1057.31 words/s
+Epoch  5 Update  216000 Cost  17.3112350453 UD  874.434991121 68.62 sents/s 1059.18 words/s
+Epoch  5 Update  217000 Cost  17.2422424117 UD  874.241158009 68.63 sents/s 1061.48 words/s
+Epoch  5 Update  218000 Cost  17.0572717133 UD  869.892658949 68.97 sents/s 1060.30 words/s
+Epoch  5 Update  219000 Cost  17.138382687 UD  876.574506044 68.45 sents/s 1057.92 words/s
+Epoch  5 Update  220000 Cost  17.1826161619 UD  872.383172989 68.78 sents/s 1057.31 words/s
+Saving the best model... Done
+Saving the model at iteration 220000... Done
+Source  0 : Japan beat Sweden
+Truth  0  :  Japan beat Sweden
+Sample  0 :  Japan beat Sweden
+Source  1 : On July 4th
+Truth  1  :  On July 4th
+Sample  1 :  July 4th
+Source  2 : In her Bag
+Truth  2  :  In Her Bag
+Sample  2 :  In her Bag
+Source  3 : Hello world !
+Truth  3  :  Hello world !
+Sample  3 :  Hello world !
+Source  4 : But ... ..
+Truth  4  :  But ... ..
+Sample  4 :  But ... ..
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.6808
+Epoch  5 Update  221000 Cost  17.17453826 UD  990.225496054 60.59 sents/s 934.40 words/s
+Epoch  5 Update  222000 Cost  17.1057923216 UD  873.163128853 68.72 sents/s 1059.96 words/s
+Epoch  5 Update  223000 Cost  17.2900635499 UD  870.570261955 68.92 sents/s 1066.19 words/s
+Epoch  5 Update  224000 Cost  17.3457158443 UD  873.011780024 68.73 sents/s 1061.08 words/s
+Seen 2240372 samples
+Epoch  6 Update  225000 Cost  16.535402927 UD  890.989645004 67.31 sents/s 1037.84 words/s
+Epoch  6 Update  226000 Cost  16.7746532294 UD  878.770107985 68.28 sents/s 1056.93 words/s
+Epoch  6 Update  227000 Cost  16.6030172145 UD  874.294886827 68.63 sents/s 1058.48 words/s
+Epoch  6 Update  228000 Cost  16.7719554693 UD  874.417859077 68.62 sents/s 1061.40 words/s
+Epoch  6 Update  229000 Cost  16.6933796012 UD  867.939239025 69.13 sents/s 1065.43 words/s
+Epoch  6 Update  230000 Cost  16.6119613855 UD  870.086371899 68.96 sents/s 1062.21 words/s
+Saving the best model... Done
+Saving the model at iteration 230000... Done
+Source  0 : very tired .
+Truth  0  :  very tired .
+Sample  0 :  very tired .
+Source  1 : One more time
+Truth  1  :  One more time
+Sample  1 :  One more time
+Source  2 : Thank you .
+Truth  2  :  Thank you .
+Sample  2 :  Thank you .
+Source  3 : Thank you !
+Truth  3  :  Thank you !
+Sample  3 :  Thank you !
+Source  4 : Music scores !
+Truth  4  :  Music scores !
+Sample  4 :  Music scores !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.6888
+Epoch  6 Update  231000 Cost  16.8277433302 UD  982.366396904 61.08 sents/s 943.91 words/s
+Epoch  6 Update  232000 Cost  16.7485838133 UD  874.310652971 68.63 sents/s 1061.44 words/s
+Epoch  6 Update  233000 Cost  16.9928940774 UD  872.174510002 68.79 sents/s 1062.03 words/s
+Epoch  6 Update  234000 Cost  16.7833528272 UD  875.142599821 68.56 sents/s 1058.82 words/s
+Epoch  6 Update  235000 Cost  16.5986729104 UD  866.71450901 69.23 sents/s 1063.48 words/s
+Epoch  6 Update  236000 Cost  16.7462924584 UD  875.559859991 68.53 sents/s 1055.94 words/s
+Epoch  6 Update  237000 Cost  16.7748760263 UD  872.290359974 68.78 sents/s 1060.70 words/s
+Epoch  6 Update  238000 Cost  16.8741486701 UD  870.610248089 68.92 sents/s 1066.27 words/s
+Epoch  6 Update  239000 Cost  16.6860210162 UD  871.883353949 68.82 sents/s 1060.56 words/s
+Epoch  6 Update  240000 Cost  16.8049179803 UD  871.963028908 68.81 sents/s 1063.99 words/s
+Saving the best model... Done
+Saving the model at iteration 240000... Done
+Source  0 : What Mrs .
+Truth  0  :  What Mrs .
+Sample  0 :  What Mrs .
+Source  1 : next week .
+Truth  1  :  next week .
+Sample  1 :  next week .
+Source  2 : A Special Day
+Truth  2  :  A Special Day
+Sample  2 :  A Special Day
+Source  3 : Thank you .
+Truth  3  :  Thank you .
+Sample  3 :  Thank you .
+Source  4 : ( Ex .
+Truth  4  :  ( Ex .
+Sample  4 :  ( Ex .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.7772
+Epoch  6 Update  241000 Cost  16.8728753247 UD  1007.23589516 59.57 sents/s 918.71 words/s
+Epoch  6 Update  242000 Cost  16.6316231045 UD  869.607106924 69.00 sents/s 1061.79 words/s
+Epoch  6 Update  243000 Cost  16.8158478405 UD  875.666256189 68.52 sents/s 1056.99 words/s
+Epoch  6 Update  244000 Cost  16.758140843 UD  875.344830036 68.54 sents/s 1057.36 words/s
+Epoch  6 Update  245000 Cost  16.6804467787 UD  876.183296204 68.48 sents/s 1059.09 words/s
+Epoch  6 Update  246000 Cost  16.6978277119 UD  876.299420118 68.47 sents/s 1052.34 words/s
+Epoch  6 Update  247000 Cost  17.0264778458 UD  869.730633974 68.99 sents/s 1065.39 words/s
+Epoch  6 Update  248000 Cost  16.6773173456 UD  867.687124014 69.15 sents/s 1064.34 words/s
+Epoch  6 Update  249000 Cost  16.6137583955 UD  870.778627872 68.90 sents/s 1062.28 words/s
+Epoch  6 Update  250000 Cost  16.9095587544 UD  873.762593985 68.67 sents/s 1058.86 words/s
+Saving the best model... Done
+Saving the model at iteration 250000...

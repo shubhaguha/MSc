@@ -26,45 +26,67 @@ az vmss start --resource-group ${USER}-gec-nmt --name ${USER}-scale --instance-i
 az vmss scale --resource-group ${USER}-gec-nmt --name ${USER}-scale --new-capacity 2
 
 
-=== Preprocessing data (mostly encapsulated in 2_setup_datasets script) ===
+=== Data formatting ===
 
 - Convert NUCLE, CoNNL-2013, and CoNLL-2014 datasets into parallel corpora
 
-- Concatenate NUCLE and Lang-8 and split train, valid, and test parallel texts
+- Concatenate NUCLE and Lang-8
+
+- Split train, valid, and test parallel texts
+
+
+=== Train truecaser ===
+
+perl mosesdecoder/scripts/recaser/train-truecaser.perl --model MSc/data/truecaser --corpus MSc/data/train.parallel
+
+
+=== Preprocessing ===
+
+- Truecase
+
+- Apply BPE
+    * TODO: find out what git version of subword-nmt was used to generate gec.bpe
 
 - Replace | with <pipe>
     * TODO: find out exactly why
 
-- Tokenize
 
-- BPE
-    * TODO: find out what git version of subword-nmt was used to generate gec.bpe
+=== Postprocessing ===
+
+- Replace <pipe> with |
+
+- Remove BPE
+
+- Detruecase
 
 
 === Running training ===
 
 - Build dictionaries
-python nematus/data/build_dictionary.py MSc/data/train.fr.tok.bpe MSc/data/train.en.tok.bpe
+python nematus/data/build_dictionary.py MSc/data/preprocessed-train.fr MSc/data/preprocessed-train.en
 
 - Train
-python nematus/nematus/nmt.py --datasets MSc/data/train.fr.tok.bpe MSc/data/train.en.tok.bpe
-                              --dictionaries MSc/data/train.fr.tok.bpe.json MSc/data/train.en.tok.bpe.json
-                              --model MSc/models/baseline_0.npz
+python nematus/nematus/nmt.py --datasets MSc/data/preprocessed-train.fr MSc/data/preprocessed-train.en
+                              --dictionaries MSc/data/preprocessed-train.fr.json MSc/data/preprocessed-train.en.json
+                              --model baseline_0.npz
                               [--saveFreq 10000]
                               --layer_normalisation
                               --use_dropout
                               --dropout_source 0.1
                               --dropout_target 0.1
-                              --batch_size 60?
-                              --valid_datasets MSc/data/valid.fr.tok.bpe MSc/data/valid.en.tok.bpe
+                              --batch_size 60
+                              --valid_datasets MSc/data/preprocessed-valid.fr MSc/data/preprocessed-valid.en
                               [--reload]
 
 * run with `time` and `deallocate`
-* default values:   dropout_embedding 0.2
-                    dropout_hidden 0.2
-                    patience 10
-                    batch_size 80
-                    objective CE (cross-entropy minimization)
+* default params:   --dropout_embedding 0.2
+                    --dropout_hidden 0.2
+                    --patience 10  # the number of times validation error > previous validation errors
+                    --batch_size 80
+                    --objective CE  # cross-entropy minimization
+
+MRT params:         --objective MRT
+                    --mrt_loss M2
 
 
 === Model file naming ===
@@ -73,15 +95,20 @@ baseline_ce_0       NUCLE only, without tokenization and BPE, default Nematus pa
 baseline_mrt_0      + MRT objective
 baseline_1          + Lang-8, + tokenization and BPE, default cross-entropy objective
 baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 source and target dropout
-                        (started training around 12am Wed June 28)
+                        started training around 12am Wed June 28
+                        pooped out after 48000 updates
 baseline_3          batch size 60, trained on M60 machine
-                        (started training around 12am Wed June 28)
+                        started training around 12am Wed June 28
 baseline_4          batch size 40, trained on M60 machine
-                        (started training around 12am Wed June 28)
-baseline_5          + replace | with <pipe>, M60 machine, batch size 60
-                        (started training around 9:45pm Wed June 28)
-baseline_6          K80 machine, default batch size 80
-                        (started training around 10:45pm Wed June 28)
+                        started training around 12am Wed June 28
+baseline_5 *        baseline_3 + replace | with <pipe>
+                        started training around 9:45pm Wed June 28
+                        338k minibatches by 12pm noon Sun July 2
+baseline_6 *        K80 machine, default batch size 80
+                        started training around 10:45pm Wed June 28
+                        210k minibatches by 12pm noon Sun July 2
+baseline_7 *        M60, batch size 60: - tokenization + truecaser, replace pipes last
+                        started training around 2:30pm Sun July 2
 
 
 ===================================================================================================
