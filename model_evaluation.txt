@@ -38,3 +38,8 @@ Precision   : 0.3017
 Recall      : 0.1187
 F1          : 0.1704
 
+baseline_6 after 330000 updates
+Precision   : 0.3162
+Recall      : 0.1237
+F1          : 0.1778
+
