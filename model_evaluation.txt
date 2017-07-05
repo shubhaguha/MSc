@@ -33,7 +33,7 @@ Precision   : 0.3054
 Recall      : 0.1195
 F1          : 0.1718
 
-final baseline_5 after 530000 updates
+*** final baseline_5 after 530000 updates ***
 Precision   : 0.3017
 Recall      : 0.1187
 F1          : 0.1704
@@ -47,4 +47,9 @@ baseline_7 after 220000 updates
 Precision   : 0.3103
 Recall      : 0.1237
 F1          : 0.1769
+
+*** final baseline_6 after 370000 updates ***
+Precision   : 0.3162
+Recall      : 0.1237
+F1          : 0.1778
 
