@@ -717,3 +717,307 @@ INFO: Seen 2240372 samples
 INFO: Epoch 7 Update 262000 Cost 16.4792144717 UD 1446.66380095 41.46 sents/s 638.69 words/s
 INFO: Epoch 7 Update 263000 Cost 16.4623601127 UD 1439.56997585 41.68 sents/s 645.29 words/s
 INFO: Epoch 7 Update 264000 Cost 16.4868357004 UD 1440.31035614 41.66 sents/s 643.27 words/s
+INFO: Epoch 7 Update 265000 Cost 16.444567354 UD 1435.37170315 41.80 sents/s 645.22 words/s
+INFO: Epoch 7 Update 266000 Cost 16.551615096 UD 1438.59549093 41.71 sents/s 643.50 words/s
+INFO: Epoch 7 Update 267000 Cost 16.3985757624 UD 1441.79290605 41.61 sents/s 641.41 words/s
+INFO: Epoch 7 Update 268000 Cost 16.3864051521 UD 1437.74812198 41.73 sents/s 643.56 words/s
+INFO: Epoch 7 Update 269000 Cost 16.4975317584 UD 1440.54881096 41.65 sents/s 644.37 words/s
+INFO: Epoch 7 Update 270000 Cost 16.6727823788 UD 1445.50683999 41.51 sents/s 645.61 words/s
+INFO: Saving the best model...
+INFO: Done
+INFO: Saving the model at iteration 270000...
+INFO: Done
+Source  0 : ( F .
+Truth  0  :  ( F .
+Sample  0 :  ( F .
+Source  1 : To be continued
+Truth  1  :  To be continued
+Sample  1 :  To be continued
+Source  2 : Come on !
+Truth  2  :  Come on !
+Sample  2 :  Come on !
+Source  3 : fast diary !
+Truth  3  :  fast diary !
+Sample  3 :  fast diary !
+Source  4 : Good Morning .
+Truth  4  :  Good Morning .
+Sample  4 :  Good Morning .
+INFO: Valid 14.2351417542
+INFO: Epoch 7 Update 271000 Cost 16.4847693379 UD 1603.01756787 37.43 sents/s 577.47 words/s
+INFO: Epoch 7 Update 272000 Cost 16.4276106873 UD 1439.87875915 41.67 sents/s 642.18 words/s
+INFO: Epoch 7 Update 273000 Cost 16.4877120618 UD 1446.40369201 41.48 sents/s 641.71 words/s
+INFO: Epoch 7 Update 274000 Cost 16.5239505053 UD 1448.95275402 41.41 sents/s 638.87 words/s
+INFO: Epoch 7 Update 275000 Cost 16.4123497666 UD 1446.21160197 41.49 sents/s 641.77 words/s
+INFO: Epoch 7 Update 276000 Cost 16.4554621624 UD 1441.23683405 41.63 sents/s 640.51 words/s
+INFO: Epoch 7 Update 277000 Cost 16.4204333375 UD 1445.77284193 41.50 sents/s 638.66 words/s
+INFO: Epoch 7 Update 278000 Cost 16.5409139551 UD 1445.67308617 41.50 sents/s 639.70 words/s
+INFO: Epoch 7 Update 279000 Cost 16.5292379668 UD 1447.97516298 41.44 sents/s 640.59 words/s
+INFO: Epoch 7 Update 280000 Cost 16.7310900573 UD 1441.19971013 41.63 sents/s 644.03 words/s
+Source  0 : Thank you .
+Truth  0  :  Thank you .
+Sample  0 :  Thank you .
+Source  1 : A baby growth
+Truth  1  :  A baby growth
+Sample  1 :  A baby speaks
+Source  2 : Places to visit
+Truth  2  :  Places to visit
+Sample  2 :  Places to visit
+Source  3 : Spaghetti tacos ?
+Truth  3  :  Spaghetti tacos ?
+Sample  3 :  Spaghetti tacos ?
+Source  4 : : -@@ P
+Truth  4  :  : -@@ P
+Sample  4 :  : -@@ P
+INFO: Valid 14.4069232941
+INFO: Epoch 7 Update 281000 Cost 16.3110141309 UD 1437.48991013 41.74 sents/s 641.60 words/s
+INFO: Epoch 7 Update 282000 Cost 16.5513359731 UD 1534.0909121 39.11 sents/s 603.29 words/s
+INFO: Epoch 7 Update 283000 Cost 16.8186603203 UD 1698.90716505 35.32 sents/s 546.48 words/s
+INFO: Epoch 7 Update 284000 Cost 16.6502008132 UD 1444.61774302 41.53 sents/s 640.13 words/s
+INFO: Epoch 7 Update 285000 Cost 16.7555094699 UD 1452.40245891 41.31 sents/s 638.42 words/s
+INFO: Epoch 7 Update 286000 Cost 16.7259690701 UD 1448.61365795 41.42 sents/s 642.69 words/s
+INFO: Epoch 7 Update 287000 Cost 16.6190159962 UD 1441.40629411 41.63 sents/s 640.16 words/s
+INFO: Epoch 7 Update 288000 Cost 16.6269941432 UD 1440.7216661 41.65 sents/s 642.72 words/s
+INFO: Epoch 7 Update 289000 Cost 16.4716100174 UD 1441.42570901 41.63 sents/s 641.90 words/s
+INFO: Epoch 7 Update 290000 Cost 16.6514328884 UD 1441.64841294 41.62 sents/s 641.39 words/s
+Source  0 : I think that .
+Truth  0  :  I think
+Sample  0 :  I think that .
+Source  1 : Web@@ sites
+Truth  1  :  Web@@ sites
+Sample  1 :  Web@@ sites
+Source  2 : Han@@ ae
+Truth  2  :  Han@@ ae
+Sample  2 :  Han@@ ae
+Source  3 : Why ?
+Truth  3  :  Why ?
+Sample  3 :  Why ?
+Source  4 : academic meeting
+Truth  4  :  academic meeting
+Sample  4 :  academic meeting
+INFO: Valid 14.5511741638
+INFO: Epoch 7 Update 291000 Cost 16.6047470344 UD 1454.18780398 41.26 sents/s 636.90 words/s
+INFO: Epoch 7 Update 292000 Cost 16.5334033059 UD 1449.92060494 41.38 sents/s 637.97 words/s
+INFO: Epoch 7 Update 293000 Cost 16.7031129208 UD 1445.21707201 41.52 sents/s 639.52 words/s
+INFO: Epoch 7 Update 294000 Cost 16.7735023071 UD 1453.09329081 41.29 sents/s 640.34 words/s
+INFO: Epoch 7 Update 295000 Cost 16.5716781863 UD 1447.93931508 41.44 sents/s 639.94 words/s
+INFO: Epoch 7 Update 296000 Cost 16.656683872 UD 1453.05808616 41.29 sents/s 637.54 words/s
+INFO: Epoch 7 Update 296000 Cost 16.656683872 UD 1453.05808616 41.29 sents/s 637.54 words/s
+INFO: Epoch 7 Update 297000 Cost 16.7920427434 UD 1449.01564384 41.41 sents/s 639.40 words/s
+INFO: Epoch 7 Update 298000 Cost 16.5524641478 UD 1446.49526119 41.48 sents/s 639.56 words/s
+INFO: Seen 2240372 samples
+INFO: Epoch 8 Update 299000 Cost 16.264242366 UD 1451.716434 41.31 sents/s 636.88 words/s
+INFO: Epoch 8 Update 300000 Cost 16.0553486212 UD 1438.94820499 41.70 sents/s 642.11 words/s
+INFO: Saving the best model...
+INFO: Done
+INFO: Saving the model at iteration 300000...
+INFO: Done
+Source  0 : well ...
+Truth  0  :  well ...
+Sample  0 :  well ...
+Source  1 : In@@ credible
+Truth  1  :  In@@ credible
+Sample  1 :  In@@ credible
+Source  2 : Dr .
+Truth  2  :  Dr .
+Sample  2 :  Dr .
+Source  3 : g .
+Truth  3  :  g .
+Sample  3 :  g .
+Source  4 : so ...
+Truth  4  :  so ...
+Sample  4 :  So ...
+INFO: Valid 14.3713932037
+INFO: Epoch 8 Update 301000 Cost 16.080385043 UD 1602.72969699 37.44 sents/s 576.08 words/s
+INFO: Epoch 8 Update 302000 Cost 16.2439425141 UD 1450.63114309 41.36 sents/s 637.39 words/s
+INFO: Epoch 8 Update 303000 Cost 16.0958450398 UD 1448.26844501 41.43 sents/s 638.79 words/s
+INFO: Epoch 8 Update 304000 Cost 16.1493152896 UD 1444.77197599 41.53 sents/s 641.18 words/s
+INFO: Epoch 8 Update 305000 Cost 16.1689036139 UD 1441.82089496 41.61 sents/s 642.55 words/s
+INFO: Epoch 8 Update 306000 Cost 16.2761363475 UD 1441.6347661 41.62 sents/s 643.04 words/s
+INFO: Epoch 8 Update 307000 Cost 16.2848442236 UD 1446.00699806 41.49 sents/s 640.83 words/s
+INFO: Epoch 8 Update 308000 Cost 16.4363042039 UD 1452.00146699 41.32 sents/s 640.48 words/s
+INFO: Epoch 8 Update 309000 Cost 16.3476335481 UD 1444.59988594 41.53 sents/s 639.93 words/s
+INFO: Epoch 8 Update 310000 Cost 16.233149888 UD 1451.48397493 41.34 sents/s 638.94 words/s
+Source  0 : mean ? ?
+Truth  0  :  mean ? ?
+Sample  0 :  mean ? ?
+Source  1 : Good afternoon .
+Truth  1  :  Good afternoon .
+Sample  1 :  Good afternoon .
+Source  2 : First writing
+Truth  2  :  First time writing
+Sample  2 :  First writing
+Source  3 : hol@@ a ♪
+Truth  3  :  hol@@ a ♪
+Sample  3 :  hol@@ a ♪
+Source  4 : Thank you .
+Truth  4  :  Thank you .
+Sample  4 :  Thank you .
+INFO: Valid 14.2921819687
+INFO: Epoch 8 Update 311000 Cost 16.2151043332 UD 1456.52293706 41.19 sents/s 633.55 words/s
+INFO: Epoch 8 Update 312000 Cost 16.3857681012 UD 1443.68899202 41.56 sents/s 640.70 words/s
+INFO: Epoch 8 Update 313000 Cost 16.3368792895 UD 1447.75350714 41.44 sents/s 638.62 words/s
+INFO: Epoch 8 Update 314000 Cost 16.2822666622 UD 1442.13277793 41.61 sents/s 640.86 words/s
+INFO: Epoch 8 Update 315000 Cost 16.272971005 UD 1448.32643199 41.43 sents/s 640.98 words/s
+INFO: Epoch 8 Update 316000 Cost 16.2857939751 UD 1442.32854891 41.60 sents/s 643.12 words/s
+INFO: Epoch 8 Update 317000 Cost 16.4875523667 UD 1442.56395698 41.59 sents/s 642.25 words/s
+INFO: Epoch 8 Update 318000 Cost 16.4233904692 UD 1440.10491991 41.66 sents/s 642.87 words/s
+INFO: Epoch 8 Update 319000 Cost 16.425962396 UD 1442.15225506 41.60 sents/s 643.49 words/s
+INFO: Epoch 8 Update 320000 Cost 16.3140020387 UD 1438.90768099 41.70 sents/s 641.09 words/s
+Source  0 : Hi .
+Truth  0  :  Hi .
+Sample  0 :  Hi .
+Source  1 : pumpkin !
+Truth  1  :  pumpkin !
+Sample  1 :  pumpkin !
+Source  2 : Music !
+Truth  2  :  Music !
+Sample  2 :  Music !
+Source  3 : Mr .
+Truth  3  :  Mr .
+Sample  3 :  Mr .
+Source  4 : To my weaknesses I can relate a self-@@ criticism .
+Truth  4  :  : (
+Sample  4 :  To my weaknesses I can relate more self-@@ criticism .
+INFO: Valid 14.3139486313
+INFO: Epoch 8 Update 321000 Cost 16.3527822741 UD 1456.86773992 41.18 sents/s 635.64 words/s
+INFO: Epoch 8 Update 322000 Cost 16.3988215762 UD 1450.79836106 41.36 sents/s 639.07 words/s
+INFO: Epoch 8 Update 323000 Cost 16.4172350503 UD 1435.06099701 41.81 sents/s 643.70 words/s
+INFO: Epoch 8 Update 324000 Cost 16.2879334874 UD 1445.08535004 41.52 sents/s 641.04 words/s
+INFO: Epoch 8 Update 325000 Cost 16.3262243101 UD 1447.95823097 41.44 sents/s 640.89 words/s
+INFO: Epoch 8 Update 326000 Cost 16.4306301529 UD 1451.55914688 41.33 sents/s 640.79 words/s
+INFO: Epoch 8 Update 327000 Cost 16.24260478 UD 1435.00163293 41.81 sents/s 644.32 words/s
+INFO: Epoch 8 Update 328000 Cost 16.5840800123 UD 1444.75806308 41.53 sents/s 643.55 words/s
+INFO: Epoch 8 Update 329000 Cost 16.4077636401 UD 1441.03956604 41.64 sents/s 641.18 words/s
+INFO: Epoch 8 Update 330000 Cost 16.471411498 UD 1443.90536189 41.55 sents/s 641.54 words/s
+INFO: Saving the best model...
+INFO: Done
+INFO: Saving the model at iteration 330000...
+INFO: Done
+Source  0 : treat the cavity
+Truth  0  :  treat the cavity
+Sample  0 :  treat the cavity
+Source  1 : as ~ as
+Truth  1  :  As ~ As
+Sample  1 :  as ~ as
+Source  2 : Hello , guys
+Truth  2  :  Hello , guys
+Sample  2 :  Hello , guys
+Source  3 : the harvest moon
+Truth  3  :  the harvest moon
+Sample  3 :  the harvest moon
+Source  4 : Happy Birthday !
+Truth  4  :  Happy Birthday !
+Sample  4 :  Happy Birthday !
+INFO: Valid 14.3235797882
+INFO: Epoch 8 Update 331000 Cost 16.3562674088 UD 1575.84201598 38.07 sents/s 586.07 words/s
+INFO: Epoch 8 Update 332000 Cost 16.3729157023 UD 1439.67046595 41.68 sents/s 641.74 words/s
+INFO: Epoch 8 Update 333000 Cost 16.609212789 UD 1450.72083592 41.36 sents/s 639.84 words/s
+INFO: Epoch 8 Update 334000 Cost 16.7050713431 UD 1447.96636701 41.44 sents/s 641.36 words/s
+INFO: Epoch 8 Update 335000 Cost 16.6022123397 UD 1485.37648201 40.39 sents/s 624.63 words/s
+INFO: Epoch 8 Update 336000 Cost 16.3782988972 UD 1708.650455 35.12 sents/s 542.04 words/s
+INFO: Seen 2240372 samples
+INFO: Epoch 9 Update 337000 Cost 16.0539593156 UD 1485.55686188 40.37 sents/s 622.97 words/s
+INFO: Epoch 9 Update 338000 Cost 15.8066753839 UD 1446.85103011 41.47 sents/s 639.69 words/s
+INFO: Epoch 9 Update 339000 Cost 15.9975865378 UD 1448.63361406 41.42 sents/s 640.04 words/s
+INFO: Epoch 9 Update 340000 Cost 15.8773027514 UD 1444.81711912 41.53 sents/s 639.66 words/s
+Source  0 : Human Rights
+Truth  0  :  Human Rights
+Sample  0 :  Human Rights
+Source  1 : animation studio
+Truth  1  :  animation studio
+Sample  1 :  animation studio
+Source  2 : hello !
+Truth  2  :  hello !
+Sample  2 :  Hello chance !
+Source  3 : My dog
+Truth  3  :  My dog
+Sample  3 :  My dog
+Source  4 : D .
+Truth  4  :  D .
+Sample  4 :  D .
+INFO: Valid 14.403345108
+INFO: Epoch 9 Update 341000 Cost 16.0205332813 UD 1453.78884816 41.27 sents/s 636.10 words/s
+INFO: Epoch 9 Update 342000 Cost 16.0656220735 UD 1446.42384601 41.48 sents/s 642.02 words/s
+INFO: Epoch 9 Update 343000 Cost 16.0170054488 UD 1444.00301409 41.55 sents/s 640.40 words/s
+INFO: Epoch 9 Update 344000 Cost 16.1176812892 UD 1449.93312216 41.38 sents/s 639.34 words/s
+INFO: Epoch 9 Update 345000 Cost 16.0205622559 UD 1448.40589881 41.42 sents/s 639.26 words/s
+INFO: Epoch 9 Update 346000 Cost 15.9668923023 UD 1441.26616597 41.63 sents/s 643.84 words/s
+INFO: Epoch 9 Update 347000 Cost 16.0438802573 UD 1448.85935497 41.41 sents/s 637.50 words/s
+INFO: Epoch 9 Update 348000 Cost 16.1526551966 UD 1447.33426189 41.46 sents/s 643.46 words/s
+INFO: Epoch 9 Update 349000 Cost 16.2132083564 UD 1445.45843792 41.51 sents/s 640.26 words/s
+INFO: Epoch 9 Update 350000 Cost 16.129766659 UD 1446.93904996 41.47 sents/s 638.79 words/s
+Source  0 : Ba@@ hasa Indonesia 
+Truth  0  :  Ba@@ hasa Indonesia
+Sample  0 :  Ba@@ hasa Indonesia
+Source  1 : THE TR@@ IAL 
+Truth  1  :  THE TR@@ IAL
+Sample  1 :  THE TR@@ IAL
+Source  2 : Hello ! ! 
+Truth  2  :  Hello ! !
+Sample  2 :  Hello ! !
+Source  3 : Sincer@@ ely , 
+Truth  3  :  Sincer@@ ely ,
+Sample  3 :  Sincer@@ ely ,
+Source  4 : Hi everyone , 
+Truth  4  :  Hi everyone ,
+Sample  4 :  Hi everyone ,
+INFO: Valid 14.5720729828
+INFO: Epoch 9 Update 351000 Cost 16.2126962624 UD 1460.50598097 41.08 sents/s 632.28 words/s
+INFO: Epoch 9 Update 352000 Cost 16.1438133159 UD 1444.37494588 41.54 sents/s 640.78 words/s
+INFO: Epoch 9 Update 353000 Cost 16.279478358 UD 1450.03286004 41.38 sents/s 640.91 words/s
+INFO: Epoch 9 Update 354000 Cost 16.1316943866 UD 1440.93002701 41.64 sents/s 640.77 words/s
+INFO: Epoch 9 Update 355000 Cost 16.2253461787 UD 1448.97047305 41.41 sents/s 640.29 words/s
+INFO: Epoch 9 Update 356000 Cost 16.2514126898 UD 1440.142735 41.66 sents/s 642.77 words/s
+INFO: Epoch 9 Update 357000 Cost 16.2972475206 UD 1453.33141398 41.28 sents/s 639.52 words/s
+INFO: Epoch 9 Update 358000 Cost 16.1727201053 UD 1450.48910999 41.37 sents/s 638.63 words/s
+INFO: Epoch 9 Update 359000 Cost 16.2526911635 UD 1450.99087501 41.35 sents/s 639.23 words/s
+INFO: Epoch 9 Update 360000 Cost 16.2952384165 UD 1454.03129005 41.26 sents/s 638.31 words/s
+INFO: Saving the best model...
+INFO: Done
+INFO: Saving the model at iteration 360000...
+INFO: Done
+Source  0 : dog cat@@ chers 
+Truth  0  :  dog cat@@ chers
+Sample  0 :  dog cat@@ chers
+Source  1 : thanks ... . 
+Truth  1  :  thanks ... .
+Sample  1 :  thanks ... .
+Source  2 : The Developing Country 
+Truth  2  :  The Developing Country
+Sample  2 :  The Developing Country
+Source  3 : Ingre@@ dients : 
+Truth  3  :  Ingre@@ dients :
+Sample  3 :  Ingre@@ dients :
+Source  4 : Help me ... ! 
+Truth  4  :  Help me !
+Sample  4 :  Help me ... !
+INFO: Valid 14.361913681
+INFO: Epoch 9 Update 361000 Cost 16.1419479164 UD 1614.00662494 37.17 sents/s 571.93 words/s
+INFO: Epoch 9 Update 362000 Cost 16.3635518781 UD 1448.63404298 41.42 sents/s 640.75 words/s
+INFO: Epoch 9 Update 363000 Cost 16.2808528078 UD 1444.38066196 41.54 sents/s 639.27 words/s
+INFO: Epoch 9 Update 364000 Cost 16.223253859 UD 1449.40465593 41.40 sents/s 639.92 words/s
+INFO: Epoch 9 Update 365000 Cost 16.0572920829 UD 1444.33963203 41.54 sents/s 641.59 words/s
+INFO: Epoch 9 Update 366000 Cost 16.1569236588 UD 1446.66514897 41.47 sents/s 640.57 words/s
+INFO: Epoch 9 Update 367000 Cost 16.229716043 UD 1443.00418806 41.58 sents/s 639.90 words/s
+INFO: Epoch 9 Update 368000 Cost 16.0740549561 UD 1445.62739801 41.50 sents/s 639.93 words/s
+INFO: Epoch 9 Update 369000 Cost 16.34591526 UD 1446.04098797 41.49 sents/s 639.81 words/s
+INFO: Epoch 9 Update 370000 Cost 16.1703772483 UD 1445.08630109 41.52 sents/s 641.23 words/s
+Source  0 : see you !
+Truth  0  :  see you !
+Sample  0 :  See you !
+Source  1 : Part time job
+Truth  1  :  Part time job
+Sample  1 :  Part Time Job
+Source  2 : At last ,
+Truth  2  :  At last ,
+Sample  2 :  Lastly ,
+Source  3 : Hi everyone .
+Truth  3  :  Hi everyone .
+Sample  3 :  Hi everyone .
+Source  4 : Gabriel ! ?
+Truth  4  :  Gabriel ! ?
+Sample  4 :  Gabriel ! ?
+INFO: Valid 14.2705888748
+INFO: Early Stop!
+INFO: Seen 2036400 samples
+INFO: Valid 14.2351417542

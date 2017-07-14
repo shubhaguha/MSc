@@ -1918,3 +1918,511 @@ Epoch  11 Update  423000 Cost  15.7722358652 UD  895.748080969 66.98 sents/s 103
 Epoch  11 Update  424000 Cost  15.7610598546 UD  893.078998804 67.18 sents/s 1033.07 words/s
 Epoch  11 Update  425000 Cost  15.9350646939 UD  892.093085051 67.26 sents/s 1037.42 words/s
 Epoch  11 Update  426000 Cost  15.7301221697 UD  893.413290024 67.16 sents/s 1035.99 words/s
+Epoch  11 Update  427000 Cost  15.6633079278 UD  897.362058163 66.86 sents/s 1030.96 words/s
+Epoch  11 Update  428000 Cost  15.8762034016 UD  901.679338932 66.54 sents/s 1029.46 words/s
+Epoch  11 Update  429000 Cost  15.9207412646 UD  899.06922102 66.74 sents/s 1031.26 words/s
+Epoch  11 Update  430000 Cost  15.609111331 UD  891.911540031 67.27 sents/s 1033.83 words/s
+Source  0 : M .
+Truth  0  :  M .
+Sample  0 :  M .
+Source  1 : Hallo !
+Truth  1  :  Hello !
+Sample  1 :  Hello !
+Source  2 : Thanks .
+Truth  2  :  Thanks .
+Sample  2 :  Thanks .
+Source  3 : Peter Rabbit
+Truth  3  :  Peter Rabbit
+Sample  3 :  Peter Rabbit
+Source  4 : really ..
+Truth  4  :  really ..
+Sample  4 :  really ..
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.0905
+Epoch  11 Update  431000 Cost  15.8817506545 UD  905.426515102 66.27 sents/s 1027.53 words/s
+Epoch  11 Update  432000 Cost  15.9650060301 UD  901.992199898 66.52 sents/s 1029.67 words/s
+Epoch  11 Update  433000 Cost  16.0171512816 UD  893.491450071 67.15 sents/s 1041.36 words/s
+Epoch  11 Update  434000 Cost  15.8572803925 UD  896.80577302 66.90 sents/s 1035.36 words/s
+Epoch  11 Update  435000 Cost  15.9773859653 UD  894.623806 67.07 sents/s 1033.78 words/s
+Epoch  11 Update  436000 Cost  15.8911754737 UD  891.698339939 67.29 sents/s 1035.13 words/s
+Epoch  11 Update  437000 Cost  15.8288790342 UD  893.495667934 67.15 sents/s 1033.70 words/s
+Epoch  11 Update  438000 Cost  15.8433743992 UD  896.48445797 66.93 sents/s 1028.31 words/s
+Epoch  11 Update  439000 Cost  16.160718309 UD  904.919215918 66.30 sents/s 1027.40 words/s
+Epoch  11 Update  440000 Cost  15.9797419127 UD  891.352453947 67.31 sents/s 1040.33 words/s
+Source  0 : Hi ! !
+Truth  0  :  Hi ! !
+Sample  0 :  Hi ! !
+Source  1 : I think ...
+Truth  1  :  I think ...
+Sample  1 :  I think ...
+Source  2 : ② negative sentence
+Truth  2  :  ② negative sentence
+Sample  2 :  ② negative sentence
+Source  3 : convenience goods .
+Truth  3  :  convenience goods .
+Sample  3 :  convenience .
+Source  4 : him getting it
+Truth  4  :  him getting it
+Sample  4 :  him getting it
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2674
+Epoch  11 Update  441000 Cost  15.9682564051 UD  904.86502099 66.31 sents/s 1027.47 words/s
+Epoch  11 Update  442000 Cost  15.8561141518 UD  896.454922915 66.93 sents/s 1028.64 words/s
+Epoch  11 Update  443000 Cost  15.9275867682 UD  895.494866133 67.00 sents/s 1033.07 words/s
+Epoch  11 Update  444000 Cost  15.8827784198 UD  896.239089012 66.95 sents/s 1033.65 words/s
+Epoch  11 Update  445000 Cost  16.0376829603 UD  911.995747805 65.79 sents/s 1018.68 words/s
+Epoch  11 Update  446000 Cost  16.1523200737 UD  1077.09602499 55.71 sents/s 862.13 words/s
+Epoch  11 Update  447000 Cost  15.9674295763 UD  920.544718981 65.18 sents/s 1007.04 words/s
+Epoch  11 Update  448000 Cost  15.7376182515 UD  896.847364902 66.90 sents/s 1026.88 words/s
+Seen 2240372 samples
+Epoch  12 Update  449000 Cost  15.4520708701 UD  913.356729031 65.66 sents/s 1012.51 words/s
+Epoch  12 Update  450000 Cost  15.5252567758 UD  895.180447817 67.03 sents/s 1032.46 words/s
+Saving the best model... Done
+Saving the model at iteration 450000... Done
+Source  0 : ( : D
+Truth  0  :  ( : D
+Sample  0 :  ( : D
+Source  1 : Mat@@ ue castle
+Truth  1  :  Mat@@ ue castle
+Sample  1 :  Mat@@ ue castle
+Source  2 : gradually confused ...
+Truth  2  :  gradually confused ...
+Sample  2 :  weak in the internet .
+Source  3 : Hi everyone ,
+Truth  3  :  Hi everyone ,
+Sample  3 :  Hi everyone ,
+Source  4 : It fills me
+Truth  4  :  It fills me
+Sample  4 :  It fills me
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.3376
+Epoch  12 Update  451000 Cost  15.6943656918 UD  1021.70820904 58.73 sents/s 907.70 words/s
+Epoch  12 Update  452000 Cost  15.4320436882 UD  897.635225058 66.84 sents/s 1029.96 words/s
+Epoch  12 Update  453000 Cost  15.6914560956 UD  894.919219017 67.05 sents/s 1035.16 words/s
+Epoch  12 Update  454000 Cost  15.7668305526 UD  895.555297852 67.00 sents/s 1034.31 words/s
+Epoch  12 Update  455000 Cost  15.5337935769 UD  889.37161088 67.46 sents/s 1039.27 words/s
+Epoch  12 Update  456000 Cost  15.4050409607 UD  894.764883041 67.06 sents/s 1035.90 words/s
+Epoch  12 Update  457000 Cost  15.6307830973 UD  894.128988028 67.10 sents/s 1035.59 words/s
+Epoch  12 Update  458000 Cost  15.5938519823 UD  893.973510027 67.12 sents/s 1035.77 words/s
+Epoch  12 Update  459000 Cost  15.5415725849 UD  894.545062065 67.07 sents/s 1038.47 words/s
+Epoch  12 Update  460000 Cost  15.4338347507 UD  899.812618971 66.68 sents/s 1026.06 words/s
+Source  0 : Bad cold
+Truth  0  :  Bad cold
+Sample  0 :  Bad cold
+Source  1 : President .
+Truth  1  :  President .
+Sample  1 :  President .
+Source  2 : g .
+Truth  2  :  g .
+Sample  2 :  g .
+Source  3 : Baseball ?
+Truth  3  :  Baseball ?
+Sample  3 :  Baseball ?
+Source  4 : First Lady
+Truth  4  :  First Lady
+Sample  4 :  First Lady
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2471
+Epoch  12 Update  461000 Cost  15.8370760571 UD  907.122980833 66.14 sents/s 1024.64 words/s
+Epoch  12 Update  462000 Cost  15.5535836129 UD  890.461100817 67.38 sents/s 1037.40 words/s
+Epoch  12 Update  463000 Cost  15.7154110515 UD  894.878124952 67.05 sents/s 1039.36 words/s
+Epoch  12 Update  464000 Cost  15.6332416376 UD  900.860432863 66.60 sents/s 1027.49 words/s
+Epoch  12 Update  465000 Cost  15.6295046933 UD  900.632744074 66.62 sents/s 1027.68 words/s
+Epoch  12 Update  466000 Cost  15.7614710645 UD  898.450248003 66.78 sents/s 1035.47 words/s
+Epoch  12 Update  467000 Cost  15.5745432173 UD  895.705243826 66.99 sents/s 1030.48 words/s
+Epoch  12 Update  468000 Cost  15.7360644017 UD  893.577465057 67.15 sents/s 1038.21 words/s
+Epoch  12 Update  469000 Cost  15.834155665 UD  896.178482056 66.95 sents/s 1034.81 words/s
+Epoch  12 Update  470000 Cost  15.6259934917 UD  890.04829812 67.41 sents/s 1034.85 words/s
+Source  0 : Ex@@ t
+Truth  0  :  Ex@@ t
+Sample  0 :  Ex@@ t
+Source  1 : 18th August
+Truth  1  :  18th August
+Sample  1 :  18th August
+Source  2 : Mental barrier
+Truth  2  :  Mental Barrier
+Sample  2 :  Mental barrier
+Source  3 : Oh ..
+Truth  3  :  Oh ..
+Sample  3 :  Oh ..
+Source  4 : Social Network
+Truth  4  :  Social Network
+Sample  4 :  Social Network
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2829
+Epoch  12 Update  471000 Cost  15.8840664994 UD  911.025120974 65.86 sents/s 1021.28 words/s
+Epoch  12 Update  472000 Cost  15.7238386312 UD  893.068099022 67.18 sents/s 1037.05 words/s
+Epoch  12 Update  473000 Cost  15.8292207558 UD  898.421932936 66.78 sents/s 1033.82 words/s
+Epoch  12 Update  474000 Cost  15.6858833076 UD  896.489741087 66.93 sents/s 1034.78 words/s
+Epoch  12 Update  475000 Cost  15.8437539285 UD  896.17982316 66.95 sents/s 1031.69 words/s
+Epoch  12 Update  476000 Cost  15.8431165887 UD  897.486823082 66.85 sents/s 1033.27 words/s
+Epoch  12 Update  477000 Cost  15.7086640316 UD  896.842054129 66.90 sents/s 1031.62 words/s
+Epoch  12 Update  478000 Cost  15.8320947336 UD  897.047837973 66.89 sents/s 1033.07 words/s
+Epoch  12 Update  479000 Cost  15.7219527535 UD  897.615972996 66.84 sents/s 1030.90 words/s
+Epoch  12 Update  480000 Cost  15.9274832914 UD  894.154021978 67.10 sents/s 1035.60 words/s
+Saving the best model... Done
+Saving the model at iteration 480000... Done
+Source  0 : A .
+Truth  0  :  A .
+Sample  0 :  A .
+Source  1 : Bye !
+Truth  1  :  Bye !
+Sample  1 :  Bye !
+Source  2 : k ?
+Truth  2  :  Okay ?
+Sample  2 :  k ?
+Source  3 : S ..
+Truth  3  :  S ..
+Sample  3 :  S ..
+Source  4 : Ah !
+Truth  4  :  Ah !
+Sample  4 :  Ah !
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2023
+Epoch  12 Update  481000 Cost  15.786343643 UD  1069.30834103 56.11 sents/s 863.46 words/s
+Epoch  12 Update  482000 Cost  15.7934444425 UD  892.473859072 67.23 sents/s 1033.81 words/s
+Epoch  12 Update  483000 Cost  15.8680119845 UD  893.7887609 67.13 sents/s 1035.70 words/s
+Epoch  12 Update  484000 Cost  15.8879232817 UD  894.37459898 67.09 sents/s 1034.19 words/s
+Epoch  12 Update  485000 Cost  15.9325643632 UD  896.511430979 66.93 sents/s 1036.32 words/s
+Seen 2240372 samples
+Epoch  13 Update  486000 Cost  15.6153343762 UD  910.279655933 65.88 sents/s 1016.31 words/s
+Epoch  13 Update  487000 Cost  15.3693684422 UD  894.718839884 67.06 sents/s 1035.61 words/s
+Epoch  13 Update  488000 Cost  15.3587100749 UD  895.324804068 67.01 sents/s 1031.14 words/s
+Epoch  13 Update  489000 Cost  15.3536632902 UD  898.731259108 66.76 sents/s 1027.44 words/s
+Epoch  13 Update  490000 Cost  15.4551236949 UD  888.753010988 67.51 sents/s 1040.18 words/s
+Source  0 : My study method
+Truth  0  :  My study method
+Sample  0 :  My study method
+Source  1 : Sweet dream !
+Truth  1  :  Sweet dreams !
+Sample  1 :  Sweet dream !
+Source  2 : ah ... ..
+Truth  2  :  ah ... ..
+Sample  2 :  ah ... ..
+Source  3 : nite nite .
+Truth  3  :  Good night .
+Sample  3 :  nite nite .
+Source  4 : Hau@@ m ..
+Truth  4  :  Hau@@ m ..
+Sample  4 :  Hau@@ m ..
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.4179
+Epoch  13 Update  491000 Cost  15.4319314504 UD  900.118453979 66.66 sents/s 1030.78 words/s
+Epoch  13 Update  492000 Cost  15.4053725291 UD  898.020195007 66.81 sents/s 1031.29 words/s
+Epoch  13 Update  493000 Cost  15.3521002952 UD  895.467568159 67.00 sents/s 1032.18 words/s
+Epoch  13 Update  494000 Cost  15.3826811546 UD  898.154150963 66.80 sents/s 1031.67 words/s
+Epoch  13 Update  495000 Cost  15.4212712165 UD  899.540776014 66.70 sents/s 1031.60 words/s
+Epoch  13 Update  496000 Cost  15.6395384299 UD  896.863620996 66.90 sents/s 1037.39 words/s
+Epoch  13 Update  497000 Cost  15.4746953377 UD  900.950632095 66.60 sents/s 1025.43 words/s
+Epoch  13 Update  498000 Cost  15.354369991 UD  895.711104155 66.99 sents/s 1032.62 words/s
+Epoch  13 Update  499000 Cost  15.5189009059 UD  893.482119083 67.15 sents/s 1036.77 words/s
+Epoch  13 Update  500000 Cost  15.477447238 UD  895.563965082 67.00 sents/s 1032.13 words/s
+Source  0 : Question : stamps
+Truth  0  :  Question : stamps
+Sample  0 :  Question : stamps
+Source  1 : We went to Hawaii , Hongkong , Okinawa ( Japan ) , so on .
+Truth  1  :  Hong Kong
+Sample  1 :  We went to Hawaii , Hongkong , Okinawa ( Japan ) , etc
+Source  2 : English lesson
+Truth  2  :  English lesson
+Sample  2 :  English lesson
+Source  3 : Hi !
+Truth  3  :  Hi !
+Sample  3 :  Hi !
+Source  4 : Thanks ...
+Truth  4  :  Thanks ...
+Sample  4 :  Thanks ...
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.4181
+Epoch  13 Update  501000 Cost  15.5598461059 UD  909.7497859 65.95 sents/s 1020.43 words/s
+Epoch  13 Update  502000 Cost  15.713059706 UD  900.029017925 66.66 sents/s 1034.93 words/s
+Epoch  13 Update  503000 Cost  15.7734225892 UD  896.6581738 66.92 sents/s 1035.69 words/s
+Epoch  13 Update  504000 Cost  15.5673099478 UD  894.481228828 67.08 sents/s 1034.37 words/s
+Epoch  13 Update  505000 Cost  15.7501973187 UD  900.13175416 66.66 sents/s 1032.34 words/s
+Epoch  13 Update  506000 Cost  15.4938586254 UD  894.170042038 67.10 sents/s 1032.22 words/s
+Epoch  13 Update  507000 Cost  15.6393194686 UD  900.224793911 66.65 sents/s 1032.58 words/s
+Epoch  13 Update  508000 Cost  15.5576722796 UD  892.03034687 67.26 sents/s 1035.20 words/s
+Epoch  13 Update  509000 Cost  15.6724700294 UD  896.295593023 66.94 sents/s 1032.53 words/s
+Epoch  13 Update  510000 Cost  15.5252588777 UD  893.764698029 67.13 sents/s 1034.85 words/s
+Saving the best model... Done
+Saving the model at iteration 510000... Done
+Source  0 : hehehe ^ ^
+Truth  0  :  hehehe ^ ^
+Sample  0 :  hehehe ^ ^
+Source  1 : Thank you !
+Truth  1  :  Thank you !
+Sample  1 :  Thank you !
+Source  2 : A new room
+Truth  2  :  A new room
+Sample  2 :  Love new room .
+Source  3 : and relation ...
+Truth  3  :  and relations ...
+Sample  3 :  and relationships ...
+Source  4 : Bi@@ zarre Weather
+Truth  4  :  Bi@@ zarre Weather
+Sample  4 :  Bi@@ zarre Weather
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.3643
+Epoch  13 Update  511000 Cost  15.5508640148 UD  1054.69558907 56.89 sents/s 875.18 words/s
+Epoch  13 Update  512000 Cost  15.6292965634 UD  895.686559916 66.99 sents/s 1031.73 words/s
+Epoch  13 Update  513000 Cost  15.7962416588 UD  896.650417089 66.92 sents/s 1036.44 words/s
+Epoch  13 Update  514000 Cost  15.5800258013 UD  896.165727854 66.95 sents/s 1032.65 words/s
+Epoch  13 Update  515000 Cost  15.8749619877 UD  897.283989906 66.87 sents/s 1031.00 words/s
+Epoch  13 Update  516000 Cost  15.8854613938 UD  902.282781839 66.50 sents/s 1028.23 words/s
+Epoch  13 Update  517000 Cost  15.5865523029 UD  897.659777164 66.84 sents/s 1032.43 words/s
+Epoch  13 Update  518000 Cost  15.6305487316 UD  896.577793837 66.92 sents/s 1031.39 words/s
+Epoch  13 Update  519000 Cost  15.7678456893 UD  901.491554022 66.56 sents/s 1028.54 words/s
+Epoch  13 Update  520000 Cost  15.6895514587 UD  900.427382946 66.64 sents/s 1030.48 words/s
+Source  0 : My cellphone
+Truth  0  :  My cellphone
+Sample  0 :  My cellphone
+Source  1 : Bye !
+Truth  1  :  Bye !
+Sample  1 :  Bye !
+Source  2 : See you
+Truth  2  :  See you
+Sample  2 :  See you
+Source  3 : Yeah !
+Truth  3  :  Yeah !
+Sample  3 :  Yeah !
+Source  4 : S .
+Truth  4  :  S .
+Sample  4 :  S .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2544
+Epoch  13 Update  521000 Cost  15.7245763963 UD  902.977328062 66.45 sents/s 1023.41 words/s
+Epoch  13 Update  522000 Cost  15.7466357915 UD  896.92048502 66.90 sents/s 1036.21 words/s
+Seen 2240372 samples
+Epoch  14 Update  523000 Cost  15.7174355326 UD  912.835453987 65.70 sents/s 1013.81 words/s
+Epoch  14 Update  524000 Cost  15.4406352333 UD  896.771228075 66.91 sents/s 1036.12 words/s
+Epoch  14 Update  525000 Cost  15.1781939036 UD  898.342061043 66.79 sents/s 1031.55 words/s
+Epoch  14 Update  526000 Cost  15.3344171881 UD  900.200312853 66.65 sents/s 1033.12 words/s
+Epoch  14 Update  527000 Cost  15.0397769116 UD  889.805933952 67.43 sents/s 1033.87 words/s
+Epoch  14 Update  528000 Cost  15.3496443858 UD  893.522080898 67.15 sents/s 1040.58 words/s
+Epoch  14 Update  529000 Cost  15.3537333649 UD  895.386066914 67.01 sents/s 1035.63 words/s
+Epoch  14 Update  530000 Cost  15.3490920724 UD  896.484758854 66.93 sents/s 1032.54 words/s
+Source  0 : in Yukata .
+Truth  0  :  in Yukata .
+Sample  0 :  in Yukata .
+Source  1 : April 15@@ ,2011
+Truth  1  :  April 15@@ ,2011
+Sample  1 :  Apri@@ 15@@ ,2011
+Source  2 : see you ☆
+Truth  2  :  see you ☆
+Sample  2 :  See you tomorrow
+Source  3 : Today , ...
+Truth  3  :  Today , ...
+Sample  3 :  Today , ...
+Source  4 : Hmm ... .
+Truth  4  :  Hmm ... .
+Sample  4 :  Hmm ... .
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.2425
+Early Stop!
+Seen 434400 samples
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+Valid  14.0905

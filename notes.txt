@@ -68,7 +68,7 @@ python nematus/data/build_dictionary.py MSc/data/preprocessed-train.fr MSc/data/
 - Train
 python nematus/nematus/nmt.py --datasets MSc/data/preprocessed-train.fr MSc/data/preprocessed-train.en
                               --dictionaries MSc/data/preprocessed-train.fr.json MSc/data/preprocessed-train.en.json
-                              --model baseline_0.npz
+                              --model MSc/baseline_0.npz
                               [--saveFreq 10000]
                               --layer_normalisation
                               --use_dropout
@@ -95,20 +95,22 @@ baseline_ce_0       NUCLE only, without tokenization and BPE, default Nematus pa
 baseline_mrt_0      + MRT objective
 baseline_1          + Lang-8, + tokenization and BPE, default cross-entropy objective
 baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 source and target dropout
-                        started training around 12am Wed June 28
-                        pooped out after 48000 updates
 baseline_3          batch size 60, trained on M60 machine
-                        started training around 12am Wed June 28
 baseline_4          batch size 40, trained on M60 machine
-                        started training around 12am Wed June 28
-baseline_5 *        baseline_3 + replace | with <pipe>
+baseline_5          baseline_3 + replace | with <pipe>
                         started training around 9:45pm Wed June 28
                         338k minibatches by 12pm noon Sun July 2
-baseline_6 *        K80 machine, default batch size 80
+                        early stop after 530k minibatches (by 1pm Tues July 4, 8056m46.192s real time)
+baseline_6          K80 machine, default batch size 80
                         started training around 10:45pm Wed June 28
                         210k minibatches by 12pm noon Sun July 2
-baseline_7 *        M60, batch size 60: - tokenization + truecaser, replace pipes last
+                        early stop after 370k minibatches (by 12pm Wed July 5, 8986m43.145s real time)
+baseline_7          M60, batch size 60: - tokenization + truecaser, replace pipes last
                         started training around 2:30pm Sun July 2
+                        early stop after 590k minibatches (before 9pm Sat July 8, 8289m6.922s real time)
+                        P 0.3319, R 0.1413
+weighted_ce_0
+pretrained_7        final baseline_7 + MRT on M2
 
 
 ===================================================================================================
@@ -177,3 +179,10 @@ do after tokenization
 undo before detokenization
 
 detokenize before evaluation on M2
+
+
+=== Meeting notes 5 July 2017 ===
+
+CE with editted words weighted extra
+
+M2 scorer for MRT in Nematus --> need aligner for hypothesis vs reference sentences
