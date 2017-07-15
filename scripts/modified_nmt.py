@@ -450,7 +450,7 @@ def build_model(tparams, options):
     cost = cost.reshape([y.shape[0], y.shape[1]])
     cost = cost * y_mask
     aligned_idxs = tensor.argmax(opt_ret['dec_alphas'], axis=2)
-    sample_idxs = range(options['batch_size'])
+    sample_idxs = tensor.arange(n_samples)
     source_tokens = x[:, aligned_idxs, sample_idxs]
     edited = tensor.neq(source_tokens, y)
     weight_matrix = edited * options['edit_weight']
