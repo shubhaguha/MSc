@@ -17,6 +17,9 @@ python setup.py install
 git reset --hard 73037e94884fd2d1c1d18d81686cd1f6ea32d073
 cd ..
 
+echo 'Copying modified nematus code...'
+cp ~/MSc/scripts/modified_nmt.py ~/nematus/nematus/
+
 echo 'Installing g++ c compiler for theano optimization...'
 sudo apt-get install g++
 
