@@ -911,7 +911,7 @@ def pred_probs(f_log_probs, prepare_data, options, iterator, verbose=True, norma
             for jdata in get_alignments(attention, x_mask, y_mask):
                 alignments_json.append(jdata)
         else:
-            pprobs = f_log_probs(x, x_mask, y, y_mask)
+            pprobs = f_log_probs(x, x_mask, y, y_mask).sum(0)
 
         # normalize scores according to output length
         if normalization_alpha:
