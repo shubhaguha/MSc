@@ -109,7 +109,18 @@ baseline_7          M60, batch size 60: - tokenization + truecaser, replace pipe
                         started training around 2:30pm Sun July 2
                         early stop after 590k minibatches (before 9pm Sat July 8, 8289m6.922s real time)
                         P 0.3319, R 0.1413
-weighted_ce_0
+edit_weight_2 *     M60, batch size 60, edit weight 2 (commit 48fb87c)
+                        started training around 2pm Wed July 19
+                        ssh -p 50003 13.84.189.224  #id 7
+edit_weight_3 *     M60, batch size 60, edit weight 3 (commit 48fb87c)
+                        started training around 2pm Wed July 19
+                        ssh -p 50004 13.84.189.224  #id 9
+edit_weight_4 *     M60, batch size 60, edit weight 4 (commit 48fb87c)
+                        started training around 2pm Wed July 19
+                        ssh -p 50005 13.84.189.224  #id 13
+edit_weight_5 *     M60, batch size 60, edit weight 5 (commit 48fb87c)
+                        started training around 2pm Wed July 19
+                        ssh -p 50001 13.84.189.224  #id 4
 pretrained_7        final baseline_7 + MRT on M2
 
 
