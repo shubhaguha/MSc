@@ -73,3 +73,8 @@ Precision   : 0.1546
 Recall      : 0.2630
 F1          : 0.1947
 
+*** final edit_weight_3 after 600000 updates ***
+Precision   : 0.1591
+Recall      : 0.2520
+F1          : 0.1951
+
