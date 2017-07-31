@@ -75,26 +75,30 @@ python nematus/nematus/nmt.py --datasets MSc/data/preprocessed-train.fr MSc/data
                               --dropout_source 0.1
                               --dropout_target 0.1
                               --batch_size 60
+                              --valid_batch_size 60
                               --valid_datasets MSc/data/preprocessed-valid.fr MSc/data/preprocessed-valid.en
                               [--reload]
 
 * run with `time` and `deallocate`
-* default params:   --dropout_embedding 0.2
+
+default params:   --dropout_embedding 0.2
                     --dropout_hidden 0.2
                     --patience 10  # the number of times validation error > previous validation errors
                     --batch_size 80
                     --objective CE  # cross-entropy minimization
 
+thesis param:       --edit_weight 2,3,4,5 [default 1]
+
 MRT params:         --objective MRT
                     --mrt_loss M2
 
 
-=== Model file naming ===
+=== Model naming ===
 
-baseline_ce_0       NUCLE only, without tokenization and BPE, default Nematus parameters, including cross-entropy minimization
+baseline_ce_0       NUCLE only, without tokenization or BPE, default Nematus parameters, cross-entropy minimization
 baseline_mrt_0      + MRT objective
 baseline_1          + Lang-8, + tokenization and BPE, default cross-entropy objective
-baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 source and target dropout
+baseline_2          + layer normalisation, default 0.2 embedding and hidden dropout, 0.1 src and trgt dropout
 baseline_3          batch size 60, trained on M60 machine
 baseline_4          batch size 40, trained on M60 machine
 baseline_5          baseline_3 + replace | with <pipe>
@@ -109,18 +113,31 @@ baseline_7          M60, batch size 60: - tokenization + truecaser, replace pipe
                         started training around 2:30pm Sun July 2
                         early stop after 590k minibatches (before 9pm Sat July 8, 8289m6.922s real time)
                         P 0.3319, R 0.1413
-edit_weight_2 *     M60, batch size 60, edit weight 2 (commit 48fb87c)
+edit_weight_2       M60, batch size 60, edit weight 2 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50003 13.84.189.224  #id 7
-edit_weight_3 *     M60, batch size 60, edit weight 3 (commit 48fb87c)
+                        early stop after 400k minibatches (before 9pm Sun July 23, 3847m50.989s real time)
+                        P 0.1546, R 0.2630
+edit_weight_3       M60, batch size 60, edit weight 3 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50004 13.84.189.224  #id 9
-edit_weight_4 *     M60, batch size 60, edit weight 4 (commit 48fb87c)
+                        early stop after 600k minibatches (before 5pm Tue July 25, 6668m41.838s real time)
+                        P 0.1591, R 0.2520
+edit_weight_4       M60, batch size 60, edit weight 4 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50005 13.84.189.224  #id 13
-edit_weight_5 *     M60, batch size 60, edit weight 5 (commit 48fb87c)
+                        early stop after 420k minibatches (before 9pm Sun July 23, 3897m54.745s real time)
+                        P 0.1566, R 0.2665
+edit_weight_5       M60, batch size 60, edit weight 5 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50001 13.84.189.224  #id 4
+                        early stop after 380k minibatches (before 2pm Sun July 23, 5316m30.417s real time)
+                        P 0.1582, R 0.2704
+edit_weight_3_x2    same as edit_weight_3
+                        started training around 3:30pm Sat July 29
+                        ssh -p 50004 13.84.189.224   #id 9
+                        early stop after --
+                        P
 pretrained_7        final baseline_7 + MRT on M2
 
 
@@ -197,3 +214,16 @@ detokenize before evaluation on M2
 CE with editted words weighted extra
 
 M2 scorer for MRT in Nematus --> need aligner for hypothesis vs reference sentences
+
+
+=== Meeting notes 28 July 2017 ===
+
+had in mind separate aligner (M2), naive
+- pass in 3rd file?
+- munge
+
+run with this but provide evidence that dec_alphas aligns to the right token (generally in MT, looks back one token from the one expected)
+
+stacked graphs (precision and recall on y axis, edit weight on x axis)
+
+argue that converges faster?
