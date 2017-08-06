@@ -118,26 +118,26 @@ edit_weight_2       M60, batch size 60, edit weight 2 (commit 48fb87c)
                         ssh -p 50003 13.84.189.224  #id 7
                         early stop after 400k minibatches (before 9pm Sun July 23, 3847m50.989s real time)
                         P 0.1546, R 0.2630
-edit_weight_3       M60, batch size 60, edit weight 3 (commit 48fb87c)
+edit_weight_3       edit weight 3 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50004 13.84.189.224  #id 9
                         early stop after 600k minibatches (before 5pm Tue July 25, 6668m41.838s real time)
                         P 0.1591, R 0.2520
-edit_weight_4       M60, batch size 60, edit weight 4 (commit 48fb87c)
+edit_weight_3_x2    same as edit_weight_3
+                        started training around 3:30pm Sat July 29
+                        ssh -p 50004 13.84.189.224   #id 9
+                        early stop after 510 minibatches (by 9pm Thur Aug 3, 5649m17.291s real time)
+                        P 0.1556, R 0.2576
+edit_weight_4       edit weight 4 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50005 13.84.189.224  #id 13
                         early stop after 420k minibatches (before 9pm Sun July 23, 3897m54.745s real time)
                         P 0.1566, R 0.2665
-edit_weight_5       M60, batch size 60, edit weight 5 (commit 48fb87c)
+edit_weight_5       edit weight 5 (commit 48fb87c)
                         started training around 2pm Wed July 19
                         ssh -p 50001 13.84.189.224  #id 4
                         early stop after 380k minibatches (before 2pm Sun July 23, 5316m30.417s real time)
                         P 0.1582, R 0.2704
-edit_weight_3_x2    same as edit_weight_3
-                        started training around 3:30pm Sat July 29
-                        ssh -p 50004 13.84.189.224   #id 9
-                        early stop after --
-                        P
 pretrained_7        final baseline_7 + MRT on M2
 
 
