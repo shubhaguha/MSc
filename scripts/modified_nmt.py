@@ -25,7 +25,7 @@ from collections import OrderedDict
 
 profile = False
 
-from data_iterator import TextIterator
+from modified_data_iterator import TextIterator
 from training_progress import TrainingProgress
 from util import *
 from theano_util import *
@@ -37,6 +37,9 @@ from optimizers import *
 from metrics.scorer_provider import ScorerProvider
 
 from domain_interpolation_data_iterator import DomainInterpolatorTextIterator
+
+ALMOST_ZERO = 1e-6
+ALMOST_ONE = 1 - ALMOST_ZERO
 
 # batch preparation
 def prepare_data(seqs_x, seqs_y, maxlen=None, n_words_src=30000,
@@ -80,6 +83,53 @@ def prepare_data(seqs_x, seqs_y, maxlen=None, n_words_src=30000,
         y_mask[:lengths_y[idx]+1, idx] = 1.
 
     return x, x_mask, y, y_mask
+
+def prepare_data_with_edits(seqs_x, seqs_y, seqs_edits, maxlen=None, n_words_src=30000,
+                            n_words=30000):
+    # x: a list of sentences
+    lengths_x = [len(s) for s in seqs_x]
+    lengths_y = [len(s) for s in seqs_y]
+
+    if maxlen is not None:
+        new_seqs_x = []
+        new_seqs_y = []
+        new_seqs_edits = []
+        new_lengths_x = []
+        new_lengths_y = []
+        for l_x, s_x, l_y, s_y, s_e in zip(lengths_x, seqs_x, lengths_y, seqs_y, seqs_edits):
+            if l_x < maxlen and l_y < maxlen:
+                new_seqs_x.append(s_x)
+                new_lengths_x.append(l_x)
+                new_seqs_y.append(s_y)
+                new_lengths_y.append(l_y)
+                new_seqs_edits.append(s_e)
+        lengths_x = new_lengths_x
+        seqs_x = new_seqs_x
+        lengths_y = new_lengths_y
+        seqs_y = new_seqs_y
+        seqs_edits = new_seqs_edits
+
+        if len(lengths_x) < 1 or len(lengths_y) < 1:
+            return None, None, None, None
+
+    n_samples = len(seqs_x)
+    n_factors = len(seqs_x[0][0])
+    maxlen_x = numpy.max(lengths_x) + 1
+    maxlen_y = numpy.max(lengths_y) + 1
+
+    x = numpy.zeros((n_factors, maxlen_x, n_samples)).astype('int64')
+    y = numpy.zeros((maxlen_y, n_samples)).astype('int64')
+    x_mask = numpy.zeros((maxlen_x, n_samples)).astype(floatX)
+    y_mask = numpy.zeros((maxlen_y, n_samples)).astype(floatX)
+    edits = numpy.zeros_like(y)
+    for idx, [s_x, s_y, s_e] in enumerate(zip(seqs_x, seqs_y, seqs_edits)):
+        x[:, :lengths_x[idx], idx] = zip(*s_x)
+        x_mask[:lengths_x[idx]+1, idx] = 1.
+        y[:lengths_y[idx], idx] = s_y
+        y_mask[:lengths_y[idx]+1, idx] = 1.
+        edits[:lengths_y[idx], idx] = s_e
+
+    return x, x_mask, y, y_mask, edits
 
 # initialize all parameters
 def init_params(options):
@@ -412,11 +462,13 @@ def build_model(tparams, options):
     x_mask = tensor.matrix('x_mask', dtype=floatX)
     y = tensor.matrix('y', dtype='int64')
     y_mask = tensor.matrix('y_mask', dtype=floatX)
+    edits = tensor.matrix('edits', dtype='int64')
     # source text length 5; batch size 10
     x_mask.tag.test_value = numpy.ones(shape=(5, 10)).astype(floatX)
     # target text length 8; batch size 10
     y.tag.test_value = (numpy.random.rand(8, 10)*100).astype('int64')
     y_mask.tag.test_value = numpy.ones(shape=(8, 10)).astype(floatX)
+    edits.tag.test_value = (numpy.random.rand(8, 10)*100).astype('int64')
 
     x, ctx = build_encoder(tparams, options, dropout, x_mask, sampling=False)
     n_samples = x.shape[2]
@@ -448,18 +500,15 @@ def build_model(tparams, options):
     y_flat_idx = tensor.arange(y_flat.shape[0]) * options['n_words'] + y_flat
     cost = -tensor.log(probs.flatten()[y_flat_idx])
     cost = cost.reshape([y.shape[0], y.shape[1]])
+    cost_without_edits = (cost * y_mask).sum(0)
     cost = cost * y_mask
-    aligned_idxs = tensor.argmax(opt_ret['dec_alphas'], axis=2)
-    sample_idxs = tensor.arange(n_samples)
-    source_tokens = x[:, aligned_idxs, sample_idxs]
-    edited = tensor.neq(source_tokens, y)
-    weight_matrix = edited * options['edit_weight']
+    weight_matrix = edits * options['edit_weight']
     cost = cost * weight_matrix
     cost = cost.sum(0)
 
     #print "Print out in build_model()"
     #print opt_ret
-    return trng, use_noise, x, x_mask, y, y_mask, opt_ret, cost
+    return trng, use_noise, x, x_mask, y, y_mask, edits, opt_ret, cost, cost_without_edits
 
 
 # build a sampler
@@ -893,7 +942,7 @@ def pred_probs(f_log_probs, prepare_data, options, iterator, verbose=True, norma
 
     alignments_json = []
 
-    for x, y in iterator:
+    for x, y, e in iterator:
         #ensure consistency in number of factors
         if len(x[0][0]) != options['factors']:
             sys.stderr.write('Error: mismatch between number of factors in settings ({0}), and number in validation corpus ({1})\n'.format(options['factors'], len(x[0][0])))
@@ -911,7 +960,7 @@ def pred_probs(f_log_probs, prepare_data, options, iterator, verbose=True, norma
             for jdata in get_alignments(attention, x_mask, y_mask):
                 alignments_json.append(jdata)
         else:
-            pprobs = f_log_probs(x, x_mask, y, y_mask).sum(0)
+            pprobs = f_log_probs(x, x_mask, y, y_mask)
 
         # normalize scores according to output length
         if normalization_alpha:
@@ -985,6 +1034,7 @@ def train(dim_word=512,  # word vector dimensionality
           domain_interpolation_indomain_datasets=[None, None], # in-domain parallel training corpus (source and target)
           maxibatch_size=20, #How many minibatches to load at one time
           objective="CE", #CE: cross-entropy; MRT: minimum risk training (see https://www.aclweb.org/anthology/P/P16/P16-1159.pdf)
+          edit_vectors=None, # path to training set edit vectors
           edit_weight=1,
           mrt_alpha=0.005,
           mrt_samples=100,
@@ -1098,7 +1148,8 @@ def train(dim_word=512,  # word vector dimensionality
                          skip_empty=True,
                          shuffle_each_epoch=shuffle_each_epoch,
                          sort_by_length=sort_by_length,
-                         maxibatch_size=maxibatch_size)
+                         maxibatch_size=maxibatch_size,
+                         edit_vectors=edit_vectors)
 
     if valid_datasets and validFreq:
         valid = TextIterator(valid_datasets[0], valid_datasets[1],
@@ -1138,9 +1189,9 @@ def train(dim_word=512,  # word vector dimensionality
     tparams = init_theano_params(params)
 
     trng, use_noise, \
-        x, x_mask, y, y_mask, \
+        x, x_mask, y, y_mask, edits, \
         opt_ret, \
-        cost = \
+        cost, cost_without_edits = \
         build_model(tparams, model_options)
 
     inps = [x, x_mask, y, y_mask]
@@ -1154,7 +1205,7 @@ def train(dim_word=512,  # word vector dimensionality
 
     # before any regularizer
     print 'Building f_log_probs...',
-    f_log_probs = theano.function(inps, cost, profile=profile)
+    f_log_probs = theano.function(inps, cost_without_edits, profile=profile)
     print 'Done'
 
     if model_options['objective'] == 'CE':
@@ -1217,7 +1268,7 @@ def train(dim_word=512,  # word vector dimensionality
 
     print 'Building optimizers...',
     f_update, optimizer_tparams = eval(optimizer)(lr, updated_params,
-                                                                 grads, inps, cost,
+                                                                 grads, inps + [edits], cost,
                                                                  profile=profile,
                                                                  optimizer_params=optimizer_params)
     print 'Done'
@@ -1252,7 +1303,7 @@ def train(dim_word=512,  # word vector dimensionality
     for training_progress.eidx in xrange(training_progress.eidx, max_epochs):
         n_samples = 0
 
-        for x, y in train:
+        for x, y, e in train:
             training_progress.uidx += 1
             use_noise.set_value(1.)
 
@@ -1266,9 +1317,9 @@ def train(dim_word=512,  # word vector dimensionality
 
             if model_options['objective'] == 'CE':
 
-                x, x_mask, y, y_mask = prepare_data(x, y, maxlen=maxlen,
-                                                    n_words_src=n_words_src,
-                                                    n_words=n_words)
+                x, x_mask, y, y_mask, edits = prepare_data_with_edits(x, y, e, maxlen=maxlen,
+                                                                      n_words_src=n_words_src,
+                                                                      n_words=n_words)
 
                 if x is None:
                     print 'Minibatch with zero sample under length ', maxlen
@@ -1280,22 +1331,22 @@ def train(dim_word=512,  # word vector dimensionality
                 last_words += (numpy.sum(x_mask) + numpy.sum(y_mask))/2.0
 
                 # compute cost, grads and update parameters
-                cost = f_update(lrate, x, x_mask, y, y_mask)
+                cost = f_update(lrate, x, x_mask, y, y_mask, edits)
 
                 cost_sum += cost
 
             elif model_options['objective'] == 'MRT':
                 assert maxlen is not None and maxlen > 0
 
-                xy_pairs = [(x_i, y_i) for (x_i, y_i) in zip(x, y) if len(x_i) < maxlen and len(y_i) < maxlen]
+                xy_pairs = [(x_i, y_i, e_i) for (x_i, y_i, e_i) in zip(x, y, e) if len(x_i) < maxlen and len(y_i) < maxlen]
                 if not xy_pairs:
                     training_progress.uidx -= 1
                     continue
 
-                for x_s, y_s in xy_pairs:
+                for x_s, y_s, e_s in xy_pairs:
 
                     # add EOS and prepare factored data
-                    x, _, _, _ = prepare_data([x_s], [y_s], maxlen=None, n_words_src=n_words_src, n_words=n_words)
+                    x, _, _, _, edits = prepare_data_with_edits([x_s], [y_s], [e_s], maxlen=None, n_words_src=n_words_src, n_words=n_words)
 
                     # draw independent samples to compute mean reward
                     if model_options['mrt_samples_meanloss']:
@@ -1336,9 +1387,9 @@ def train(dim_word=512,  # word vector dimensionality
                         samples = [y_s] + [s for s in samples if s != y_s]
 
                     # create mini-batch with masking
-                    x, x_mask, y, y_mask = prepare_data([x_s for _ in xrange(len(samples))], samples,
-                                                                    maxlen=None, n_words_src=n_words_src,
-                                                                    n_words=n_words)
+                    x, x_mask, y, y_mask, edits = prepare_data_with_edits([x_s for _ in xrange(len(samples))], samples, e_s,
+                                                                                    maxlen=None, n_words_src=n_words_src,
+                                                                                    n_words=n_words)
 
                     cost_batches += 1
                     last_disp_samples += xlen
@@ -1358,7 +1409,7 @@ def train(dim_word=512,  # word vector dimensionality
                     loss = mean_loss - numpy.array(scorer.score_matrix(samples), dtype=floatX)
 
                     # compute cost, grads and update parameters
-                    cost = f_update(lrate, x, x_mask, y, y_mask, loss)
+                    cost = f_update(lrate, x, x_mask, y, y_mask, edits, loss)
 
                     cost_sum += cost
 
@@ -1658,6 +1709,8 @@ if __name__ == '__main__':
                          help='size of maxibatch (number of minibatches that are sorted by length) (default: %(default)s)')
     training.add_argument('--objective', choices=['CE', 'MRT'], default='CE',
                          help='training objective. CE: cross-entropy minimization (default); MRT: Minimum Risk Training (https://www.aclweb.org/anthology/P/P16/P16-1159.pdf)')
+    training.add_argument('--edit_vectors', type=str, metavar='PATH',
+                         help="binary vectors for each sentence of the training corpus indicating whether the given target word must be edited")
     training.add_argument('--edit_weight', type=float, default=1,
                          help='factor by which to multiply word-level cost of edited words')
     training.add_argument('--encoder_truncate_gradient', type=int, default=-1, metavar='INT',
