@@ -500,10 +500,10 @@ def build_model(tparams, options):
     y_flat_idx = tensor.arange(y_flat.shape[0]) * options['n_words'] + y_flat
     cost = -tensor.log(probs.flatten()[y_flat_idx])
     cost = cost.reshape([y.shape[0], y.shape[1]])
-    cost_without_edits = (cost * y_mask).sum(0)
     cost = cost * y_mask
-    weight_matrix = edits * options['edit_weight']
-    cost = cost * weight_matrix
+    cost_without_edits = cost.sum(0)
+    weight_matrix = edits * (options['edit_weight'] - 1)
+    cost = cost + (cost * weight_matrix)
     cost = cost.sum(0)
 
     #print "Print out in build_model()"
