@@ -93,3 +93,8 @@ Precision   : 0.0909
 Recall      : 0.0272
 F1          : 0.0419
 
+*** final edit_vectors_0 after 210000 updates ***
+Precision   : 0.0805
+Recall      : 0.0248
+F1          : 0.0379
+
