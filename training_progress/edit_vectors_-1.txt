@@ -1,0 +1,108 @@
+Epoch  0 Update  1000 Cost  64.6806064085 UD  828.867377043 72.39 sents/s 1025.21 words/s
+Epoch  0 Update  2000 Cost  49.2066598697 UD  812.681316853 73.83 sents/s 1038.72 words/s
+Epoch  0 Update  3000 Cost  44.5743669725 UD  819.597028017 73.21 sents/s 1031.78 words/s
+Epoch  0 Update  4000 Cost  39.6988474857 UD  824.041821957 72.81 sents/s 1028.99 words/s
+Epoch  0 Update  5000 Cost  34.8458051702 UD  816.262629986 73.51 sents/s 1039.32 words/s
+Epoch  0 Update  6000 Cost  29.6694895957 UD  821.445509911 73.04 sents/s 1030.13 words/s
+Epoch  0 Update  7000 Cost  25.0664052424 UD  816.830936193 73.45 sents/s 1034.77 words/s
+Epoch  0 Update  8000 Cost  20.3555771796 UD  815.816498041 73.55 sents/s 1034.15 words/s
+Epoch  0 Update  9000 Cost  15.2366101188 UD  816.259526014 73.51 sents/s 1036.64 words/s
+Epoch  0 Update  10000 Cost  9.54429818647 UD  814.374696016 73.68 sents/s 1037.14 words/s
+Saving the best model... Done
+Saving the model at iteration 10000... Done
+Source  0 : : p
+Truth  0  :  : p
+Sample  0 :  : Mirror
+Source  1 : PS .
+Truth  1  :  PS .
+Sample  1 :  Fred .
+Source  2 : ever .
+Truth  2  :  ever .
+Sample  2 :  worm .
+Source  3 : important Thing
+Truth  3  :  important Thing
+Sample  3 :  mainly charging
+Source  4 : heavy rain
+Truth  4  :  heavy rain
+Sample  4 :  country hospital
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  108.568
+Epoch  0 Update  11000 Cost  5.06919390632 UD  984.837887049 60.92 sents/s 860.80 words/s
+Epoch  0 Update  12000 Cost  0.460777114156 UD  817.237734079 73.42 sents/s 1035.19 words/s
+Epoch  0 Update  13000 Cost  -5.35316334925 UD  819.293165922 73.23 sents/s 1032.05 words/s
+Epoch  0 Update  14000 Cost  -10.6175538826 UD  816.81157589 73.46 sents/s 1040.46 words/s
+Epoch  0 Update  15000 Cost  -14.3293528459 UD  818.700992823 73.29 sents/s 1032.34 words/s
+Epoch  0 Update  16000 Cost  -21.343857311 UD  820.667783976 73.11 sents/s 1036.91 words/s
+Epoch  0 Update  17000 Cost  -24.9964020248 UD  821.157106161 73.07 sents/s 1031.79 words/s
+Epoch  0 Update  18000 Cost  -30.3317776059 UD  818.446347952 73.31 sents/s 1035.62 words/s
+Epoch  0 Update  19000 Cost  -35.3468439208 UD  818.227908134 73.33 sents/s 1029.40 words/s
+Epoch  0 Update  20000 Cost  -40.1292714071 UD  819.574001074 73.21 sents/s 1034.54 words/s
+Saving the best model... Done
+Saving the model at iteration 20000... Done
+Source  0 : time flies .
+Truth  0  :  time flies .
+Sample  0 :  time Magic .
+Source  1 : de@@ ja vu
+Truth  1  :  de@@ ja vu
+Sample  1 :  sigh vastly )
+Source  2 : seniors Are Dangerous
+Truth  2  :  seniors Are Dangerous
+Sample  2 :  yoyo hospital kok@@
+Source  3 : uh .@@ ...
+Truth  3  :  uh .@@ ...
+Sample  3 :  partici@@ .@@ ...
+Source  4 : the beautiful castle
+Truth  4  :  the beautiful castle
+Sample  4 :  the beautiful needed
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  88.0102
+Epoch  0 Update  21000 Cost  -42.8099099918 UD  1002.35595798 59.86 sents/s 844.98 words/s
+Epoch  0 Update  22000 Cost  -48.529693558 UD  817.939012051 73.36 sents/s 1034.91 words/s
+Epoch  0 Update  23000 Cost  -55.1324529943 UD  815.340130091 73.59 sents/s 1036.53 words/s
+NaN detected

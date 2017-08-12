@@ -115,55 +115,60 @@ baseline_7          M60, batch size 60: - tokenization + truecaser, replace pipe
 baseline_8 *        same as baseline_7
                         started training around 6pm Wed Aug 9
                         ssh -p 50008 13.84.189.224   #id 21
+baseline_9 *        same as baseline_7 and baseline_8
+                        started training around 10:30pm Thurs Aug 10
+                        ssh -p 50007 13.84.189.224   #id 24
 edit_weight_2       M60, batch size 60, edit weight 2 (commit 48fb87c)
                         started training around 2pm Wed July 19
-                        ssh -p 50003 13.84.189.224  #id 7
                         early stop after 400k minibatches (before 9pm Sun July 23, 3847m50.989s real time)
                         P 0.1546, R 0.2630
 edit_weight_3       edit weight 3 (commit 48fb87c)
                         started training around 2pm Wed July 19
-                        ssh -p 50004 13.84.189.224  #id 9
                         early stop after 600k minibatches (before 5pm Tue July 25, 6668m41.838s real time)
                         P 0.1591, R 0.2520
 edit_weight_3_x2    same as edit_weight_3
                         started training around 3:30pm Sat July 29
-                        ssh -p 50004 13.84.189.224   #id 9
                         early stop after 510 minibatches (by 9pm Thur Aug 3, 5649m17.291s real time)
                         P 0.1556, R 0.2576
 edit_weight_4       edit weight 4 (commit 48fb87c)
                         started training around 2pm Wed July 19
-                        ssh -p 50005 13.84.189.224  #id 13
                         early stop after 420k minibatches (before 9pm Sun July 23, 3897m54.745s real time)
                         P 0.1566, R 0.2665
 edit_weight_5       edit weight 5 (commit 48fb87c)
                         started training around 2pm Wed July 19
-                        ssh -p 50001 13.84.189.224  #id 4
                         early stop after 380k minibatches (before 2pm Sun July 23, 5316m30.417s real time)
                         P 0.1582, R 0.2704
-edit_vectors_2 *     edit vectors and edit weight 2 (commit 842c2a5)
+edit_vectors_2 *    edit vectors and edit weight 2 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50000 13.84.189.224   #id 0
-edit_vectors_3 *     edit vectors and edit weight 3 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_3 *    edit vectors and edit weight 3 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50001 13.84.189.224   #id 4
-edit_vectors_4 *     edit vectors and edit weight 4 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_4 *    edit vectors and edit weight 4 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50002 13.84.189.224   #id 16
-edit_vectors_5 *     edit vectors and edit weight 5 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_5 *    edit vectors and edit weight 5 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50003 13.84.189.224   #id 7
-edit_vectors_6 *     edit vectors and edit weight 6 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_6 *    edit vectors and edit weight 6 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50004 13.84.189.224   #id 9
-edit_vectors_1 *     edit vectors and edit weight 1 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_1 *    edit vectors and edit weight 1 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
                         ssh -p 50005 13.84.189.224   #id 13
-edit_vectors_0 *     edit vectors and edit weight 0 (commit 842c2a5)
+                        patience 5: 
+edit_vectors_0      edit vectors and edit weight 0 (commit 842c2a5)
                         started training around 12:45am Thurs Aug 10
+                        patience 5: early stop after 160k minibatches (by 4:30pm Fri Aug 11)
                         ssh -p 50006 13.84.189.224   #id 18
-edit_vectors_-1      edit vectors and edit weight -1 (commit 842c2a5)
-                        started training around 12:45am Thurs Aug 10
-                        ssh -p 50007 13.84.189.224   #id 24
+                        restarted training around 6:15pm Fri Aug 11)
+                        patience 10: early stop after 210k minibatches (by 11am Sat Aug 12)
+edit_vectors_-1     edit vectors and edit weight -1 (commit 842c2a5), lrate 0.00001
 pretrained_7        final baseline_7 + MRT on M2
 
 
