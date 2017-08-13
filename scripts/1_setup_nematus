@@ -19,6 +19,7 @@ cd ..
 
 echo 'Copying modified nematus code...'
 cp ~/MSc/scripts/modified_nmt.py ~/nematus/nematus/
+cp ~/MSc/scripts/modified_data_iterator.py ~/nematus/nematus/
 
 echo 'Installing g++ c compiler for theano optimization...'
 sudo apt-get install g++
