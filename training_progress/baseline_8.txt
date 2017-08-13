@@ -1566,3 +1566,685 @@ Sample  4 :  the latter is 7 and the other is 9 .
 1381 samples computed
 Valid  14.3281
 Epoch  7 Update  301000 Cost  16.512681572 UD  935.906229019 64.11 sents/s 907.85 words/s
+Epoch  7 Update  302000 Cost  16.7500701668 UD  823.610606909 72.85 sents/s 1031.74 words/s
+Epoch  7 Update  303000 Cost  16.6770429284 UD  827.49209404 72.51 sents/s 1019.55 words/s
+Epoch  7 Update  304000 Cost  16.7895493923 UD  827.676334858 72.49 sents/s 1023.84 words/s
+Epoch  7 Update  305000 Cost  16.5201856549 UD  826.996906996 72.55 sents/s 1026.09 words/s
+Epoch  7 Update  306000 Cost  16.675999302 UD  824.548716068 72.77 sents/s 1029.69 words/s
+Epoch  7 Update  307000 Cost  16.7051015099 UD  819.435559988 73.22 sents/s 1029.57 words/s
+Epoch  7 Update  308000 Cost  16.7721546605 UD  821.002688885 73.08 sents/s 1030.27 words/s
+Epoch  7 Update  309000 Cost  16.7084522627 UD  819.766208887 73.19 sents/s 1032.01 words/s
+Epoch  7 Update  310000 Cost  16.6880946312 UD  820.266839027 73.15 sents/s 1029.84 words/s
+Saving the best model... Done
+Saving the model at iteration 310000... Done
+Source  0 : and I &apos;d like students to trust me .
+Truth  0  :  and I &apos;d like my students to trust me .
+Sample  0 :  and I &apos;d like students to trust me .
+Source  1 : I am really busy at schoolwork until exams ! !
+Truth  1  :  I am really busy at schoolwork until exams ! !
+Sample  1 :  I am really busy at schoolwork by exams ! !
+Source  2 : from now I will write , just try to let you know /
+Truth  2  :  from now on , I will write my story .
+Sample  2 :  from now on I will write , just try to let you know /
+Source  3 : and I will be too busy due to above .
+Truth  3  :  and I will be too busy due to above .
+Sample  3 :  and I will be too busy due to the@@ above .
+Source  4 : but yestarday there were nobody in front of this restrant .
+Truth  4  :  but yestarday there@@ was nobody in front ofthe restrant .
+Sample  4 :  but yesterday there was nobody in front of this restaurant .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2925
+Epoch  7 Update  311000 Cost  16.875675568 UD  937.797261 63.98 sents/s 904.67 words/s
+Epoch  7 Update  312000 Cost  16.8955768169 UD  828.553621054 72.42 sents/s 1026.27 words/s
+Epoch  7 Update  313000 Cost  16.9028153771 UD  831.045287132 72.20 sents/s 1016.95 words/s
+Epoch  7 Update  314000 Cost  17.0363777767 UD  829.154455185 72.36 sents/s 1022.55 words/s
+Epoch  7 Update  315000 Cost  16.9699718781 UD  824.052826881 72.81 sents/s 1031.50 words/s
+Epoch  7 Update  316000 Cost  16.777425549 UD  824.432229996 72.78 sents/s 1024.89 words/s
+Epoch  7 Update  317000 Cost  16.9207080072 UD  823.70512414 72.84 sents/s 1025.33 words/s
+Epoch  7 Update  318000 Cost  16.9218602997 UD  826.888557911 72.56 sents/s 1025.80 words/s
+Epoch  7 Update  319000 Cost  16.9754488171 UD  824.203797102 72.80 sents/s 1027.59 words/s
+Epoch  7 Update  320000 Cost  16.7950076955 UD  824.345382929 72.79 sents/s 1026.84 words/s
+Saving the best model... Done
+Saving the model at iteration 320000... Done
+Source  0 : it was a old , big , and cool .
+Truth  0  :  it was an old , big , cool house .
+Sample  0 :  it was old , big , and cool .
+Source  1 : after all , profits comes the first to a company .
+Truth  1  :  after all , profit comes first to a company .
+Sample  1 :  after all , profits come the first to a company .
+Source  2 : MSR can convert heat to electricity with high efficiency .
+Truth  2  :  MSR can convert heat to electricity with high efficiency .
+Sample  2 :  MSR can convert heat to electricity with high efficiency .
+Source  3 : I went to the University and I got a job .
+Truth  3  :  I went to university and then got a job .
+Sample  3 :  I went to the University . I got a job .
+Source  4 : there are over ten thousand convenient stores here .
+Truth  4  :  there are over ten thousand convenience stores here .
+Sample  4 :  there are over ten thousand convenient stores here .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1215
+Epoch  7 Update  321000 Cost  16.7106440045 UD  926.71170783 64.75 sents/s 912.17 words/s
+Epoch  7 Update  322000 Cost  17.051643113 UD  824.179454088 72.80 sents/s 1032.79 words/s
+Epoch  7 Update  323000 Cost  16.9517180239 UD  827.986835957 72.46 sents/s 1021.88 words/s
+Epoch  7 Update  324000 Cost  16.6814546195 UD  819.316641092 73.23 sents/s 1026.99 words/s
+Epoch  7 Update  325000 Cost  16.7650944276 UD  826.239182949 72.62 sents/s 1025.20 words/s
+Epoch  7 Update  326000 Cost  16.9359290438 UD  821.683254957 73.02 sents/s 1032.57 words/s
+Epoch  7 Update  327000 Cost  16.747434697 UD  821.429608822 73.04 sents/s 1031.88 words/s
+Epoch  7 Update  328000 Cost  16.8357608814 UD  822.559355021 72.94 sents/s 1031.88 words/s
+Epoch  7 Update  329000 Cost  16.9877941583 UD  825.608569145 72.67 sents/s 1025.81 words/s
+Seen 2243334 samples
+Epoch  8 Update  330000 Cost  16.6618175218 UD  839.478116989 71.47 sents/s 1011.16 words/s
+Saving the best model... Done
+Saving the model at iteration 330000... Done
+Source  0 : however he is confront of the hell and try to find out people for the earth-@@ quake .
+Truth  0  :  however he is not afraid of the hell and just wants to find and help people affected by the earth quake .
+Sample  0 :  however Taiwan was confronted by hell and tried to find out people for the earth-@@ quake .
+Source  1 : but I &apos;m wondering they are used casually in your daily life or used just on the news and a bit formal ones .
+Truth  1  :  but I &apos;m wondering if they are used casually in your daily life or used just on the news and formally .
+Sample  1 :  but I &apos;m wondering if they are used casually in your daily life or always dialogs on all the news and , I prefer wide ones .
+Source  2 : 2009 has passed and there are so many memories , happiness , sadness , movement , anger , and so on .
+Truth  2  :  2009 has passed and there are so many memories : happiness , sadness , movement , anger , and so on .
+Sample  2 :  2009 has passed and there are so many memories , happiness , sadness , movement , anger , and so on .
+Source  3 : we think that there is a lot of room to improve the SNS by using rich sensors on the mobile devices .
+Truth  3  :  we think that there is a lot of room to improve the SNS by using rich sensors on the mobile devices .
+Sample  3 :  we think that there are a lot of rooms to improve the SNS by using rich sensors on the mobile devices .
+Source  4 : I am usually so slow to get work done , but I want to start the report from now on !
+Truth  4  :  I am usually so slow to get work done , but I want to start the reports early from now on !
+Sample  4 :  I always feel so slow to get work done , but I want to start the report from now on !
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1021
+Epoch  8 Update  331000 Cost  16.1867516821 UD  924.951532125 64.87 sents/s 914.09 words/s
+Epoch  8 Update  332000 Cost  16.1706521131 UD  825.657389879 72.67 sents/s 1023.28 words/s
+Epoch  8 Update  333000 Cost  16.2146901918 UD  826.437241077 72.60 sents/s 1022.60 words/s
+Epoch  8 Update  334000 Cost  16.339216018 UD  827.253612041 72.53 sents/s 1019.49 words/s
+Epoch  8 Update  335000 Cost  16.3931632239 UD  818.877595901 73.27 sents/s 1035.19 words/s
+Epoch  8 Update  336000 Cost  16.4609530262 UD  820.435952902 73.13 sents/s 1034.21 words/s
+Epoch  8 Update  337000 Cost  16.4143465932 UD  825.925840139 72.65 sents/s 1025.64 words/s
+Epoch  8 Update  338000 Cost  16.5797436058 UD  823.285672903 72.88 sents/s 1031.64 words/s
+Epoch  8 Update  339000 Cost  16.6647480141 UD  827.442792177 72.51 sents/s 1023.84 words/s
+Epoch  8 Update  340000 Cost  16.5345127564 UD  817.558162212 73.39 sents/s 1036.62 words/s
+Saving the best model... Done
+Saving the model at iteration 340000... Done
+Source  0 : I didn &apos;t know how long I rode today since I didn &apos;t have a cycle@@ -@@ computer .
+Truth  0  :  I didn &apos;t know how long I rode today since I didn &apos;t have a way of tracking my distance .
+Sample  0 :  I didn &apos;t know how long I rode today since I didn &apos;t have a motor@@ -@@ computer .
+Source  1 : arguably , they still prefer to listen to native speaker as they can rise their listening level higher and faster .
+Truth  1  :  arguably , they still prefer to listen to native speaker as they can rise their listening level higher and faster .
+Sample  1 :  arguably , they still prefer to listen to native speakers as they can raise their listening level higher and faster .
+Source  2 : I have a very important examination today .
+Truth  2  :  I have a very important exam ( you can also say &quot; test , &quot; exam = test ) today .
+Sample  2 :  I have a very important examination today .
+Source  3 : http : / / you@@ co@@ 600@@ .@@ vo@@ x@@ .com / library / post / the-@@ sea-@@ insi@@ de@@ .html
+Truth  3  :  http : / / you@@ co@@ 600@@ .@@ vo@@ x@@ .com / library / post / the-@@ sea-@@ insi@@ de@@ .html
+Sample  3 :  http : / / you@@ co@@ 600@@ .@@ vo@@ x@@ .com / library / post / the-@@ sea-@@ insi@@ de@@ .html
+Source  4 : I would like to be as calm as I can , viewing long term image of my career development plan .
+Truth  4  :  I would like to be as calm as I could when viewing long term image of my career development plan .
+Sample  4 :  I would like to be as calm as I can , view long term image of my career development plan .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1654
+Epoch  8 Update  341000 Cost  16.6590017015 UD  948.910444021 63.23 sents/s 892.49 words/s
+Epoch  8 Update  342000 Cost  16.5523770812 UD  828.746582985 72.40 sents/s 1023.37 words/s
+Epoch  8 Update  343000 Cost  16.6337765263 UD  821.561653852 73.03 sents/s 1033.07 words/s
+Epoch  8 Update  344000 Cost  16.4245371675 UD  825.184196949 72.71 sents/s 1024.68 words/s
+Epoch  8 Update  345000 Cost  16.6488699107 UD  825.354515076 72.70 sents/s 1028.24 words/s
+Epoch  8 Update  346000 Cost  16.460630728 UD  823.563732862 72.85 sents/s 1027.68 words/s
+Epoch  8 Update  347000 Cost  16.6249572068 UD  823.984182835 72.82 sents/s 1027.60 words/s
+Epoch  8 Update  348000 Cost  16.582461697 UD  826.479480982 72.60 sents/s 1027.34 words/s
+Epoch  8 Update  349000 Cost  16.3805901575 UD  820.69918108 73.11 sents/s 1027.58 words/s
+Epoch  8 Update  350000 Cost  16.7437998618 UD  822.34743619 72.96 sents/s 1029.48 words/s
+Saving the best model... Done
+Saving the model at iteration 350000... Done
+Source  0 : the other day my female acquaintance drunk Coca-@@ cola with the can rolled by a handkerchief .
+Truth  0  :  the other day a female acquaintance of mine was drinking Coca-@@ cola with the can rolled up in a handkerchief .
+Sample  0 :  the other day my female acquaintance drank applaud Cola with the can rolled by a handkerchief .
+Source  1 : as you know , open innovation is one of the recent popular strategies in business and R &amp; D collaboration .
+Truth  1  :  as you know , open innovation is one of the recent popular strategies in business and R &amp; D collaboration .
+Sample  1 :  as you know , open innovation is one of the recent popular strategies in business and R &amp; D collaboration .
+Source  2 : * 2 ; Is &quot; Whenever ----@@ --@@ -- , I always ----@@ --@@ -- . &quot; a correct sentence ?
+Truth  2  :  * 2 ; Is &quot; Whenever ----@@ --@@ -- , I always ----@@ --@@ -- . &quot; a correct sentence ?
+Sample  2 :  * 2 ; Is &quot; Whenever ----@@ --@@ -- , I always ----@@ --@@ -- . &quot; a correct sentence ?
+Source  3 : comm@@ om people read and write hardly , the roll of reading and writing very small relatively on all communication of human .
+Truth  3  :  the amount of time humans spend their time reading and writing is relatively small compared to human to human communication .
+Sample  3 :  comm@@ om people read and write hardly , the roll of reading and writing very small relatively on all communication of humanity .
+Source  4 : at first , people who saw his Ustream told him not to die through comment section on the Ustream .
+Truth  4  :  at first , people who saw his Ustream told him not to die through the comment section on the Ustream .
+Sample  4 :  at first , people who saw his Ustream told him not to died through praise section on the Ustream .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1215
+Epoch  8 Update  351000 Cost  16.7108327116 UD  931.122907877 64.44 sents/s 912.11 words/s
+Epoch  8 Update  352000 Cost  16.6100937797 UD  823.781707048 72.83 sents/s 1028.28 words/s
+Epoch  8 Update  353000 Cost  16.8055968467 UD  823.506438017 72.86 sents/s 1028.66 words/s
+Epoch  8 Update  354000 Cost  16.4320524212 UD  824.344867945 72.79 sents/s 1024.63 words/s
+Epoch  8 Update  355000 Cost  16.5196021388 UD  824.264317989 72.79 sents/s 1027.62 words/s
+Epoch  8 Update  356000 Cost  16.6505605457 UD  825.124846935 72.72 sents/s 1027.44 words/s
+Epoch  8 Update  357000 Cost  16.7739034765 UD  822.083843946 72.99 sents/s 1026.51 words/s
+Epoch  8 Update  358000 Cost  16.463665714 UD  821.115270138 73.07 sents/s 1027.74 words/s
+Epoch  8 Update  359000 Cost  16.5746109776 UD  818.208341837 73.33 sents/s 1029.37 words/s
+Epoch  8 Update  360000 Cost  16.3442940974 UD  817.205832958 73.42 sents/s 1034.82 words/s
+Saving the best model... Done
+Saving the model at iteration 360000... Done
+Source  0 : I &apos;m writing report just now , I have to hand it tomm@@ morrow ... oh , it &apos;s today ! !
+Truth  0  :  I &apos;m writing a report just now , I have to hand it in tomorrow ... oh , it &apos;s today ! !
+Sample  0 :  I &apos;m writing a report just now , I have to hand it in tomorrow ... oh , it &apos;s today ! !
+Source  1 : if you can saw some cloth , you can repair old kimonos and use it for a long time .
+Truth  1  :  if you can saw ( ? ) some cloth , you can repair old kimonos and use it for a long time .
+Sample  1 :  if you can see some cloth , you can repair old kimonos and use it for a long time .
+Source  2 : it will be hot in this afternoon , so I &apos;m go@@ inng to clean the bath room using high water pressure machine .
+Truth  2  :  it will be hot in this afternoon , so I &apos;m going to clean the bathroom using a high water pressure machine .
+Sample  2 :  it will be hot this afternoon , so I &apos;m going to clean the bath room using a high water power salon .
+Source  3 : and as we speak , african philosophers are debating , trying to find a way to fight against ne@@ o@@ coloni@@ alism .
+Truth  3  :  and as we speak , african philosophers are debating , trying to find a way to fight against ne@@ o@@ coloni@@ alism .
+Sample  3 :  and as we speak , African philosophers are debating , trying to find a way to fight against ne@@ o@@ coloni@@ alism .
+Source  4 : few days ago , I started to review to program , especially in C and C + + language .
+Truth  4  :  few days ago , I started to review some programming , it was mainly in C and C + + language .
+Sample  4 :  a few days ago , I started to review into program , especially in C and C + + language .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.0011
+Epoch  8 Update  361000 Cost  16.6399276432 UD  924.573074102 64.89 sents/s 918.39 words/s
+Epoch  8 Update  362000 Cost  16.6777301782 UD  822.934396982 72.91 sents/s 1029.02 words/s
+Epoch  8 Update  363000 Cost  16.6073175901 UD  824.141827822 72.80 sents/s 1024.56 words/s
+Epoch  8 Update  364000 Cost  16.9668425885 UD  824.067655087 72.81 sents/s 1026.22 words/s
+Epoch  8 Update  365000 Cost  16.7310655636 UD  825.634606838 72.67 sents/s 1029.21 words/s
+Epoch  8 Update  366000 Cost  16.7150296785 UD  830.856029987 72.21 sents/s 1020.35 words/s
+Seen 2243334 samples
+Epoch  9 Update  367000 Cost  16.5528330322 UD  836.325124979 71.74 sents/s 1013.19 words/s
+Epoch  9 Update  368000 Cost  16.2886015313 UD  829.907822847 72.30 sents/s 1025.13 words/s
+Epoch  9 Update  369000 Cost  16.1162598101 UD  820.572731018 73.12 sents/s 1030.69 words/s
+Epoch  9 Update  370000 Cost  16.2661066145 UD  822.790333986 72.92 sents/s 1028.75 words/s
+Saving the best model... Done
+Saving the model at iteration 370000... Done
+Source  0 : how do I get to your house ?
+Truth  0  :  how do I get to your house ?
+Sample  0 :  how do I get in your house ?
+Source  1 : &quot; eat all of your meals . &quot;
+Truth  1  :  &quot; eat all of your meal . &quot;
+Sample  1 :  &quot; eat all of your meals . &quot;
+Source  2 : my son has left for Australia last night .
+Truth  2  :  my son left for Australia last night .
+Sample  2 :  my son got left for Australia last night .
+Source  3 : in Meiji era Japan grew rapidly .
+Truth  3  :  in the Meiji era Japan grew rapidly .
+Sample  3 :  in the Meiji era Japan grew rapidly .
+Source  4 : now , we are connecting on Facebook .
+Truth  4  :  now , we are connected on Facebook .
+Sample  4 :  now , we are connecting on Facebook reasons .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2226
+Epoch  9 Update  371000 Cost  16.3141582444 UD  934.451108217 64.21 sents/s 906.00 words/s
+Epoch  9 Update  372000 Cost  16.1179410843 UD  823.455949068 72.86 sents/s 1025.68 words/s
+Epoch  9 Update  373000 Cost  16.1146001362 UD  822.241601944 72.97 sents/s 1029.72 words/s
+Epoch  9 Update  374000 Cost  16.3532960472 UD  825.900495052 72.65 sents/s 1026.54 words/s
+Epoch  9 Update  375000 Cost  16.2265493344 UD  827.329501867 72.52 sents/s 1021.84 words/s
+Epoch  9 Update  376000 Cost  16.114283656 UD  815.450409174 73.58 sents/s 1031.62 words/s
+Epoch  9 Update  377000 Cost  16.2435143311 UD  820.897885799 73.09 sents/s 1032.97 words/s
+Epoch  9 Update  378000 Cost  16.4399177963 UD  825.980955124 72.64 sents/s 1025.87 words/s
+Epoch  9 Update  379000 Cost  16.52673254 UD  826.245403051 72.62 sents/s 1027.11 words/s
+Epoch  9 Update  380000 Cost  16.2405069664 UD  822.966135025 72.91 sents/s 1026.83 words/s
+Saving the best model... Done
+Saving the model at iteration 380000... Done
+Source  0 : but the country has its own advantages .
+Truth  0  :  but the country has its own advantages .
+Sample  0 :  but did their own advantages .
+Source  1 : what do you think about your office ?
+Truth  1  :  what do you think about your office ?
+Sample  1 :  what do you think about your office ?
+Source  2 : thank you so much for your help .
+Truth  2  :  thank you so much for your help .
+Sample  2 :  thank you so much for your help .
+Source  3 : I hope she will get well soon .
+Truth  3  :  I hope she will get well soon .
+Sample  3 :  I hope she will get well soon .
+Source  4 : please , help me write it right .
+Truth  4  :  please , help me write it correctly .
+Sample  4 :  please , help me write it right .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2248
+Epoch  9 Update  381000 Cost  16.3117180485 UD  931.626712084 64.40 sents/s 905.26 words/s
+Epoch  9 Update  382000 Cost  16.5164812647 UD  829.044007063 72.37 sents/s 1026.42 words/s
+Epoch  9 Update  383000 Cost  16.3821776736 UD  823.856787205 72.83 sents/s 1026.77 words/s
+Epoch  9 Update  384000 Cost  16.5854786818 UD  830.051533937 72.28 sents/s 1024.86 words/s
+Epoch  9 Update  385000 Cost  16.2072159849 UD  822.922834873 72.91 sents/s 1028.17 words/s
+Epoch  9 Update  386000 Cost  16.2479609777 UD  828.993252039 72.38 sents/s 1022.46 words/s
+Epoch  9 Update  387000 Cost  16.3537678517 UD  823.100041151 72.90 sents/s 1028.53 words/s
+Epoch  9 Update  388000 Cost  16.4236360755 UD  823.150662899 72.89 sents/s 1026.25 words/s
+Epoch  9 Update  389000 Cost  16.3551857302 UD  824.057552099 72.81 sents/s 1028.24 words/s
+Epoch  9 Update  390000 Cost  16.193943864 UD  819.972112894 73.17 sents/s 1028.43 words/s
+Saving the best model... Done
+Saving the model at iteration 390000... Done
+Source  0 : today , I am about terrible experience .
+Truth  0  :  today , I had a terrible experience .
+Sample  0 :  today , I am about terrible experience .
+Source  1 : I think there are another reasons .
+Truth  1  :  I think there are a few reasons .
+Sample  1 :  I think there have another reasons .
+Source  2 : so I was going to use computer .
+Truth  2  :  so I was going to use computer .
+Sample  2 :  so I was going to use a computer .
+Source  3 : my parents was fighted .
+Truth  3  :  some time ago , my parents fought .
+Sample  3 :  my parents fought .
+Source  4 : because it is very contradictory saying .
+Truth  4  :  because it is a very contradictory saying .
+Sample  4 :  because it is very contradictory saying .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1693
+Epoch  9 Update  391000 Cost  16.4087390051 UD  925.291508913 64.84 sents/s 913.99 words/s
+Epoch  9 Update  392000 Cost  16.3956255419 UD  820.894695997 73.09 sents/s 1031.33 words/s
+Epoch  9 Update  393000 Cost  16.3272335041 UD  820.728707075 73.11 sents/s 1029.18 words/s
+Epoch  9 Update  394000 Cost  16.5260166635 UD  826.645694971 72.58 sents/s 1027.48 words/s
+Epoch  9 Update  395000 Cost  16.3843237581 UD  824.404388905 72.78 sents/s 1026.00 words/s
+Epoch  9 Update  396000 Cost  16.4014967094 UD  816.437957048 73.49 sents/s 1032.70 words/s
+Epoch  9 Update  397000 Cost  16.5027424257 UD  828.236863852 72.44 sents/s 1023.42 words/s
+Epoch  9 Update  398000 Cost  16.6053693746 UD  824.252744913 72.79 sents/s 1028.91 words/s
+Epoch  9 Update  399000 Cost  16.4740817981 UD  822.146152973 72.98 sents/s 1029.53 words/s
+Epoch  9 Update  400000 Cost  16.4947508438 UD  824.548797131 72.77 sents/s 1029.41 words/s
+Saving the best model... Done
+Saving the model at iteration 400000... Done
+Source  0 : I do not want fat .
+Truth  0  :  I do not want to be fat .
+Sample  0 :  I do not want ( for ) getting fat .
+Source  1 : he was stepping out on his wife .
+Truth  1  :  he was stepping out on his wife .
+Sample  1 :  he was stepping out on his wife .
+Source  2 : a lotus seems to bloom soon .
+Truth  2  :  a lotus seems to be blooming soon .
+Sample  2 :  a lotus seems to bloom soon .
+Source  3 : &quot; http : / / www.ted.com / &quot;
+Truth  3  :  &quot; http : / / www.ted.com / &quot;
+Sample  3 :  &quot; http : / / www.ted.com / &quot;
+Source  4 : so , please tell me follows :
+Truth  4  :  so , please tell me as follows :
+Sample  4 :  so , please tell me the following :
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2171
+Epoch  9 Update  401000 Cost  16.5441515849 UD  914.790096998 65.59 sents/s 926.05 words/s
+Epoch  9 Update  402000 Cost  16.5648784714 UD  824.151175022 72.80 sents/s 1026.96 words/s
+Epoch  9 Update  403000 Cost  16.5092932997 UD  822.731365919 72.93 sents/s 1030.53 words/s
+Epoch  9 Update  404000 Cost  16.6051678157 UD  824.616286993 72.76 sents/s 1029.52 words/s
+Seen 2243334 samples
+Epoch  10 Update  405000 Cost  16.48623007 UD  842.392128944 71.22 sents/s 1005.51 words/s
+Epoch  10 Update  406000 Cost  16.0885607682 UD  824.818660021 72.74 sents/s 1027.06 words/s
+Epoch  10 Update  407000 Cost  16.1889860936 UD  825.006920099 72.73 sents/s 1028.63 words/s
+Epoch  10 Update  408000 Cost  15.9497433966 UD  822.149973869 72.98 sents/s 1026.01 words/s
+Epoch  10 Update  409000 Cost  16.0998480186 UD  823.472273111 72.86 sents/s 1029.32 words/s
+Epoch  10 Update  410000 Cost  16.1306779109 UD  822.718502998 72.93 sents/s 1031.75 words/s
+Saving the best model... Done
+Saving the model at iteration 410000... Done
+Source  0 : http : / / www.youtube.com / watch ? v = q@@ HU@@ hy@@ gd@@ AZ@@ I@@ w
+Truth  0  :  http : / / www.youtube.com / watch ? v = q@@ HU@@ hy@@ gd@@ AZ@@ I@@ w
+Sample  0 :  http : / / www.youtube.com / watch ? v = q@@ HU@@ hy@@ gd@@ AZ@@ I@@ w
+Source  1 : I long to alleviate the evil , but I can@@ not , and I too suffer .
+Truth  1  :  I long to alleviate the evil , but I can@@ not , and I too suffer .
+Sample  1 :  I long to alleviate the evil , but I can@@ not , and I am too Wakkanai .
+Source  2 : I do not work as a part-time job as well as full-time job so that I have much time .
+Truth  2  :  I do not currently don &apos;t work , so that I have a lot of time .
+Sample  2 :  I do not work as a part-time job as well as a full-time job so that I have a lot of time .
+Source  3 : they said the control subjects are works including sexual or un@@ sound expressions .
+Truth  3  :  they said the subjects that will be controlled are works including sexual or un@@ sound expressions .
+Sample  3 :  he said their control subjects are works including sexual or unnatural expressions .
+Source  4 : I have ever been to Hawaii .
+Truth  4  :  I have even been to Hawaii . ( I think this is what you mean here )
+Sample  4 :  I have been to Hawaii .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.3664
+Epoch  10 Update  411000 Cost  16.1814580528 UD  830.032840014 72.29 sents/s 1020.83 words/s
+Epoch  10 Update  412000 Cost  16.192765407 UD  823.200026035 72.89 sents/s 1030.89 words/s
+Epoch  10 Update  413000 Cost  16.3995423646 UD  826.861943007 72.56 sents/s 1026.22 words/s
+Epoch  10 Update  414000 Cost  16.2395099646 UD  826.647100925 72.58 sents/s 1027.05 words/s
+Epoch  10 Update  415000 Cost  16.3289740885 UD  833.970201969 71.95 sents/s 1018.72 words/s
+Epoch  10 Update  416000 Cost  16.3560136369 UD  822.452837944 72.95 sents/s 1032.55 words/s
+Epoch  10 Update  417000 Cost  16.3942285286 UD  826.001386881 72.64 sents/s 1023.94 words/s
+Epoch  10 Update  418000 Cost  16.2061904581 UD  829.245623112 72.35 sents/s 1019.54 words/s
+Epoch  10 Update  419000 Cost  16.4579549593 UD  822.457296133 72.95 sents/s 1029.67 words/s
+Epoch  10 Update  420000 Cost  16.5232898352 UD  828.648797989 72.41 sents/s 1022.67 words/s
+Saving the best model... Done
+Saving the model at iteration 420000... Done
+Source  0 : ^ o ^
+Truth  0  :  ^ o ^
+Sample  0 :  ^ o ^
+Source  1 : face the truth
+Truth  1  :  face the truth
+Sample  1 :  face the truth
+Source  2 : nice Day .
+Truth  2  :  nice Day .
+Sample  2 :  nice Day .
+Source  3 : thank you !
+Truth  3  :  thank you !
+Sample  3 :  thank you !
+Source  4 : resuming Reading Books
+Truth  4  :  resuming Reading Books
+Sample  4 :  resuming Reading Books
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2582
+Epoch  10 Update  421000 Cost  16.3809878301 UD  924.6079669 64.89 sents/s 916.83 words/s
+Epoch  10 Update  422000 Cost  16.4816886936 UD  832.408118963 72.08 sents/s 1024.12 words/s
+Epoch  10 Update  423000 Cost  16.2714005301 UD  827.846956968 72.48 sents/s 1021.44 words/s
+Epoch  10 Update  424000 Cost  16.2850333144 UD  821.002639055 73.08 sents/s 1027.40 words/s
+Epoch  10 Update  425000 Cost  16.3551645079 UD  829.811439037 72.31 sents/s 1020.34 words/s
+Epoch  10 Update  426000 Cost  16.3116178254 UD  825.220301867 72.71 sents/s 1022.55 words/s
+Epoch  10 Update  427000 Cost  16.4221638618 UD  819.969967842 73.17 sents/s 1032.37 words/s
+Epoch  10 Update  428000 Cost  16.4533529894 UD  826.36649704 72.61 sents/s 1022.76 words/s
+Epoch  10 Update  429000 Cost  16.5676313635 UD  824.209695816 72.80 sents/s 1027.54 words/s
+Epoch  10 Update  430000 Cost  16.5043797441 UD  824.285950184 72.79 sents/s 1024.49 words/s
+Saving the best model... Done
+Saving the model at iteration 430000... Done
+Source  0 : my Boyfriend
+Truth  0  :  my Boyfriend
+Sample  0 :  my Boyfriend
+Source  1 : manager
+Truth  1  :  manager ,
+Sample  1 :  manager
+Source  2 : -@@ Others
+Truth  2  :  -@@ Others
+Sample  2 :  -@@ Others
+Source  3 : listening skill
+Truth  3  :  listening skill
+Sample  3 :  listening skill
+Source  4 : bye !
+Truth  4  :  bye !
+Sample  4 :  bye !
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.2712
+Epoch  10 Update  431000 Cost  16.5233505008 UD  918.27650094 65.34 sents/s 922.27 words/s
+Epoch  10 Update  432000 Cost  16.1851144156 UD  824.167990923 72.80 sents/s 1025.26 words/s
+Epoch  10 Update  433000 Cost  16.4254055743 UD  832.236721039 72.09 sents/s 1023.57 words/s
+Epoch  10 Update  434000 Cost  16.4432175965 UD  821.421911001 73.04 sents/s 1030.48 words/s
