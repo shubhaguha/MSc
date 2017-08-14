@@ -128,3 +128,13 @@ Precision   : 0.4076
 Recall      : 0.2192
 F1          : 0.2851
 
+*** patience 5 baseline_8 after 410000 updates ***
+Precision   : 0.3210
+Recall      : 0.1284
+F1          : 0.1834
+
+*** final baseline_8 after 460000 updates ***
+Precision   : 0.3376
+Recall      : 0.1362
+F1          : 0.1941
+
