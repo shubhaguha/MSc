@@ -88,7 +88,7 @@ Precision   : 0.1556
 Recall      : 0.2576
 F1          : 0.1940
 
-*** patience 5 edit_vectors_0 after 160000 updates ***
+patience 5 edit_vectors_0 after 160000 updates
 Precision   : 0.0909
 Recall      : 0.0272
 F1          : 0.0419
@@ -98,22 +98,22 @@ Precision   : 0.0805
 Recall      : 0.0248
 F1          : 0.0379
 
-*** patience 5 edit_vectors_4 after 300000 updates ***
+patience 5 edit_vectors_4 after 300000 updates
 Precision   : 0.3919
 Recall      : 0.2207
 F1          : 0.2824
 
-*** patience 5 edit_vectors_1 after 320000 updates ***
+patience 5 edit_vectors_1 after 320000 updates
 Precision   : 0.3095
 Recall      : 0.1251
 F1          : 0.1782
 
-*** patience 5 edit_vectors_2 after 340000 updates ***
+patience 5 edit_vectors_2 after 340000 updates
 Precision   : 0.3700
 Recall      : 0.1752
 F1          : 0.2378
 
-*** patience 5 edit_vectors_5 after 350000 updates ***
+patience 5 edit_vectors_5 after 350000 updates
 Precision   : 0.3926
 Recall      : 0.2457
 F1          : 0.3022
@@ -123,12 +123,12 @@ Precision   : 0.3984
 Recall      : 0.2294
 F1          : 0.2912
 
-*** patience 5 edit_vectors_3 after 420000 updates ***
+patience 5 edit_vectors_3 after 420000 updates
 Precision   : 0.4076
 Recall      : 0.2192
 F1          : 0.2851
 
-*** patience 5 baseline_8 after 410000 updates ***
+patience 5 baseline_8 after 410000 updates
 Precision   : 0.3210
 Recall      : 0.1284
 F1          : 0.1834
@@ -142,4 +142,9 @@ F1          : 0.1941
 Precision   : 0.3980
 Recall      : 0.2624
 F1          : 0.3163
+
+patience 5 baseline_9 after 370000 updates
+Precision   : 0.3353
+Recall      : 0.1324
+F1          : 0.1898
 
