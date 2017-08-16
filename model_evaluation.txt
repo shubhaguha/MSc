@@ -157,5 +157,9 @@ F1          : 0.3382
 Precision   : 0.3448
 Recall      : 0.1437
 F1          : 0.2029
->>>>>>> Stashed changes
+
+*** final edit_vectors_6 after 620000 updates ***
+Precision   : 0.4044
+Recall      : 0.2857
+F1          : 0.3349
 
