@@ -2248,3 +2248,183 @@ Epoch  10 Update  431000 Cost  16.5233505008 UD  918.27650094 65.34 sents/s 922.
 Epoch  10 Update  432000 Cost  16.1851144156 UD  824.167990923 72.80 sents/s 1025.26 words/s
 Epoch  10 Update  433000 Cost  16.4254055743 UD  832.236721039 72.09 sents/s 1023.57 words/s
 Epoch  10 Update  434000 Cost  16.4432175965 UD  821.421911001 73.04 sents/s 1030.48 words/s
+Epoch  10 Update  435000 Cost  16.5045407092 UD  829.303097963 72.35 sents/s 1020.77 words/s
+Epoch  10 Update  436000 Cost  16.4768704798 UD  830.317857027 72.26 sents/s 1019.59 words/s
+Epoch  10 Update  437000 Cost  16.5068874019 UD  820.381500959 73.14 sents/s 1030.81 words/s
+Epoch  10 Update  438000 Cost  16.4562374782 UD  826.691926003 72.58 sents/s 1022.19 words/s
+Epoch  10 Update  439000 Cost  16.1503456071 UD  820.882188082 73.09 sents/s 1026.86 words/s
+Epoch  10 Update  440000 Cost  16.4776225131 UD  825.157521009 72.71 sents/s 1028.34 words/s
+Saving the best model... Done
+Saving the model at iteration 440000... Done
+Source  0 : global Warming
+Truth  0  :  global Warming
+Sample  0 :  global Warming
+Source  1 : but
+Truth  1  :  but then
+Sample  1 :  but
+Source  2 : ans .
+Truth  2  :  ans .
+Sample  2 :  ans .
+Source  3 : Hello .
+Truth  3  :  Hello .
+Sample  3 :  Hello .
+Source  4 : Christmas party
+Truth  4  :  Christmas party
+Sample  4 :  Christmas Party
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.081
+Epoch  10 Update  441000 Cost  16.5026305643 UD  927.069469929 64.72 sents/s 912.79 words/s
+Epoch  10 Update  442000 Cost  16.7555182943 UD  825.20404911 72.71 sents/s 1025.48 words/s
+Epoch  10 Update  443000 Cost  16.5165508798 UD  828.684746027 72.40 sents/s 1022.77 words/s
+Epoch  10 Update  444000 Cost  16.6163758232 UD  827.800608158 72.48 sents/s 1026.73 words/s
+Epoch  10 Update  445000 Cost  16.4055609953 UD  822.501678944 72.95 sents/s 1026.52 words/s
+Epoch  10 Update  446000 Cost  16.6203343539 UD  819.969923019 73.17 sents/s 1028.87 words/s
+Epoch  10 Update  447000 Cost  16.4024887914 UD  823.46141696 72.86 sents/s 1024.87 words/s
+Seen 2243334 samples
+Epoch  11 Update  448000 Cost  16.2467386943 UD  844.088989973 71.08 sents/s 1006.48 words/s
+Epoch  11 Update  449000 Cost  15.9428568498 UD  821.536857843 73.03 sents/s 1029.32 words/s
+Epoch  11 Update  450000 Cost  16.0618348883 UD  824.477646828 72.77 sents/s 1026.41 words/s
+Saving the best model... Done
+Saving the model at iteration 450000... Done
+Source  0 : Kotaro doesn &apos;t resist her when she barks .
+Truth  0  :  Kotaro doesn &apos;t resist her when she barks at him .
+Sample  0 :  Kotaro doesn &apos;t resist her when she barks .
+Source  1 : the Kou@@ yasan was amazing and had a mystic atmosphere .
+Truth  1  :  the Kou@@ yasan was amazing and had a mystic atmosphere .
+Sample  1 :  the Kou@@ yasan was amazing and had a mystic atmosphere .
+Source  2 : I will go to study in Kyoto University graduate school .
+Truth  2  :  I will go to study at Kyoto University graduate school .
+Sample  2 :  I will go to study at its Kyoto University graduate school .
+Source  3 : comics on paper are usually in black-and-white because of cost .
+Truth  3  :  comics on paper are usually in black-and-white because of cost .
+Sample  3 :  comics on paper are usually in black-and-white because of cost .
+Source  4 : they couldn &apos;t correct £ 3 billion in this year .
+Truth  4  :  they couldn &apos;t correct £ 3 billion in this year .
+Sample  4 :  they couldn &apos;t correct £ 3 billion in this year .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.0631
+Epoch  11 Update  451000 Cost  15.9550859725 UD  927.966378927 64.66 sents/s 913.23 words/s
+Epoch  11 Update  452000 Cost  16.1500792704 UD  823.486566067 72.86 sents/s 1026.95 words/s
+Epoch  11 Update  453000 Cost  16.1765244274 UD  828.051771164 72.46 sents/s 1023.47 words/s
+Epoch  11 Update  454000 Cost  16.1504582279 UD  822.905738115 72.91 sents/s 1032.23 words/s
+Epoch  11 Update  455000 Cost  16.0987118862 UD  821.55171299 73.03 sents/s 1028.35 words/s
+Epoch  11 Update  456000 Cost  16.0700061855 UD  822.635957956 72.94 sents/s 1028.61 words/s
+Epoch  11 Update  457000 Cost  16.1472947403 UD  832.64081502 72.06 sents/s 1019.47 words/s
+Epoch  11 Update  458000 Cost  16.2979591331 UD  827.103479862 72.54 sents/s 1023.45 words/s
+Epoch  11 Update  459000 Cost  16.4199124316 UD  828.270419836 72.44 sents/s 1023.15 words/s
+Epoch  11 Update  460000 Cost  16.2169277324 UD  822.879799843 72.91 sents/s 1029.90 words/s
+Saving the best model... Done
+Saving the model at iteration 460000... Done
+Source  0 : but the problem is that the weather is really crazy .
+Truth  0  :  but the problem is that the weather is really crazy .
+Sample  0 :  but the problem is that the weather is really crazy .
+Source  1 : I waited p@@ lice for about half hour .
+Truth  1  :  I waited for the police for about half an hour .
+Sample  1 :  I waited for exactly half an hour .
+Source  2 : I &apos;ve been watching some videos on engaging topics lately .
+Truth  2  :  I &apos;ve been watching some videos on engaging topics lately .
+Sample  2 :  I &apos;ve been watching some videos on engaging topics lately .
+Source  3 : I sure knew accepting .
+Truth  3  :  I knew the true meaning of acceptance . ( ? )
+Sample  3 :  I sure knew accepting .
+Source  4 : it is very important the economic wealth and working hard .
+Truth  4  :  it is very important for economic wealth and working hard .
+Sample  4 :  it is very important for economic wealth and working hard .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.0666
+Early Stop!
+Seen 756660 samples
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.0666

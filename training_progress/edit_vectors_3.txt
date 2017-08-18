@@ -2141,3 +2141,394 @@ Sample  4 :  yesterday , my boss called my phone and told me some work for this 
 1381 samples computed
 Valid  13.9675
 Epoch  10 Update  411000 Cost  36.9549237789 UD  917.92176795 65.37 sents/s 926.40 words/s
+Seen 2243334 samples
+Epoch  11 Update  412000 Cost  36.1890064719 UD  834.929670095 71.86 sents/s 1011.54 words/s
+Epoch  11 Update  413000 Cost  35.6895004278 UD  822.062067032 72.99 sents/s 1029.92 words/s
+Epoch  11 Update  414000 Cost  35.1700401187 UD  822.6995368 72.93 sents/s 1028.92 words/s
+Epoch  11 Update  415000 Cost  36.3293771637 UD  829.065627098 72.37 sents/s 1022.14 words/s
+Epoch  11 Update  416000 Cost  36.0240655766 UD  822.383639097 72.96 sents/s 1029.83 words/s
+Epoch  11 Update  417000 Cost  35.8666463314 UD  827.701516867 72.49 sents/s 1020.47 words/s
+Epoch  11 Update  418000 Cost  35.6926739965 UD  824.276178122 72.79 sents/s 1024.52 words/s
+Epoch  11 Update  419000 Cost  36.7112629574 UD  824.155051947 72.80 sents/s 1028.98 words/s
+Epoch  11 Update  420000 Cost  35.6916448119 UD  828.402745008 72.43 sents/s 1022.99 words/s
+Saving the best model... Done
+Saving the model at iteration 420000... Done
+Source  0 : I love travelling very much .
+Truth  0  :  I love travelling very much .
+Sample  0 :  I love travelling very much .
+Source  1 : that function brings me motivation .
+Truth  1  :  that function brings me motivation .
+Sample  1 :  that function brings me motivation .
+Source  2 : London from India .
+Truth  2  :  from India , to London .
+Sample  2 :  and
+Source  3 : so I enjoyed the program .
+Truth  3  :  so I enjoyed the program .
+Sample  3 :  so I enjoyed the program .
+Source  4 : I &apos;m looking forward it .
+Truth  4  :  I &apos;m looking forward it .
+Sample  4 :  I &apos;m looking forward to it .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1404
+Epoch  11 Update  421000 Cost  35.7095320595 UD  829.530980825 72.33 sents/s 1022.72 words/s
+Epoch  11 Update  422000 Cost  36.1108483626 UD  814.725785971 73.64 sents/s 1034.95 words/s
+Epoch  11 Update  423000 Cost  36.9307213751 UD  827.514469862 72.51 sents/s 1026.04 words/s
+Epoch  11 Update  424000 Cost  36.3758254576 UD  815.252202034 73.60 sents/s 1034.82 words/s
+Epoch  11 Update  425000 Cost  36.3460835351 UD  824.05281496 72.81 sents/s 1029.16 words/s
+Epoch  11 Update  426000 Cost  36.2484166696 UD  820.977454901 73.08 sents/s 1032.30 words/s
+Epoch  11 Update  427000 Cost  35.6746939934 UD  811.971365929 73.89 sents/s 1037.91 words/s
+Epoch  11 Update  428000 Cost  35.8461705777 UD  814.524034977 73.66 sents/s 1036.74 words/s
+Epoch  11 Update  429000 Cost  36.1636521552 UD  818.787290096 73.28 sents/s 1030.87 words/s
+Epoch  11 Update  430000 Cost  36.5523095593 UD  818.757169008 73.28 sents/s 1035.33 words/s
+Saving the best model... Done
+Saving the model at iteration 430000... Done
+Source  0 : Hello .
+Truth  0  :  Hello .
+Sample  0 :  Hello .
+Source  1 : a cow
+Truth  1  :  a cow
+Sample  1 :  a cow
+Source  2 : Hello !
+Truth  2  :  Hello !
+Sample  2 :  Hello !
+Source  3 : seal !
+Truth  3  :  seal !
+Sample  3 :  seal !
+Source  4 : Hello !
+Truth  4  :  Hello !
+Sample  4 :  Hello !
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  13.9612
+Epoch  11 Update  431000 Cost  36.5617280983 UD  908.689138174 66.03 sents/s 933.48 words/s
+Epoch  11 Update  432000 Cost  36.2192313202 UD  814.066178083 73.70 sents/s 1038.72 words/s
+Epoch  11 Update  433000 Cost  36.6418234137 UD  819.17463088 73.24 sents/s 1033.46 words/s
+Epoch  11 Update  434000 Cost  36.1872805828 UD  819.037564993 73.26 sents/s 1026.17 words/s
+Epoch  11 Update  435000 Cost  36.4393777212 UD  819.102403164 73.25 sents/s 1037.39 words/s
+Epoch  11 Update  436000 Cost  36.7287439093 UD  815.799612999 73.55 sents/s 1038.70 words/s
+Epoch  11 Update  437000 Cost  36.6893997983 UD  817.687618017 73.38 sents/s 1032.86 words/s
+Epoch  11 Update  438000 Cost  37.2460883126 UD  822.990013123 72.90 sents/s 1031.20 words/s
+Epoch  11 Update  439000 Cost  36.6532305033 UD  827.040562153 72.55 sents/s 1030.06 words/s
+Epoch  11 Update  440000 Cost  36.6703919685 UD  814.052566051 73.71 sents/s 1041.40 words/s
+Saving the best model... Done
+Saving the model at iteration 440000... Done
+Source  0 : &quot; apparently &quot;
+Truth  0  :  &quot; apparently &quot;
+Sample  0 :  &quot; apparently &quot;
+Source  1 : Hi teacher ^ ^
+Truth  1  :  Hello teacher !
+Sample  1 :  Hi teachers . ^ ^
+Source  2 : Hi there .
+Truth  2  :  Hi there .
+Sample  2 :  Hi there .
+Source  3 : I just started
+Truth  3  :  I just started
+Sample  3 :  I just started
+Source  4 : places to visit
+Truth  4  :  places to visit
+Sample  4 :  places to visit
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  13.9438
+Epoch  11 Update  441000 Cost  37.0223055387 UD  897.205954075 66.87 sents/s 942.97 words/s
+Epoch  11 Update  442000 Cost  36.8852439509 UD  822.002882004 72.99 sents/s 1029.86 words/s
+Epoch  11 Update  443000 Cost  37.218110942 UD  830.322539091 72.26 sents/s 1019.64 words/s
+Epoch  11 Update  444000 Cost  36.8236160042 UD  826.729134083 72.58 sents/s 1021.11 words/s
+Epoch  11 Update  445000 Cost  37.1438776469 UD  826.860033989 72.56 sents/s 1022.30 words/s
+Epoch  11 Update  446000 Cost  36.6185153792 UD  826.853914022 72.56 sents/s 1023.89 words/s
+Epoch  11 Update  447000 Cost  37.0600890745 UD  831.364686012 72.17 sents/s 1017.87 words/s
+Epoch  11 Update  448000 Cost  37.4305605722 UD  829.66689992 72.32 sents/s 1020.54 words/s
+Epoch  11 Update  449000 Cost  37.0992387569 UD  826.545095921 72.59 sents/s 1025.84 words/s
+Epoch  11 Update  450000 Cost  36.6869421908 UD  828.532655954 72.42 sents/s 1024.15 words/s
+Saving the best model... Done
+Saving the model at iteration 450000... Done
+Source  0 : writing ! !
+Truth  0  :  writing ! !
+Sample  0 :  writing ! !
+Source  1 : I Hate Working
+Truth  1  :  I Hate Working
+Sample  1 :  I Hate Working
+Source  2 : take care ♪
+Truth  2  :  take care ♪
+Sample  2 :  take care ♪
+Source  3 : after injection .
+Truth  3  :  after injection .
+Sample  3 :  after injection .
+Source  4 : wedding ! !
+Truth  4  :  wedding ! !
+Sample  4 :  wedding ! !
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  13.8701
+Epoch  11 Update  451000 Cost  35.8766293033 UD  858.025239944 69.93 sents/s 984.27 words/s
+Epoch  11 Update  452000 Cost  35.5583909173 UD  843.866345882 71.10 sents/s 1003.65 words/s
+Epoch  11 Update  453000 Cost  35.7908750444 UD  845.120589972 71.00 sents/s 1002.71 words/s
+Epoch  11 Update  454000 Cost  35.6592389239 UD  843.689007044 71.12 sents/s 1001.29 words/s
+Epoch  11 Update  455000 Cost  36.0778942003 UD  844.748898029 71.03 sents/s 1001.61 words/s
+Epoch  11 Update  456000 Cost  35.7978688896 UD  847.671612024 70.78 sents/s 998.64 words/s
+Epoch  11 Update  457000 Cost  36.254513478 UD  856.469549894 70.06 sents/s 993.41 words/s
+Epoch  11 Update  458000 Cost  36.1985802818 UD  849.896359205 70.60 sents/s 997.50 words/s
+Epoch  11 Update  459000 Cost  35.7008247669 UD  854.593367815 70.21 sents/s 989.70 words/s
+Epoch  11 Update  460000 Cost  36.4099863429 UD  847.763048887 70.77 sents/s 1001.00 words/s
+Saving the best model... Done
+Saving the model at iteration 460000... Done
+Source  0 : running meet of 1 km was held
+Truth  0  :  a School Run
+Sample  0 :  a tapped altitude track of a narrow travel location ( Year ran ) .
+Source  1 : a first diary
+Truth  1  :  my first diary
+Sample  1 :  my First Diary Entry
+Source  2 : Hello ! !
+Truth  2  :  Hello ! !
+Sample  2 :  Hello , everyone !
+Source  3 : this morning .
+Truth  3  :  this morning .
+Sample  3 :  this morning , I injured my own while up .
+Source  4 : good afternoon .
+Truth  4  :  good afternoon .
+Sample  4 :  good afternoon .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1122
+Epoch  11 Update  461000 Cost  36.8328154685 UD  943.989706993 63.56 sents/s 899.35 words/s
+Epoch  11 Update  462000 Cost  36.4521248404 UD  850.573499203 70.54 sents/s 998.16 words/s
+Epoch  11 Update  463000 Cost  36.1835335666 UD  841.289448977 71.32 sents/s 1005.05 words/s
+Epoch  11 Update  464000 Cost  36.1987875995 UD  846.777911901 70.86 sents/s 994.22 words/s
+Epoch  11 Update  465000 Cost  36.626113051 UD  846.871143103 70.85 sents/s 999.82 words/s
+Epoch  11 Update  466000 Cost  36.2618274228 UD  845.661816835 70.95 sents/s 1003.04 words/s
+Epoch  11 Update  467000 Cost  36.9114374934 UD  846.247231007 70.90 sents/s 1000.56 words/s
+Epoch  11 Update  468000 Cost  36.4049698575 UD  847.368043184 70.81 sents/s 997.50 words/s
+Epoch  11 Update  469000 Cost  36.5263253809 UD  849.18920517 70.66 sents/s 999.96 words/s
+Epoch  11 Update  470000 Cost  36.1688881528 UD  844.731645107 71.03 sents/s 1001.32 words/s
+Saving the best model... Done
+Saving the model at iteration 470000... Done
+Source  0 : Fuku@@ oka-@@ 2
+Truth  0  :  Fuku@@ oka-@@ 2
+Sample  0 :  Fuku@@ oka-@@ 2
+Source  1 : Hi body !
+Truth  1  :  Hi everybody !
+Sample  1 :  Hi everybody !
+Source  2 : good night !
+Truth  2  :  good night !
+Sample  2 :  good night !
+Source  3 : see you .
+Truth  3  :  see you .
+Sample  3 :  see you .
+Source  4 : cool service !
+Truth  4  :  cool service !
+Sample  4 :  cool service !
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  14.1088
+Epoch  11 Update  471000 Cost  36.3733190817 UD  918.584822178 65.32 sents/s 920.88 words/s
+Epoch  11 Update  472000 Cost  36.3039549212 UD  849.346066952 70.64 sents/s 995.26 words/s
+Epoch  11 Update  473000 Cost  36.262136911 UD  846.917647839 70.85 sents/s 999.06 words/s
+Epoch  11 Update  474000 Cost  36.9978453689 UD  852.025163889 70.42 sents/s 993.69 words/s
+Epoch  11 Update  475000 Cost  36.4198222426 UD  843.083443165 71.17 sents/s 998.87 words/s
+Epoch  11 Update  476000 Cost  36.8352391971 UD  848.553071022 70.71 sents/s 998.19 words/s
+Epoch  11 Update  477000 Cost  36.5843006294 UD  846.550462961 70.88 sents/s 1000.04 words/s
+Epoch  11 Update  478000 Cost  36.9331855519 UD  843.242385149 71.15 sents/s 1007.31 words/s
+Epoch  11 Update  479000 Cost  36.7909028717 UD  845.741869926 70.94 sents/s 1001.67 words/s
+Epoch  11 Update  480000 Cost  36.9491346855 UD  850.669332027 70.53 sents/s 994.64 words/s
+Saving the best model... Done
+Saving the model at iteration 480000... Done
+Source  0 : embarrassing situ@@ rations
+Truth  0  :  embarrassing situations
+Sample  0 :  embarrassing situations
+Source  1 : natural Japanese
+Truth  1  :  natural Japanese
+Sample  1 :  natural Japanese
+Source  2 : funny Doomsday
+Truth  2  :  funny Doomsday
+Sample  2 :  funny Doomsday
+Source  3 : happiness day
+Truth  3  :  happiness day
+Sample  3 :  happy Day
+Source  4 : Christina says
+Truth  4  :  Christina says
+Sample  4 :  Christina says
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  13.9983
+Early Stop!
+Seen 1800000 samples
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  13.9983

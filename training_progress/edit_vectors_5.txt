@@ -2039,3 +2039,79 @@ Valid  14.8171
 Epoch  10 Update  391000 Cost  55.9012091911 UD  937.023668051 64.03 sents/s 905.97 words/s
 Epoch  10 Update  392000 Cost  56.2169266084 UD  862.66693902 69.55 sents/s 981.79 words/s
 Epoch  10 Update  393000 Cost  56.2819438341 UD  858.16970706 69.92 sents/s 987.40 words/s
+Epoch  10 Update  394000 Cost  55.958040853 UD  859.464550972 69.81 sents/s 980.46 words/s
+Epoch  10 Update  395000 Cost  56.1337171339 UD  854.480827093 70.22 sents/s 987.67 words/s
+Epoch  10 Update  396000 Cost  56.1240104952 UD  859.850815058 69.78 sents/s 982.36 words/s
+Epoch  10 Update  397000 Cost  56.4253373454 UD  851.155097008 70.49 sents/s 990.76 words/s
+Epoch  10 Update  398000 Cost  56.5454481891 UD  856.686732054 70.04 sents/s 989.00 words/s
+Epoch  10 Update  399000 Cost  56.3258171058 UD  861.836794138 69.62 sents/s 987.78 words/s
+Epoch  10 Update  400000 Cost  56.8774031624 UD  858.466370821 69.89 sents/s 988.17 words/s
+Saving the best model... Done
+Saving the model at iteration 400000... Done
+Source  0 : meanwhile I do my best what I must do ! !
+Truth  0  :  while I &apos;m studying , I will do my very best .
+Sample  0 :  usually I do my best in doing that . ( throughout the world )
+Source  1 : you think the best part of TV are the commercials .
+Truth  1  :  you think the best part of watching TV are the commercials .
+Sample  1 :  you may think the best part of TV is commercials .
+Source  2 : I have to improve my English until I came back to Japan .
+Truth  2  :  I have to improve my English before I return to Japan .
+Sample  2 :  I have to improve my English before I came back to Japan .
+Source  3 : the articles are presented by students filling in for each other .
+Truth  3  :  the articles are presented by students filling in for each other .
+Sample  3 :  there are a lot of articles which are presented by students in each process .
+Source  4 : however I can drink any wines due to their bitterness .
+Truth  4  :  however I can &apos;t drink any wines due to their bitterness .
+Sample  4 :  but I can drink any wines due to their bitterness .
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  15.0064
+Early Stop!
+Seen 756660 samples
+60 samples computed
+120 samples computed
+180 samples computed
+240 samples computed
+300 samples computed
+360 samples computed
+420 samples computed
+480 samples computed
+540 samples computed
+600 samples computed
+660 samples computed
+720 samples computed
+780 samples computed
+840 samples computed
+900 samples computed
+960 samples computed
+1020 samples computed
+1080 samples computed
+1140 samples computed
+1200 samples computed
+1260 samples computed
+1320 samples computed
+1380 samples computed
+1381 samples computed
+Valid  15.0064
