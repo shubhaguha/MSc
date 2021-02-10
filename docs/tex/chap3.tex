@@ -1,0 +1,160 @@
+\chapter{Methods} \label{ch:methods}
+We used Nematus \citep{Sennrich2017Nematus:Translation} to train attentional encoder-decoder networks with similar architecture to that described in \citet{Bahdanau2014NeuralTranslate}. This chapter lists implementation details including network and training parameters, the novel weighted cost function, and the datasets.
+
+\section{Model Architecture}
+Like \citet{Bahdanau2014NeuralTranslate} and \citet{Xie2016NeuralAttention}, we use a bidirectional RNN as an encoder. Each input token is represented with the concatenation of the hidden states of the RNN cells in the forward and backward directions; the result is referred to as an annotation for the given input token. The Nematus implementation of the decoder is a modified and simplified version of what \citet{Bahdanau2014NeuralTranslate} propose: instead of the decoder hidden states being initialised with the last annotation of the encoder's backward RNN, they are initialised with the mean of all annotations; maxout is replaced with tanh in the feedforward hidden layer before the decoder's softmax layer; there are no added biases in both encoder and decoder embedding layers; and the order in which the decoder RNN state updates and generates the next token is switched for a simpler implementation. For reasons of limited time and computational resources, we limited both encoder and decoder depths to a single layer, using the Nematus default of GRU cells (conditional GRU cells in the decoder) instead of LSTM cells as in \citet{Bahdanau2014NeuralTranslate}.
+
+All models used an embedding layer size of 512, hidden layer size of 1000, layer normalisation, and dropout (0.1 for the source and target layers, 0.2 for embedding and hidden layers).
+
+% pass context vector (from first layer) to deep decoder layers
+% number of GRU transition operations applied in an encoder layer (default: 1)
+% number of GRU transition operations applied in first decoder layer (default: 2)
+% number of GRU transition operations applied in decoder layers after the first (default: 1)
+
+\section{Training}
+The following training parameters were left at Nematus default values: maximum sequence length of 100, Adam optimizer, maximum 5000 epochs (which was never reached), maximum 10 million updates (minibatches; also never reached), gradient clipping threshold 1, learning rate 0.0001, maxibatch size 20, cross-entropy objective function (see following subsection for implementation details on modified cross-entropy objective), and early stopping patience of 10, with validation every 10,000 minibatches. Batch size used was 60.
+
+\subsection{Objective Function}
+Baseline models were trained to minimize the same cross-entropy loss function used in \citet{Xie2016NeuralAttention}:
+\begin{equation} \label{eq:cross-entropy}
+	L(x,y)=-\sum_{t=1}^{T}\log P(y_t|x,y_{<t})
+\end{equation}
+where $x$ is the source sentence and $y$ is the output sentence with $T$ time steps.
+
+\subsubsection{Edit-Based Weighted Cross-Entropy}
+As described in the project proposal, in order to improve on recall of error types, we added a weight to the usual cross-entropy loss function that would multiply the loss contribution for time steps when the input and target values were different. In other words, where the learner sentence contained a grammatical error, it was especially important for the system to learn the correct behaviour; where the learner sentence was grammatically correct, it was less important whether the system copied the input or applied an edit.
+
+The weighted cross-entropy loss function used to train more advanced models was the following:
+\begin{equation} \label{eq:weighted-ce}
+	L(x,y)=-\sum_{t=1}^{T}\lambda(x_t,y_t) \log P(y_t|x,y_{<t})
+\end{equation}
+where the new weight is a function of the input and output at a particular time step $t$:
+\begin{equation} \label{eq:lambda}
+	\lambda(x_t,y_t)=
+    \begin{cases}
+    	1 & \texttt{if}\ x_t=y_t \\
+        \Lambda & \texttt{otherwise}
+    \end{cases}
+\end{equation}
+We report results on the test set for various values of this weight parameter $\Lambda$.
+
+\subsection{Implementation}
+To identify edits, we used the $M^2$ scoring script from the CoNLL-2013 shared task to align source and hypothesis sentences, producing a binary edit vector with ones in the positions identified by the aligner as edit words and zeroes in the remaining positions. This edit vector was passed in as an additional input to the Nematus training script, along with an edit weight value specifying the coefficient by which the loss of edit words would be multiplied, i.e. $\Lambda$ in equation \ref{eq:lambda}.
+
+In the following example from the NUCLE dataset (described in section \ref{sec:datasets}), the target tokens that are edits are ``cause,'' ``is,'' and ``space,'' so the corresponding edit vector will have ones in those positions (indices 7, 11, and 14 with index origin 0) and zeroes in remaining positions.
+\begin{table}[h]
+\begin{tabular}{ r l }
+\tabularnewline \hline \hline
+Source &  this will , if not already , caused problems as there are very limited spaces \\
+& for us . \\
+Target &  this will , if not already , cause problems as there is very limited space for \\
+& us . \\
+\hline
+\end{tabular}
+\caption{Example source and target for which edit words are ``cause,'' ``is,'' and ``space.''} \label{tab:edit-vectors-example}
+\end{table}
+
+Since cost is calculated over each output token, the edit vector must have the same size as the output sequence, even when the source and target are of different lengths, as in the example below. All in all, of the three possible edit operations (aside from ``no edit''), insertions and substitutions result in an output token that we treat as an edit, whereas deletions result in no output token and therefore no output loss contribution that can be multiplied to emphasize training contribution of deleted tokens.
+\begin{table}[h]
+\centering
+\begin{tabular}{ r l }
+\tabularnewline \hline \hline
+Source & safety is one of the crucial problems that many countries and companies \\
+& concern . \\
+Target & safety is one of the crucial problems that many countries and companies \\
+& are concerned about . \\
+\hline
+\end{tabular}
+\caption{Example source and target for which edit words are ``are concerned about.''}
+\label{tab:target-longer-example}
+\end{table}
+
+The training script reads binary edit values as an additional input of the same size as the target values. After computing the usual cross-entropy cost on a given minibatch, for which edit tokens and non-edit tokens are equally weighted, the script increments this cost by the product of itself with the edit vector of the minibatch and the edit weight previously set as a training parameter (minus one, since the loss from these tokens has already been counted once).
+\begin{algorithm}
+\caption{Calculated Edit-Based Weighted Cost}
+\label{alg:increment-cost}
+\begin{algorithmic}[1]
+\Procedure{IncrementCost}{cost, edits, edit\_weight}
+\State $\text{weight\_matrix} \gets \text{edits} * (\text{edit\_weight} - 1)$
+\State $\text{cost} \gets \text{cost} + (\text{cost} * \text{weight\_matrix})$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+As a result, the model is punished more severely for incorrectly transforming edit words than non-edit words.
+
+\section{Datasets} \label{sec:datasets}
+As in \citet{Susanto2014SystemCorrection}, \citet{Chollampatt2016NeuralCorrection}, and others, we used NUCLE \citep{Dahlmeier2013BuildingEnglish} and Lang-8 \citep{Mizumoto2011MiningLearners,Tajiri2012TenseContext} as training data, the CoNLL-2013 test set as development data \citep{Ng2013TheCorrection}, and the CoNLL-2014 test set as test data \citep{Ng2014TheCorrection}.
+
+NUCLE (National University of Singapore Corpus of Learner English) was created expressly for GEC and is publicly available. It contains 1414 essays written by NUS students on a wide variety of topics and corrected by professional English teachers following a standardized annotation schema, illustrated in table \ref{tab:training-nucle}.
+\begin{table}[h]
+\centering
+\begin{tabular}{r l}
+\tabularnewline \hline \hline
+S & \texttt{Therefore , the equipments of biometric identification tend to} \\
+& \texttt{be in-expensive .} \\
+A & \texttt{3 4|||Nn|||equipment|||REQUIRED|||-NONE-|||0} \\
+A & \texttt{7 8|||SVA|||tends|||REQUIRED|||-NONE-|||0} \\
+A & \texttt{10 11|||Mec|||inexpensive|||REQUIRED|||-NONE-|||0} \\
+\hline
+\end{tabular}
+\caption{Example learner sentence and annotations from NUCLE corpus.}
+\label{tab:training-nucle}
+\end{table}
+It includes 27 error categories, though our machine translation approach does not make use of error category information to produce the corrected output.
+
+Lang-8 is a corpus that was extracted from a language learning social network. The 120,000 English texts in the cleaned corpus were written by language learners, usually as diary entries, and corrected by native speakers who were also users on the platform. As a result of the lack of standardized annotation, this data set is noisier, with target sentences often including parenthetical comments by the annotator instead of strictly correcting the ungrammatical sentence. Two examples are listed in table \ref{tab:training-lang8}.
+\begin{table}[h]
+\centering
+\begin{tabular}{ r l }
+\tabularnewline \hline \hline
+Source 1 & The entertainment was to be at his wedding . \\
+Truth 1 & There will be entertainment at this wedding . ( sorry , I am not sure what \\
+& you wanted to say here ) \\
+\hline
+Source 2 & They were more expensive compared to others . \\
+Truth 2 & They were more expensive compared to others . ( this pronoun is unclear \\
+& `` I searched the internet and found the same items at a cheaper price . '' \\
+& is better ) \\
+\hline
+\end{tabular}
+\caption{Training samples from Lang-8 in which target sentences include annotator's commentary in addition to or instead of strict correction of grammatical errors.}
+\label{tab:training-lang8}
+\end{table}
+
+We considered the disadvantages of such noisy data and ultimately decided that they were outweighed by the advantage of an aggregate training corpus of 2.2 million sentences: among other benefits, a significantly larger corpus would result in fewer issues related to rare word handling.
+
+Other examples of noise in Lang-8 as well as other datasets used in this work are hyperlinks, citations, and other forms of text for which grammatical error correction seems inapplicable since they are not subject to English grammar rules. Some examples are in table \ref{tab:training-citations-hyperlinks}. These were preprocessed just as any other standard text (preprocessing steps are described next in subsection \ref{subsec:preprocessing}) and ultimately treated similarly to how rare words would be treated.
+\begin{table}[h]
+\centering
+\begin{tabular}{ r l }
+\tabularnewline \hline \hline
+Sample 1 & References : * Peter G.@@ Peterson . \\
+Sample 2 & Harvard International Review . \\
+Sample 3 & 23@@ .3 ( Fall 2001 ) : 66 * Central Provident Fund , from Wikipedia \\
+& http : //en.wikipedia.org/wiki/@@ C@@ entr@@ al\_@@ \\
+& Provi@@ dent@@ \_@@ Fund * e@@ Go@@ v monitor . \\
+\hline
+\end{tabular}
+\caption{Three consecutive training ``sentences'' with no edits, since grammatical rules do not apply to this kind of text.} \label{tab:training-citations-hyperlinks}
+\end{table}
+
+We used the test data from CoNLL-2013 as a validation set. This dataset has 50 additional essays written and annotated similarly to NUCLE. The only purpose of a validation set was to track training progress and decide early stopping.
+
+For our test data, we will use the test set from CoNLL-2014, which contains another 50 essays written and annotated like those in NUCLE. We report recall and $F_{0.5}$ scores on this dataset for consistent comparison against previous work.
+
+\subsection{Preprocessing} \label{subsec:preprocessing}
+CoNLL and NUCLE datasets first had to be transformed from an annotation format with source sentence and set of edits (shown in \ref{tab:training-nucle}) into parallel texts that could be processed by a sequence-to-sequence model as in neural machine translation. We used a script from \citet{Junczys-Dowmunt2016Phrase-basedCorrection} to convert CoNLL and NUCLE notation into parallel corpora. All datasets were received already tokenised in the same way as NUCLE. We used the truecase of the Moses SMT framework \citep{Koehn2007Moses} to normalise casing, then applied byte pair encoding with the open source subword-nmt package. Finally, we had to replace any pipe symbols \texttt{|} in the datasets with a special symbol \texttt{<pipe>} because they carry a special meaning in Nematus.
+
+\subsubsection{Truecasing}
+The truecaser in the open source mosesdecoder package was first trained on our concatenated NUCLE and Lang-8 training corpus. Based on the frequencies of words in different cases, the truecaser determines when to lowercase sentence-initial tokens. In the forward direction (preprocessing), the trained truecaser lowercases most sentence-initial tokens, and in the reverse direction (postprocessing, applied to system output before evaluation), detruecasing capitalises all sentence-initial tokens.
+
+\subsubsection{Byte Pair Encoding}
+\citet{Xie2016NeuralAttention} and \citet{Yuan2016GrammaticalTranslation} each had different approaches to dealing with the problem of rare and unknown words in GEC. Instead of using character-level encoding or transforming unknown words as a postprocessing step, we apply byte pair encoding using the open source subword-nmt package \citep{Sennrich2015NeuralUnits}. Byte pair encoding is a compression algorithm that can be used to segment words into set number of possible subword units based on how frequently these subwords appear as units in the corpus. A dictionary of fifty thousand subword units was generated from our training dataset and all datasets were preprocessed by applying this encoding.
+
+\subsection{Edit Frequency} \label{subsec:error-rates}
+One factor contributing to the failure of standard NMT techniques to learn to correct grammatical errors, mentioned previously in chapter \ref{ch:intro}, is that the occurrence of grammatical errors in our corpora is far lower than the occurrence of grammatically correct tokens. After generating edit vectors for the full training corpus including NUCLE and Lang-8, we calculated that only 22.32\% of all target tokens were edits. Similarly, \citet{Junczys-Dowmunt2016Phrase-basedCorrection} report that the CoNLL-2013 test set has an grammatical error rate of 14.97\% of all tokens.
+
+As stated in chapter \ref{ch:intro}, the fact that edit tokens are so much more underrepresented than non-edit tokens is a strong justification to give them more importance during training. Despite addressing this imbalance, there remains an apparent discrepancy between training and validation error rates, which may warrant future efforts to use a validation set more representative of the training set or to clean up some of the noise in Lang-8.
+
+\section{Tools}
+We used the following open source packages: Nematus (git version 73037e9), subword-nmt (git version fb526f1 to generate byte pair encoding and version 8873136 for NMT training), mosesdecoder (git version dc42bcb for NMT training).
