@@ -1,5 +1,5 @@
 Effective Grammatical Error Correction with Neural Machine Translation Techniques
-===
+---
 
 Shubha Guha, M.Sc. Artificial Intelligence
 

@@ -1,4 +1,25 @@
-# MSc
+Effective Grammatical Error Correction with Neural Machine Translation Techniques
+===
+
+Shubha Guha, M.Sc. Artificial Intelligence
+
+University of Edinburgh, 2016-2017
+
+Formal Writing
+---
+
+- [Informatics Research Proposal](docs/proposal.pdf)
+- [Mid-term Progress Report](docs/report.pdf)
+- [Final Master's Thesis](docs/thesis.pdf)
+
+Informal Notes & Documentation
+---
+
+- [Development Notes](DEVELOPMENT.md)
+- [Meeting Notes](NOTES.md)
+
+Submission Summary
+---
 
 All original code can be found under [scripts/](scripts). Most important to note:
 
@@ -8,15 +29,15 @@ All original code can be found under [scripts/](scripts). Most important to note
 
   - [generate_edit_vectors.py](scripts/generate_edit_vectors.py)
 
-      This is my implmentation  of using the MaxMatch aligner to extract edit vectors. The file created by this script is passed in as the value of command line argument `--edit_vectors` in modified_nmt.py.
+      This is my implementation  of using the MaxMatch aligner to extract edit vectors. The file created by this script is passed in as the value of command line argument `--edit_vectors` in modified_nmt.py.
 
 Also relevant:
 
-  - [preprocess_data](scripts/preprocess_data)
+  - [preprocess_data.sh](scripts/preprocess_data)
 
     This is how I preprocess training, validation, and test data.
 
-  - [evaluate_model](scripts/evaluate_model)
+  - [evaluate_model.sh](scripts/evaluate_model)
 
     This is how I evaluate a trained model.
 
